@@ -1,0 +1,23 @@
+{
+  "name": "rsk-academy-dapp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solangegueiros/rsk-academy-dapp.git"
+  },
+  "keywords": ["blockchain", "smart contracts", "ethereum", "rsk", "rsksmart"],
+  "author": "Solange Gueiros <solangegueiros@gmail.com> (https://solange.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solangegueiros/rsk-academy-dapp/issues"
+  },
+  "homepage": "https://github.com/solangegueiros/rsk-academy-dapp#readme"
+}
