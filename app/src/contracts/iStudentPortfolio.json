@@ -1,34 +1,51 @@
 {
-  "contractName": "iName",
+  "contractName": "iStudentPortfolio",
   "abi": [
     {
-      "inputs": [],
-      "name": "owner",
-      "outputs": [
+      "inputs": [
         {
           "internalType": "address",
-          "name": "",
+          "name": "projectAddress",
           "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "getName",
-      "outputs": [
+        },
         {
           "internalType": "string",
-          "name": "",
+          "name": "projectName",
           "type": "string"
         }
       ],
-      "stateMutability": "view",
+      "name": "addProject",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "projectAddress",
+          "type": "address"
+        }
+      ],
+      "name": "deleteProjectByAddress",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/MasterName.sol\":\"iName\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/MasterName.sol\":{\"keccak256\":\"0x2172461221f896707c4487c95516251030996a35d2cafac2db99a5e360d5fb49\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a90d5f7676ef11705a804c84513f29068db854d17ef5b688af05bc69943711ff\",\"dweb:/ipfs/QmcfGFoz623nPXJVAUpnR6Cdw4BCXLEo4RBubAGxKAiTc8\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/access/AccessControl.sol\":{\"keccak256\":\"0x877dc2a75f1b3d7de3aa259d97d8c58e75b386435cf28f6e1b87e2f2167cc546\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cabfdd2b9505230852827e7755c9cabe3459c3d3382905667dc1e5545a41dd49\",\"dweb:/ipfs/QmZandfiQLrS9RjKZgFmdvK5sdkSGgfgPt9jUSy59DTERs\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/Address.sol\":{\"keccak256\":\"0x055865e412a376d7467750cd42c47930aef7a372306e032e40eda9a132e2f1b2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cfd6532c00cc0b54fced1ea7c20f23c191a460dc9e8afffcf288752a471c7838\",\"dweb:/ipfs/QmTFgWb8DaLaFZCHHWwWu1PmT3yprGsntnEtYrWP9CqPZ6\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/Context.sol\":{\"keccak256\":\"0x458d9bbcd900f10c2a72ec11752df54db7877f86070ec72ce15994c39d0cb9ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1b784af1c7c2e20a8f0aa445f06f12a62f97fbe6521d24eb334c5f7cfbc27398\",\"dweb:/ipfs/QmXo9fKr6PvYXyPLtrSTJXPJCkbDHy9WaKv1L7bRqMUWVe\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x2962f9258c7b6d44fd0c7c9b618cf99178919b1a6fd25a3880f42e0a576d5154\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2c31cf5db9b4bee162e074f1ecc678e04ec4b2827b35493bec19b0a42a5f1d20\",\"dweb:/ipfs/QmSXMLWEAiuCT1a9uPbhmXuHNKhDwa6s8s8WpcLbCt771Q\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"projectAddress\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"projectName\",\"type\":\"string\"}],\"name\":\"addProject\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"projectAddress\",\"type\":\"address\"}],\"name\":\"deleteProjectByAddress\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/MasterName.sol\":\"iStudentPortfolio\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/MasterName.sol\":{\"keccak256\":\"0x2172461221f896707c4487c95516251030996a35d2cafac2db99a5e360d5fb49\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a90d5f7676ef11705a804c84513f29068db854d17ef5b688af05bc69943711ff\",\"dweb:/ipfs/QmcfGFoz623nPXJVAUpnR6Cdw4BCXLEo4RBubAGxKAiTc8\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/access/AccessControl.sol\":{\"keccak256\":\"0x877dc2a75f1b3d7de3aa259d97d8c58e75b386435cf28f6e1b87e2f2167cc546\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cabfdd2b9505230852827e7755c9cabe3459c3d3382905667dc1e5545a41dd49\",\"dweb:/ipfs/QmZandfiQLrS9RjKZgFmdvK5sdkSGgfgPt9jUSy59DTERs\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/Address.sol\":{\"keccak256\":\"0x055865e412a376d7467750cd42c47930aef7a372306e032e40eda9a132e2f1b2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cfd6532c00cc0b54fced1ea7c20f23c191a460dc9e8afffcf288752a471c7838\",\"dweb:/ipfs/QmTFgWb8DaLaFZCHHWwWu1PmT3yprGsntnEtYrWP9CqPZ6\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/Context.sol\":{\"keccak256\":\"0x458d9bbcd900f10c2a72ec11752df54db7877f86070ec72ce15994c39d0cb9ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1b784af1c7c2e20a8f0aa445f06f12a62f97fbe6521d24eb334c5f7cfbc27398\",\"dweb:/ipfs/QmXo9fKr6PvYXyPLtrSTJXPJCkbDHy9WaKv1L7bRqMUWVe\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x2962f9258c7b6d44fd0c7c9b618cf99178919b1a6fd25a3880f42e0a576d5154\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2c31cf5db9b4bee162e074f1ecc678e04ec4b2827b35493bec19b0a42a5f1d20\",\"dweb:/ipfs/QmSXMLWEAiuCT1a9uPbhmXuHNKhDwa6s8s8WpcLbCt771Q\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -14218,7 +14235,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-02-19T18:38:53.356Z",
+  "updatedAt": "2021-02-19T18:38:53.425Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

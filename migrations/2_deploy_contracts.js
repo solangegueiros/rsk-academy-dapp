@@ -9,7 +9,7 @@ const Name = artifacts.require("Name");
 
 module.exports = async (deployer, network, accounts) => {
 
-  accountStudent = accounts[5];
+  accountStudent = accounts[1];
   DEFAULT_ADMIN_ROLE = "0x0000000000000000000000000000000000000000000000000000000000000000";
 
   //Deploy AcademyClassList
@@ -118,14 +118,16 @@ module.exports = async (deployer, network, accounts) => {
   console.log("\n MasterName list\n", result);
   
   //The student did a wrong name, then will delete the project and submit again
-  console.log("\nstudent delete wrong project");
+  console.log("\nstudent delete the wrong project");
   //result = await portfolio.deleteProjectByAddress(yourName.address, {from: accountStudent});
+  //console.log("\n Student portfolio.deleteProjectByAddress result\n", JSON.stringify(result.logs));
   result = await masterName.deleteName({from: accountStudent});
-  console.log("\n Student portfolio.deleteProjectByAddress result\n", JSON.stringify(result.logs));
+  console.log("\n Student masterName.deleteName result\n", JSON.stringify(result));
   
   result = await portfolio.listPortfolio();
   console.log("\n portfolio AFTER deleteProjectByAddress \n", result);
 
+  /*
   //NameSol
   nameSol = await deployer.deploy(NameSol, {from: accountStudent});
   console.log("nameSol.Address: ", nameSol.address);

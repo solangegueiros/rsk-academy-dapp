@@ -130,7 +130,7 @@ contract MasterName is AccessControl {
 
         uint256 indexToDelete = ownerIndex[msg.sender];
         //address scNameToDelete = nameInfo[indexToDelete].scName;
-        emit NameDeleted (msg.sender, nameInfo[indexToDelete].scName, nameInfo[indexToDelete].name);
+        //emit NameDeleted (msg.sender, nameInfo[indexToDelete].scName, nameInfo[indexToDelete].name);
 
         //_deleteName (msg.sender);
         return true;        
