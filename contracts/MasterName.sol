@@ -2,7 +2,9 @@
 pragma solidity 0.8.1;
 
 //import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/AccessControl.sol";
-import '@openzeppelin/contracts/access/AccessControl.sol';
+//import '@openzeppelin/contracts/access/AccessControl.sol';
+import './oz-contracts/access/AccessControl.sol';
+
 
 struct StudentStruct {
     uint index;
@@ -127,8 +129,7 @@ contract MasterName is AccessControl {
     function deleteName () public returns (bool) {
 
         uint256 indexToDelete = ownerIndex[msg.sender];
-        address scNameToDelete = nameInfo[indexToDelete].scName;
-
+        //address scNameToDelete = nameInfo[indexToDelete].scName;
         emit NameDeleted (msg.sender, nameInfo[indexToDelete].scName, nameInfo[indexToDelete].name);
 
         //_deleteName (msg.sender);

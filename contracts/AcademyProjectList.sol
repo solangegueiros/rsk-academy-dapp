@@ -2,7 +2,9 @@
 pragma solidity 0.8.1;
 
 //import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/AccessControl.sol";
-import '@openzeppelin/contracts/access/AccessControl.sol';
+//import '@openzeppelin/contracts/access/AccessControl.sol';
+import './oz-contracts/access/AccessControl.sol';
+
 
 struct ProjectStruct {
     address master;
