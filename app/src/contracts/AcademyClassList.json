@@ -11371,19 +11371,19 @@
         380
       ],
       "AccessControl": [
-        3315
+        3486
       ],
       "Address": [
-        3611
+        3782
       ],
       "ClassStruct": [
         11
       ],
       "Context": [
-        3637
+        3808
       ],
       "EnumerableSet": [
-        4732
+        4903
       ],
       "StudentInClass": [
         23
@@ -11415,7 +11415,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 797,
-        "sourceUnit": 3316,
+        "sourceUnit": 3487,
         "src": "236:49:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -12142,7 +12142,7 @@
               "id": 64,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3315,
+              "referencedDeclaration": 3486,
               "src": "1465:13:0"
             },
             "id": 65,
@@ -12152,16 +12152,16 @@
         ],
         "contractDependencies": [
           796,
-          3315,
-          3637
+          3486,
+          3808
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 380,
         "linearizedBaseContracts": [
           380,
-          3315,
-          3637
+          3486,
+          3808
         ],
         "name": "AcademyClassList",
         "nodeType": "ContractDefinition",
@@ -12295,7 +12295,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "1686:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -12344,7 +12344,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3241,
+                      "referencedDeclaration": 3412,
                       "src": "1675:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -12528,7 +12528,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3058,
+                            "referencedDeclaration": 3229,
                             "src": "1887:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -12577,7 +12577,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3104,
+                          "referencedDeclaration": 3275,
                           "src": "1879:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -13604,7 +13604,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "2875:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -14547,7 +14547,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "3549:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -14597,7 +14597,7 @@
                       "lValueRequested": false,
                       "memberName": "grantRole",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3179,
+                      "referencedDeclaration": 3350,
                       "src": "3537:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -14835,7 +14835,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "3765:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -14885,7 +14885,7 @@
                       "lValueRequested": false,
                       "memberName": "revokeRole",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3205,
+                      "referencedDeclaration": 3376,
                       "src": "3752:12:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -15817,7 +15817,7 @@
               "id": 381,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3315,
+              "referencedDeclaration": 3486,
               "src": "4602:13:0"
             },
             "id": 382,
@@ -15826,16 +15826,16 @@
           }
         ],
         "contractDependencies": [
-          3315,
-          3637
+          3486,
+          3808
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 796,
         "linearizedBaseContracts": [
           796,
-          3315,
-          3637
+          3486,
+          3808
         ],
         "name": "AcademyClass",
         "nodeType": "ContractDefinition",
@@ -16030,7 +16030,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "4969:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -16079,7 +16079,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3241,
+                      "referencedDeclaration": 3412,
                       "src": "4958:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -16488,7 +16488,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3058,
+                            "referencedDeclaration": 3229,
                             "src": "5338:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -16537,7 +16537,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3104,
+                          "referencedDeclaration": 3275,
                           "src": "5330:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -20916,19 +20916,19 @@
         380
       ],
       "AccessControl": [
-        3315
+        3486
       ],
       "Address": [
-        3611
+        3782
       ],
       "ClassStruct": [
         11
       ],
       "Context": [
-        3637
+        3808
       ],
       "EnumerableSet": [
-        4732
+        4903
       ],
       "StudentInClass": [
         23
@@ -20960,7 +20960,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 797,
-        "sourceUnit": 3316,
+        "sourceUnit": 3487,
         "src": "236:49:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -21687,7 +21687,7 @@
               "id": 64,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3315,
+              "referencedDeclaration": 3486,
               "src": "1465:13:0"
             },
             "id": 65,
@@ -21697,16 +21697,16 @@
         ],
         "contractDependencies": [
           796,
-          3315,
-          3637
+          3486,
+          3808
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 380,
         "linearizedBaseContracts": [
           380,
-          3315,
-          3637
+          3486,
+          3808
         ],
         "name": "AcademyClassList",
         "nodeType": "ContractDefinition",
@@ -21840,7 +21840,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "1686:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -21889,7 +21889,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3241,
+                      "referencedDeclaration": 3412,
                       "src": "1675:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -22073,7 +22073,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3058,
+                            "referencedDeclaration": 3229,
                             "src": "1887:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -22122,7 +22122,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3104,
+                          "referencedDeclaration": 3275,
                           "src": "1879:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -23149,7 +23149,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "2875:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -24092,7 +24092,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "3549:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -24142,7 +24142,7 @@
                       "lValueRequested": false,
                       "memberName": "grantRole",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3179,
+                      "referencedDeclaration": 3350,
                       "src": "3537:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -24380,7 +24380,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "3765:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -24430,7 +24430,7 @@
                       "lValueRequested": false,
                       "memberName": "revokeRole",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3205,
+                      "referencedDeclaration": 3376,
                       "src": "3752:12:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -25362,7 +25362,7 @@
               "id": 381,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3315,
+              "referencedDeclaration": 3486,
               "src": "4602:13:0"
             },
             "id": 382,
@@ -25371,16 +25371,16 @@
           }
         ],
         "contractDependencies": [
-          3315,
-          3637
+          3486,
+          3808
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 796,
         "linearizedBaseContracts": [
           796,
-          3315,
-          3637
+          3486,
+          3808
         ],
         "name": "AcademyClass",
         "nodeType": "ContractDefinition",
@@ -25575,7 +25575,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3058,
+                        "referencedDeclaration": 3229,
                         "src": "4969:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -25624,7 +25624,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3241,
+                      "referencedDeclaration": 3412,
                       "src": "4958:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -26033,7 +26033,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3058,
+                            "referencedDeclaration": 3229,
                             "src": "5338:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -26082,7 +26082,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3104,
+                          "referencedDeclaration": 3275,
                           "src": "5330:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -30554,12 +30554,12 @@
         }
       },
       "links": {},
-      "address": "0x0aB0b2b691E7773d47104ad6f93cdBeA0F8B8399",
-      "transactionHash": "0xa3162a800a0d7009b15989bd93584c46f3d9431eb00b6d9a4d3c398b2cb862bf"
+      "address": "0x87ab2Eb83174e9EB46ecDF9A3B243F53cBb8d965",
+      "transactionHash": "0x33eda201469b885cd7c0434d1161d43560e6319cdd2254ecc2f58b0c9e4acae2"
     }
   },
-  "schemaVersion": "3.3.3",
-  "updatedAt": "2021-02-20T02:13:11.413Z",
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-02-20T18:47:10.935Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

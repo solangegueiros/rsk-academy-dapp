@@ -156,11 +156,14 @@ contract MasterName is AccessControl {
         delete scNameIndex[scNameToDelete];
         nameInfo.pop();
 
+        
         StudentStruct memory s = studentList.getStudentByAddress(scOwner); 
         if (s.portfolioAddress != address(0x0)) {
             iStudentPortfolio p = iStudentPortfolio(s.portfolioAddress);
             p.deleteProjectByAddress(scNameToDelete);
         }
+        /*
+        */
 
         emit NameDeleted (scOwner, scNameToDelete);
         return true;

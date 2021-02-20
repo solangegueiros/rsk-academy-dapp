@@ -191,6 +191,7 @@ contract AcademyStudents is AccessControl {
 }
 
 
+
 contract StudentPortfolio is AccessControl {
     //One StudentPortfolio per Student
     
@@ -263,7 +264,6 @@ contract StudentPortfolio is AccessControl {
         require (!(projectAddress == address(0x0)), "invalid address");
         require (addressInPortfolio(projectAddress), "address not exists");
 
-
         //Porém, dependendo do projeto, ele terá que apagar no MasterProject.
         //Definir que um projeto só pode ser apagado em seu MasterProject? SIM!
         address masterAddress = projectList.getMasterAddressByName(portfolioProjects[addressIndex[projectAddress]-1].name);
@@ -271,16 +271,18 @@ contract StudentPortfolio is AccessControl {
 
         uint256 indexToDelete = addressIndex[projectAddress]-1;
         string memory nameToDelete =  portfolioProjects[indexToDelete].name;
-        addressIndex[projectAddress] = 0;
-        nameIndex[nameToDelete] = 0;
-        delete addressIndex[projectAddress];
-        delete nameIndex[nameToDelete];
+
         
         uint256 indexToMove = portfolioProjects.length-1;
         address keyToMove = portfolioProjects[indexToMove].projectAddress;
         portfolioProjects[indexToDelete] = portfolioProjects[indexToMove];
         addressIndex[keyToMove] = indexToDelete+1;
         nameIndex[portfolioProjects[indexToMove].name] = indexToDelete+1;
+        
+        //addressIndex[projectAddress] = 0;
+        //nameIndex[nameToDelete] = 0;
+        delete addressIndex[projectAddress];
+        delete nameIndex[nameToDelete];    
         portfolioProjects.pop();
 
         emit PortfolioProjectDeleted(projectAddress, nameToDelete);
@@ -341,4 +343,6 @@ contract StudentPortfolio is AccessControl {
     }
     
 }
+
+
 

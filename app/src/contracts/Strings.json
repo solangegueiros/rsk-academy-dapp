@@ -15,15 +15,15 @@
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/Strings.sol",
     "exportedSymbols": {
       "Strings": [
-        4911
+        5082
       ]
     },
-    "id": 4912,
+    "id": 5083,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4826,
+        "id": 4997,
         "literals": [
           "solidity",
           ">=",
@@ -42,22 +42,22 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 4827,
+          "id": 4998,
           "nodeType": "StructuredDocumentation",
           "src": "70:36:12",
           "text": " @dev String operations."
         },
         "fullyImplemented": true,
-        "id": 4911,
+        "id": 5082,
         "linearizedBaseContracts": [
-          4911
+          5082
         ],
         "name": "Strings",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4909,
+              "id": 5080,
               "nodeType": "Block",
               "src": "292:675:12",
               "statements": [
@@ -67,17 +67,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 4837,
+                    "id": 5008,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4835,
+                      "id": 5006,
                       "name": "value",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4830,
+                      "referencedDeclaration": 5001,
                       "src": "498:5:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -88,7 +88,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "hexValue": "30",
-                      "id": 4836,
+                      "id": 5007,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -108,18 +108,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4841,
+                  "id": 5012,
                   "nodeType": "IfStatement",
                   "src": "494:53:12",
                   "trueBody": {
-                    "id": 4840,
+                    "id": 5011,
                     "nodeType": "Block",
                     "src": "510:37:12",
                     "statements": [
                       {
                         "expression": {
                           "hexValue": "30",
-                          "id": 4838,
+                          "id": 5009,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -133,8 +133,8 @@
                           },
                           "value": "0"
                         },
-                        "functionReturnParameters": 4834,
-                        "id": 4839,
+                        "functionReturnParameters": 5005,
+                        "id": 5010,
                         "nodeType": "Return",
                         "src": "525:10:12"
                       }
@@ -143,16 +143,16 @@
                 },
                 {
                   "assignments": [
-                    4843
+                    5014
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4843,
+                      "id": 5014,
                       "mutability": "mutable",
                       "name": "temp",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4909,
+                      "scope": 5080,
                       "src": "557:12:12",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -161,7 +161,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4842,
+                        "id": 5013,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "557:7:12",
@@ -173,13 +173,13 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4845,
+                  "id": 5016,
                   "initialValue": {
-                    "id": 4844,
+                    "id": 5015,
                     "name": "value",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4830,
+                    "referencedDeclaration": 5001,
                     "src": "572:5:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -191,16 +191,16 @@
                 },
                 {
                   "assignments": [
-                    4847
+                    5018
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4847,
+                      "id": 5018,
                       "mutability": "mutable",
                       "name": "digits",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4909,
+                      "scope": 5080,
                       "src": "588:14:12",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -209,7 +209,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4846,
+                        "id": 5017,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "588:7:12",
@@ -221,19 +221,19 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4848,
+                  "id": 5019,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "588:14:12"
                 },
                 {
                   "body": {
-                    "id": 4859,
+                    "id": 5030,
                     "nodeType": "Block",
                     "src": "631:60:12",
                     "statements": [
                       {
                         "expression": {
-                          "id": 4853,
+                          "id": 5024,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -243,11 +243,11 @@
                           "prefix": false,
                           "src": "646:8:12",
                           "subExpression": {
-                            "id": 4852,
+                            "id": 5023,
                             "name": "digits",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4847,
+                            "referencedDeclaration": 5018,
                             "src": "646:6:12",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -259,23 +259,23 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 4854,
+                        "id": 5025,
                         "nodeType": "ExpressionStatement",
                         "src": "646:8:12"
                       },
                       {
                         "expression": {
-                          "id": 4857,
+                          "id": 5028,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 4855,
+                            "id": 5026,
                             "name": "temp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4843,
+                            "referencedDeclaration": 5014,
                             "src": "669:4:12",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -286,7 +286,7 @@
                           "operator": "/=",
                           "rightHandSide": {
                             "hexValue": "3130",
-                            "id": 4856,
+                            "id": 5027,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -306,7 +306,7 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 4858,
+                        "id": 5029,
                         "nodeType": "ExpressionStatement",
                         "src": "669:10:12"
                       }
@@ -317,17 +317,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 4851,
+                    "id": 5022,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4849,
+                      "id": 5020,
                       "name": "temp",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4843,
+                      "referencedDeclaration": 5014,
                       "src": "620:4:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -338,7 +338,7 @@
                     "operator": "!=",
                     "rightExpression": {
                       "hexValue": "30",
-                      "id": 4850,
+                      "id": 5021,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -358,22 +358,22 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4860,
+                  "id": 5031,
                   "nodeType": "WhileStatement",
                   "src": "613:78:12"
                 },
                 {
                   "assignments": [
-                    4862
+                    5033
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4862,
+                      "id": 5033,
                       "mutability": "mutable",
                       "name": "buffer",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4909,
+                      "scope": 5080,
                       "src": "701:19:12",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -382,7 +382,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 4861,
+                        "id": 5032,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "701:5:12",
@@ -394,15 +394,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4867,
+                  "id": 5038,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4865,
+                        "id": 5036,
                         "name": "digits",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4847,
+                        "referencedDeclaration": 5018,
                         "src": "733:6:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -417,7 +417,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4864,
+                      "id": 5035,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -429,7 +429,7 @@
                         "typeString": "function (uint256) pure returns (bytes memory)"
                       },
                       "typeName": {
-                        "id": 4863,
+                        "id": 5034,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "727:5:12",
@@ -439,7 +439,7 @@
                         }
                       }
                     },
-                    "id": 4866,
+                    "id": 5037,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -459,16 +459,16 @@
                 },
                 {
                   "assignments": [
-                    4869
+                    5040
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4869,
+                      "id": 5040,
                       "mutability": "mutable",
                       "name": "index",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4909,
+                      "scope": 5080,
                       "src": "751:13:12",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -477,7 +477,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4868,
+                        "id": 5039,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "751:7:12",
@@ -489,23 +489,23 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4873,
+                  "id": 5044,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 4872,
+                    "id": 5043,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4870,
+                      "id": 5041,
                       "name": "digits",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4847,
+                      "referencedDeclaration": 5018,
                       "src": "767:6:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -516,7 +516,7 @@
                     "operator": "-",
                     "rightExpression": {
                       "hexValue": "31",
-                      "id": 4871,
+                      "id": 5042,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -541,17 +541,17 @@
                 },
                 {
                   "expression": {
-                    "id": 4876,
+                    "id": 5047,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 4874,
+                      "id": 5045,
                       "name": "temp",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4843,
+                      "referencedDeclaration": 5014,
                       "src": "788:4:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -561,11 +561,11 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 4875,
+                      "id": 5046,
                       "name": "value",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4830,
+                      "referencedDeclaration": 5001,
                       "src": "795:5:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -578,39 +578,39 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 4877,
+                  "id": 5048,
                   "nodeType": "ExpressionStatement",
                   "src": "788:12:12"
                 },
                 {
                   "body": {
-                    "id": 4902,
+                    "id": 5073,
                     "nodeType": "Block",
                     "src": "829:99:12",
                     "statements": [
                       {
                         "expression": {
-                          "id": 4896,
+                          "id": 5067,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
                             "baseExpression": {
-                              "id": 4881,
+                              "id": 5052,
                               "name": "buffer",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4862,
+                              "referencedDeclaration": 5033,
                               "src": "844:6:12",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
                                 "typeString": "bytes memory"
                               }
                             },
-                            "id": 4884,
+                            "id": 5055,
                             "indexExpression": {
-                              "id": 4883,
+                              "id": 5054,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -620,11 +620,11 @@
                               "prefix": false,
                               "src": "851:7:12",
                               "subExpression": {
-                                "id": 4882,
+                                "id": 5053,
                                 "name": "index",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4869,
+                                "referencedDeclaration": 5040,
                                 "src": "851:5:12",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -658,14 +658,14 @@
                                       "typeIdentifier": "t_uint256",
                                       "typeString": "uint256"
                                     },
-                                    "id": 4893,
+                                    "id": 5064,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
                                     "lValueRequested": false,
                                     "leftExpression": {
                                       "hexValue": "3438",
-                                      "id": 4889,
+                                      "id": 5060,
                                       "isConstant": false,
                                       "isLValue": false,
                                       "isPure": true,
@@ -686,17 +686,17 @@
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
                                       },
-                                      "id": 4892,
+                                      "id": 5063,
                                       "isConstant": false,
                                       "isLValue": false,
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "leftExpression": {
-                                        "id": 4890,
+                                        "id": 5061,
                                         "name": "temp",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4843,
+                                        "referencedDeclaration": 5014,
                                         "src": "880:4:12",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint256",
@@ -707,7 +707,7 @@
                                       "operator": "%",
                                       "rightExpression": {
                                         "hexValue": "3130",
-                                        "id": 4891,
+                                        "id": 5062,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": true,
@@ -741,7 +741,7 @@
                                       "typeString": "uint256"
                                     }
                                   ],
-                                  "id": 4888,
+                                  "id": 5059,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -753,14 +753,14 @@
                                     "typeString": "type(uint8)"
                                   },
                                   "typeName": {
-                                    "id": 4887,
+                                    "id": 5058,
                                     "name": "uint8",
                                     "nodeType": "ElementaryTypeName",
                                     "src": "869:5:12",
                                     "typeDescriptions": {}
                                   }
                                 },
-                                "id": 4894,
+                                "id": 5065,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -783,7 +783,7 @@
                                   "typeString": "uint8"
                                 }
                               ],
-                              "id": 4886,
+                              "id": 5057,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -795,14 +795,14 @@
                                 "typeString": "type(bytes1)"
                               },
                               "typeName": {
-                                "id": 4885,
+                                "id": 5056,
                                 "name": "bytes1",
                                 "nodeType": "ElementaryTypeName",
                                 "src": "862:6:12",
                                 "typeDescriptions": {}
                               }
                             },
-                            "id": 4895,
+                            "id": 5066,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -823,23 +823,23 @@
                             "typeString": "bytes1"
                           }
                         },
-                        "id": 4897,
+                        "id": 5068,
                         "nodeType": "ExpressionStatement",
                         "src": "844:47:12"
                       },
                       {
                         "expression": {
-                          "id": 4900,
+                          "id": 5071,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 4898,
+                            "id": 5069,
                             "name": "temp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4843,
+                            "referencedDeclaration": 5014,
                             "src": "906:4:12",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -850,7 +850,7 @@
                           "operator": "/=",
                           "rightHandSide": {
                             "hexValue": "3130",
-                            "id": 4899,
+                            "id": 5070,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -870,7 +870,7 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 4901,
+                        "id": 5072,
                         "nodeType": "ExpressionStatement",
                         "src": "906:10:12"
                       }
@@ -881,17 +881,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 4880,
+                    "id": 5051,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4878,
+                      "id": 5049,
                       "name": "temp",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4843,
+                      "referencedDeclaration": 5014,
                       "src": "818:4:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -902,7 +902,7 @@
                     "operator": "!=",
                     "rightExpression": {
                       "hexValue": "30",
-                      "id": 4879,
+                      "id": 5050,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -922,7 +922,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4903,
+                  "id": 5074,
                   "nodeType": "WhileStatement",
                   "src": "811:117:12"
                 },
@@ -930,11 +930,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 4906,
+                        "id": 5077,
                         "name": "buffer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4862,
+                        "referencedDeclaration": 5033,
                         "src": "952:6:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -949,7 +949,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 4905,
+                      "id": 5076,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -961,14 +961,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 4904,
+                        "id": 5075,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "945:6:12",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 4907,
+                    "id": 5078,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -983,36 +983,36 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4834,
-                  "id": 4908,
+                  "functionReturnParameters": 5005,
+                  "id": 5079,
                   "nodeType": "Return",
                   "src": "938:21:12"
                 }
               ]
             },
             "documentation": {
-              "id": 4828,
+              "id": 4999,
               "nodeType": "StructuredDocumentation",
               "src": "131:84:12",
               "text": " @dev Converts a `uint256` to its ASCII `string` representation."
             },
-            "id": 4910,
+            "id": 5081,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "toString",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4831,
+              "id": 5002,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4830,
+                  "id": 5001,
                   "mutability": "mutable",
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4910,
+                  "scope": 5081,
                   "src": "239:13:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1021,7 +1021,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4829,
+                    "id": 5000,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "239:7:12",
@@ -1036,16 +1036,16 @@
               "src": "238:15:12"
             },
             "returnParameters": {
-              "id": 4834,
+              "id": 5005,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4833,
+                  "id": 5004,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4910,
+                  "scope": 5081,
                   "src": "277:13:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -1054,7 +1054,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4832,
+                    "id": 5003,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "277:6:12",
@@ -1068,14 +1068,14 @@
               ],
               "src": "276:15:12"
             },
-            "scope": 4911,
+            "scope": 5082,
             "src": "221:746:12",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 4912,
+        "scope": 5083,
         "src": "108:862:12"
       }
     ],
@@ -1085,15 +1085,15 @@
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/Strings.sol",
     "exportedSymbols": {
       "Strings": [
-        4911
+        5082
       ]
     },
-    "id": 4912,
+    "id": 5083,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4826,
+        "id": 4997,
         "literals": [
           "solidity",
           ">=",
@@ -1112,22 +1112,22 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 4827,
+          "id": 4998,
           "nodeType": "StructuredDocumentation",
           "src": "70:36:12",
           "text": " @dev String operations."
         },
         "fullyImplemented": true,
-        "id": 4911,
+        "id": 5082,
         "linearizedBaseContracts": [
-          4911
+          5082
         ],
         "name": "Strings",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4909,
+              "id": 5080,
               "nodeType": "Block",
               "src": "292:675:12",
               "statements": [
@@ -1137,17 +1137,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 4837,
+                    "id": 5008,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4835,
+                      "id": 5006,
                       "name": "value",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4830,
+                      "referencedDeclaration": 5001,
                       "src": "498:5:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1158,7 +1158,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "hexValue": "30",
-                      "id": 4836,
+                      "id": 5007,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1178,18 +1178,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4841,
+                  "id": 5012,
                   "nodeType": "IfStatement",
                   "src": "494:53:12",
                   "trueBody": {
-                    "id": 4840,
+                    "id": 5011,
                     "nodeType": "Block",
                     "src": "510:37:12",
                     "statements": [
                       {
                         "expression": {
                           "hexValue": "30",
-                          "id": 4838,
+                          "id": 5009,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1203,8 +1203,8 @@
                           },
                           "value": "0"
                         },
-                        "functionReturnParameters": 4834,
-                        "id": 4839,
+                        "functionReturnParameters": 5005,
+                        "id": 5010,
                         "nodeType": "Return",
                         "src": "525:10:12"
                       }
@@ -1213,16 +1213,16 @@
                 },
                 {
                   "assignments": [
-                    4843
+                    5014
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4843,
+                      "id": 5014,
                       "mutability": "mutable",
                       "name": "temp",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4909,
+                      "scope": 5080,
                       "src": "557:12:12",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1231,7 +1231,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4842,
+                        "id": 5013,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "557:7:12",
@@ -1243,13 +1243,13 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4845,
+                  "id": 5016,
                   "initialValue": {
-                    "id": 4844,
+                    "id": 5015,
                     "name": "value",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4830,
+                    "referencedDeclaration": 5001,
                     "src": "572:5:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1261,16 +1261,16 @@
                 },
                 {
                   "assignments": [
-                    4847
+                    5018
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4847,
+                      "id": 5018,
                       "mutability": "mutable",
                       "name": "digits",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4909,
+                      "scope": 5080,
                       "src": "588:14:12",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1279,7 +1279,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4846,
+                        "id": 5017,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "588:7:12",
@@ -1291,19 +1291,19 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4848,
+                  "id": 5019,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "588:14:12"
                 },
                 {
                   "body": {
-                    "id": 4859,
+                    "id": 5030,
                     "nodeType": "Block",
                     "src": "631:60:12",
                     "statements": [
                       {
                         "expression": {
-                          "id": 4853,
+                          "id": 5024,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1313,11 +1313,11 @@
                           "prefix": false,
                           "src": "646:8:12",
                           "subExpression": {
-                            "id": 4852,
+                            "id": 5023,
                             "name": "digits",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4847,
+                            "referencedDeclaration": 5018,
                             "src": "646:6:12",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1329,23 +1329,23 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 4854,
+                        "id": 5025,
                         "nodeType": "ExpressionStatement",
                         "src": "646:8:12"
                       },
                       {
                         "expression": {
-                          "id": 4857,
+                          "id": 5028,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 4855,
+                            "id": 5026,
                             "name": "temp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4843,
+                            "referencedDeclaration": 5014,
                             "src": "669:4:12",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1356,7 +1356,7 @@
                           "operator": "/=",
                           "rightHandSide": {
                             "hexValue": "3130",
-                            "id": 4856,
+                            "id": 5027,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1376,7 +1376,7 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 4858,
+                        "id": 5029,
                         "nodeType": "ExpressionStatement",
                         "src": "669:10:12"
                       }
@@ -1387,17 +1387,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 4851,
+                    "id": 5022,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4849,
+                      "id": 5020,
                       "name": "temp",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4843,
+                      "referencedDeclaration": 5014,
                       "src": "620:4:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1408,7 +1408,7 @@
                     "operator": "!=",
                     "rightExpression": {
                       "hexValue": "30",
-                      "id": 4850,
+                      "id": 5021,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1428,22 +1428,22 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4860,
+                  "id": 5031,
                   "nodeType": "WhileStatement",
                   "src": "613:78:12"
                 },
                 {
                   "assignments": [
-                    4862
+                    5033
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4862,
+                      "id": 5033,
                       "mutability": "mutable",
                       "name": "buffer",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4909,
+                      "scope": 5080,
                       "src": "701:19:12",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1452,7 +1452,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 4861,
+                        "id": 5032,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "701:5:12",
@@ -1464,15 +1464,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4867,
+                  "id": 5038,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4865,
+                        "id": 5036,
                         "name": "digits",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4847,
+                        "referencedDeclaration": 5018,
                         "src": "733:6:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1487,7 +1487,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4864,
+                      "id": 5035,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1499,7 +1499,7 @@
                         "typeString": "function (uint256) pure returns (bytes memory)"
                       },
                       "typeName": {
-                        "id": 4863,
+                        "id": 5034,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "727:5:12",
@@ -1509,7 +1509,7 @@
                         }
                       }
                     },
-                    "id": 4866,
+                    "id": 5037,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1529,16 +1529,16 @@
                 },
                 {
                   "assignments": [
-                    4869
+                    5040
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4869,
+                      "id": 5040,
                       "mutability": "mutable",
                       "name": "index",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4909,
+                      "scope": 5080,
                       "src": "751:13:12",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1547,7 +1547,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4868,
+                        "id": 5039,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "751:7:12",
@@ -1559,23 +1559,23 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4873,
+                  "id": 5044,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 4872,
+                    "id": 5043,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4870,
+                      "id": 5041,
                       "name": "digits",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4847,
+                      "referencedDeclaration": 5018,
                       "src": "767:6:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1586,7 +1586,7 @@
                     "operator": "-",
                     "rightExpression": {
                       "hexValue": "31",
-                      "id": 4871,
+                      "id": 5042,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1611,17 +1611,17 @@
                 },
                 {
                   "expression": {
-                    "id": 4876,
+                    "id": 5047,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 4874,
+                      "id": 5045,
                       "name": "temp",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4843,
+                      "referencedDeclaration": 5014,
                       "src": "788:4:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1631,11 +1631,11 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 4875,
+                      "id": 5046,
                       "name": "value",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4830,
+                      "referencedDeclaration": 5001,
                       "src": "795:5:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1648,39 +1648,39 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 4877,
+                  "id": 5048,
                   "nodeType": "ExpressionStatement",
                   "src": "788:12:12"
                 },
                 {
                   "body": {
-                    "id": 4902,
+                    "id": 5073,
                     "nodeType": "Block",
                     "src": "829:99:12",
                     "statements": [
                       {
                         "expression": {
-                          "id": 4896,
+                          "id": 5067,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
                             "baseExpression": {
-                              "id": 4881,
+                              "id": 5052,
                               "name": "buffer",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4862,
+                              "referencedDeclaration": 5033,
                               "src": "844:6:12",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_memory_ptr",
                                 "typeString": "bytes memory"
                               }
                             },
-                            "id": 4884,
+                            "id": 5055,
                             "indexExpression": {
-                              "id": 4883,
+                              "id": 5054,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1690,11 +1690,11 @@
                               "prefix": false,
                               "src": "851:7:12",
                               "subExpression": {
-                                "id": 4882,
+                                "id": 5053,
                                 "name": "index",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4869,
+                                "referencedDeclaration": 5040,
                                 "src": "851:5:12",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -1728,14 +1728,14 @@
                                       "typeIdentifier": "t_uint256",
                                       "typeString": "uint256"
                                     },
-                                    "id": 4893,
+                                    "id": 5064,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
                                     "lValueRequested": false,
                                     "leftExpression": {
                                       "hexValue": "3438",
-                                      "id": 4889,
+                                      "id": 5060,
                                       "isConstant": false,
                                       "isLValue": false,
                                       "isPure": true,
@@ -1756,17 +1756,17 @@
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
                                       },
-                                      "id": 4892,
+                                      "id": 5063,
                                       "isConstant": false,
                                       "isLValue": false,
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "leftExpression": {
-                                        "id": 4890,
+                                        "id": 5061,
                                         "name": "temp",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4843,
+                                        "referencedDeclaration": 5014,
                                         "src": "880:4:12",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint256",
@@ -1777,7 +1777,7 @@
                                       "operator": "%",
                                       "rightExpression": {
                                         "hexValue": "3130",
-                                        "id": 4891,
+                                        "id": 5062,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": true,
@@ -1811,7 +1811,7 @@
                                       "typeString": "uint256"
                                     }
                                   ],
-                                  "id": 4888,
+                                  "id": 5059,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -1823,14 +1823,14 @@
                                     "typeString": "type(uint8)"
                                   },
                                   "typeName": {
-                                    "id": 4887,
+                                    "id": 5058,
                                     "name": "uint8",
                                     "nodeType": "ElementaryTypeName",
                                     "src": "869:5:12",
                                     "typeDescriptions": {}
                                   }
                                 },
-                                "id": 4894,
+                                "id": 5065,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -1853,7 +1853,7 @@
                                   "typeString": "uint8"
                                 }
                               ],
-                              "id": 4886,
+                              "id": 5057,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1865,14 +1865,14 @@
                                 "typeString": "type(bytes1)"
                               },
                               "typeName": {
-                                "id": 4885,
+                                "id": 5056,
                                 "name": "bytes1",
                                 "nodeType": "ElementaryTypeName",
                                 "src": "862:6:12",
                                 "typeDescriptions": {}
                               }
                             },
-                            "id": 4895,
+                            "id": 5066,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1893,23 +1893,23 @@
                             "typeString": "bytes1"
                           }
                         },
-                        "id": 4897,
+                        "id": 5068,
                         "nodeType": "ExpressionStatement",
                         "src": "844:47:12"
                       },
                       {
                         "expression": {
-                          "id": 4900,
+                          "id": 5071,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 4898,
+                            "id": 5069,
                             "name": "temp",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4843,
+                            "referencedDeclaration": 5014,
                             "src": "906:4:12",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1920,7 +1920,7 @@
                           "operator": "/=",
                           "rightHandSide": {
                             "hexValue": "3130",
-                            "id": 4899,
+                            "id": 5070,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1940,7 +1940,7 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 4901,
+                        "id": 5072,
                         "nodeType": "ExpressionStatement",
                         "src": "906:10:12"
                       }
@@ -1951,17 +1951,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 4880,
+                    "id": 5051,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4878,
+                      "id": 5049,
                       "name": "temp",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4843,
+                      "referencedDeclaration": 5014,
                       "src": "818:4:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1972,7 +1972,7 @@
                     "operator": "!=",
                     "rightExpression": {
                       "hexValue": "30",
-                      "id": 4879,
+                      "id": 5050,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1992,7 +1992,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 4903,
+                  "id": 5074,
                   "nodeType": "WhileStatement",
                   "src": "811:117:12"
                 },
@@ -2000,11 +2000,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 4906,
+                        "id": 5077,
                         "name": "buffer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4862,
+                        "referencedDeclaration": 5033,
                         "src": "952:6:12",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -2019,7 +2019,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 4905,
+                      "id": 5076,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2031,14 +2031,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 4904,
+                        "id": 5075,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "945:6:12",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 4907,
+                    "id": 5078,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2053,36 +2053,36 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4834,
-                  "id": 4908,
+                  "functionReturnParameters": 5005,
+                  "id": 5079,
                   "nodeType": "Return",
                   "src": "938:21:12"
                 }
               ]
             },
             "documentation": {
-              "id": 4828,
+              "id": 4999,
               "nodeType": "StructuredDocumentation",
               "src": "131:84:12",
               "text": " @dev Converts a `uint256` to its ASCII `string` representation."
             },
-            "id": 4910,
+            "id": 5081,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "toString",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4831,
+              "id": 5002,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4830,
+                  "id": 5001,
                   "mutability": "mutable",
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4910,
+                  "scope": 5081,
                   "src": "239:13:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2091,7 +2091,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4829,
+                    "id": 5000,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "239:7:12",
@@ -2106,16 +2106,16 @@
               "src": "238:15:12"
             },
             "returnParameters": {
-              "id": 4834,
+              "id": 5005,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4833,
+                  "id": 5004,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4910,
+                  "scope": 5081,
                   "src": "277:13:12",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2124,7 +2124,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4832,
+                    "id": 5003,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "277:6:12",
@@ -2138,14 +2138,14 @@
               ],
               "src": "276:15:12"
             },
-            "scope": 4911,
+            "scope": 5082,
             "src": "221:746:12",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 4912,
+        "scope": 5083,
         "src": "108:862:12"
       }
     ],
@@ -2157,7 +2157,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-02-19T18:38:53.708Z",
+  "updatedAt": "2021-02-20T18:46:46.142Z",
   "devdoc": {
     "details": "String operations.",
     "kind": "dev",
