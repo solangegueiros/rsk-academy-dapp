@@ -81,6 +81,8 @@ module.exports = async (deployer, network, accounts) => {
   student = await academyStudents.getStudentByAddress(accountStudent);
   console.log("\n student info\n", student);
 
+  //academyStudents = await AcademyStudents.at("0x73f2aa5D251DbdEd6C950257124eA93bb00c0Ec0");
+  //academyProjectList = await AcademyProjectList.at("0x24AfE1784672750155C2a504DB4b6f1eD76bBAEf");
 
   //In AcademyProjectList, addProject "Name" => DONE
   //Deploy MasterName
@@ -117,22 +119,23 @@ module.exports = async (deployer, network, accounts) => {
   result = await masterName.listNameInfo();
   console.log("\n MasterName list\n", result);
   
-  //The student did a wrong name, then will delete the project and submit again
+  //The student published a wrong name, then will delete the project and submit again
   console.log("\nstudent delete the wrong project");
   //result = await portfolio.deleteProjectByAddress(yourName.address, {from: accountStudent});
-  //console.log("\n Student portfolio.deleteProjectByAddress result\n", JSON.stringify(result.logs));
   result = await masterName.deleteName({from: accountStudent});
-  console.log("\n Student masterName.deleteName result\n", JSON.stringify(result));
+  console.log("\n Student masterName.deleteName result\n", JSON.stringify(result.logs));
   
   result = await portfolio.listPortfolio();
   console.log("\n portfolio AFTER deleteProjectByAddress \n", result);
 
-  /*
+  result = await masterName.listNameInfo();
+  console.log("\n MasterName list AFTER deleteProjectByAddress\n", result);  
+
   //NameSol
   nameSol = await deployer.deploy(NameSol, {from: accountStudent});
   console.log("nameSol.Address: ", nameSol.address);
 
-  console.log("\nValidate project Name in Mastername");
+  console.log("\nValidate project NameSol in Mastername");
   await masterName.addName(nameSol.address, "Solange Gueiros", {from: accountStudent});
 
   console.log("\nacademyStudents.getStudentByAddress");

@@ -131,7 +131,7 @@ contract AcademyProjectList is AccessControl {
     }    
 
     function getProjectByIndex (uint256 index) public view returns (ProjectStruct memory) {
-        require (index <= projectInfo.length, "out of range");
+        require ((index > 0 ) && (index <= projectInfo.length), "out of range");
         return projectInfo[index-1];
     }
     

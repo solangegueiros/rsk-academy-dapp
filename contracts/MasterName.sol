@@ -65,7 +65,8 @@ contract MasterName is AccessControl {
     }
     
     event NameAdded (address indexed owner, address indexed scName, string name);
-    event NameDeleted (address indexed owner, address indexed scName, string name);
+    event NameDeleted (address indexed owner, address indexed scName);
+    event NameDeleted1 (address indexed owner, uint256 nameIndex);
 
     modifier onlyOwner() {
         require(hasRole(DEFAULT_ADMIN_ROLE, msg.sender), "MasterName: only owner");
@@ -100,7 +101,7 @@ contract MasterName is AccessControl {
         n.name = name;
 
         nameInfo.push(n);
-        uint256 index = nameInfo.length;
+        uint256 index = nameInfo.length;    //Attention: real location is index-1!
         ownerIndex[scOwner] = index;
         scNameIndex[scNameAddress] = index;
         
@@ -127,12 +128,7 @@ contract MasterName is AccessControl {
     }
 
     function deleteName () public returns (bool) {
-
-        uint256 indexToDelete = ownerIndex[msg.sender];
-        //address scNameToDelete = nameInfo[indexToDelete].scName;
-        //emit NameDeleted (msg.sender, nameInfo[indexToDelete].scName, nameInfo[indexToDelete].name);
-
-        //_deleteName (msg.sender);
+        _deleteName (msg.sender);
         return true;        
     }
 
@@ -142,41 +138,31 @@ contract MasterName is AccessControl {
     }
 
     function _deleteName (address scOwner) private returns (bool) {
-        //require (existsOwner(scOwner), "owner not exists");
+        require (existsOwner(scOwner), "owner not exists");
 
-        uint256 indexToDelete = ownerIndex[scOwner];
+        uint256 indexToDelete = ownerIndex[scOwner] - 1;
+        emit NameDeleted1 (scOwner, indexToDelete);
         address scNameToDelete = nameInfo[indexToDelete].scName;
 
-        emit NameDeleted (scOwner, nameInfo[indexToDelete].scName, nameInfo[indexToDelete].name);
-
-        /*
-        uint256 indexToMove = nameInfo.length-1;
+        uint256 indexToMove = nameInfo.length - 1;
         address ownerToMove = nameInfo[indexToMove].owner;
         address scNameToMove = nameInfo[indexToMove].scName;
-        
-
-        StudentStruct memory s = studentList.getStudentByAddress(scOwner); 
-        if (s.portfolioAddress != address(0x0)) {
-            //Only AcademyStudents is allowed to adds projects
-
-            iStudentPortfolio p = iStudentPortfolio(s.portfolioAddress);
-            p.deleteProjectByAddress(nameInfo[indexToDelete].scName);
-        }
-        */
-
-        //emit NameDeleted (scOwner, scNameToDelete, nameInfo[indexToDelete].name);
-
-        /*
 
         nameInfo[indexToDelete] = nameInfo[indexToMove];
-        ownerIndex[ownerToMove] = indexToDelete;
-        scNameIndex[scNameToMove] = indexToDelete;
-    
+        ownerIndex[ownerToMove] = indexToDelete + 1;
+        scNameIndex[scNameToMove] = indexToDelete + 1;
+
         delete ownerIndex[scOwner];
         delete scNameIndex[scNameToDelete];
         nameInfo.pop();
-        */
 
+        StudentStruct memory s = studentList.getStudentByAddress(scOwner); 
+        if (s.portfolioAddress != address(0x0)) {
+            iStudentPortfolio p = iStudentPortfolio(s.portfolioAddress);
+            p.deleteProjectByAddress(scNameToDelete);
+        }
+
+        emit NameDeleted (scOwner, scNameToDelete);
         return true;
     }
     
@@ -227,7 +213,19 @@ contract MasterName is AccessControl {
         iName scName = iName(scNameAddress);
         return scName.getName();
     }
+    
+    function getNameInfoByOwner (address account) public view returns (NameStruct memory) {
+        return nameInfo[ownerIndex[account]];
+    }    
 
+    function getNameInfoByNameSC (address scNameAddress) public view returns (NameStruct memory) {
+        return nameInfo[scNameIndex[scNameAddress]];
+    }    
+
+    function getNameInfoByIndex (uint256 index) public view returns (NameStruct memory) {
+        return nameInfo[index-1];
+    } 
+    
     function compareStrings(string memory a, string memory b) private pure returns (bool) {
         return (keccak256(abi.encodePacked((a))) == keccak256(abi.encodePacked((b))));
     }    

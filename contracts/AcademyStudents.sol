@@ -200,9 +200,10 @@ contract StudentPortfolio is AccessControl {
         string name;    // Key for iAcademyProjects.ProjectStruct
     }
     PortfolioStruct[] private portfolioProjects;
-    
+    //private
+
     mapping(address => uint256) private addressIndex;
-    mapping(string => uint256) private nameIndex;
+    mapping(string => uint256) public nameIndex;
 
     address public student;
     //address public projectList;
@@ -233,15 +234,15 @@ contract StudentPortfolio is AccessControl {
     function addProject (address projectAddress, string memory projectName) public returns(uint256) {
         //Owners serão os Masters ou Academy. Somente eles podem adicionar projetos, porque validam cada projeto antes de adicionar.
         //melhor somente Academy pode adicionar, Masters chamam Academy
-        require (!compareStrings(projectName, ""), "invalid name");
-        require (!(projectAddress == address(0x0)), "invalid address");
-        require (projectList.exists(projectName), "project not exists");
-        require (projectList.isActive(projectName), "project not active");
+        require (!compareStrings(projectName, ""), "portfolio: invalid name");
+        require (!(projectAddress == address(0x0)), "portfolio: invalid address");
+        require (projectList.exists(projectName), "portfolio: project not exists");
+        require (projectList.isActive(projectName), "portfolio: project not active");
         require(msg.sender == projectList.getMasterAddressByName(projectName), "Only Master can add project in portfolio");
         
         // O estudante pode ter mais de um address por projeto? NÃO
-        require (!addressInPortfolio(projectAddress), "address exists");
-        require (!nameInPortfolio(projectName), "project exists");
+        require (!addressInPortfolio(projectAddress), "portfolio: address exists");
+        require (!nameInPortfolio(projectName), "portfolio: project exists");
 
         PortfolioStruct memory p;
         p.projectAddress = projectAddress;
@@ -262,14 +263,16 @@ contract StudentPortfolio is AccessControl {
         require (!(projectAddress == address(0x0)), "invalid address");
         require (addressInPortfolio(projectAddress), "address not exists");
 
-        //Porém, dependendo do projeto, ele terá que apagar no MasterProject.
-        //Definir que um projeto só pode ser apagado em seu MasterProject? SIM!        
-        require(msg.sender == projectList.getMasterAddressByName(portfolioProjects[addressIndex[projectAddress]].name), 
-            "Only Master can add project in portfolio");
 
-        
+        //Porém, dependendo do projeto, ele terá que apagar no MasterProject.
+        //Definir que um projeto só pode ser apagado em seu MasterProject? SIM!
+        address masterAddress = projectList.getMasterAddressByName(portfolioProjects[addressIndex[projectAddress]-1].name);
+        require(msg.sender == masterAddress, "Only Master can add project in portfolio");
+
         uint256 indexToDelete = addressIndex[projectAddress]-1;
         string memory nameToDelete =  portfolioProjects[indexToDelete].name;
+        addressIndex[projectAddress] = 0;
+        nameIndex[nameToDelete] = 0;
         delete addressIndex[projectAddress];
         delete nameIndex[nameToDelete];
         
@@ -281,6 +284,9 @@ contract StudentPortfolio is AccessControl {
         portfolioProjects.pop();
 
         emit PortfolioProjectDeleted(projectAddress, nameToDelete);
+        /*
+        */
+        
         return true;
     }
  
@@ -322,6 +328,7 @@ contract StudentPortfolio is AccessControl {
     }
     
     function projectByIndex (uint256 index) public view returns (PortfolioStruct memory) {
+        require ((index > 0 ) && (index <= portfolioProjects.length), "out of range");
         return portfolioProjects[index-1];
     }    
 
