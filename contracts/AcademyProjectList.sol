@@ -5,26 +5,17 @@ pragma solidity 0.8.1;
 //import '@openzeppelin/contracts/access/AccessControl.sol';
 import './oz-contracts/access/AccessControl.sol';
 
+import './iAcademyProjectList.sol';
 
-struct ProjectStruct {
-    address master;
-    bool active;
-    string name;
-    string description;
-    string ABI;
-    string sourceCode;
-    string image;
-}
-    
+  
 contract AcademyProjectList is AccessControl {
 
-    ProjectStruct[] private projectInfo;
-    
+    bool active;
+
+    ProjectStruct[] private projectInfo;    
     //Project name is the index, can't be changed after created.
     mapping(string => uint256) private projectIndexName;
     //mapping(string => ProjectStruct) public projects;
-    
-    bool active;
     
     constructor() {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
@@ -84,10 +75,9 @@ contract AcademyProjectList is AccessControl {
         return true;
     }
     
-    function updateProjectByName (string memory name,
-        bool activeProject, address master, 
-        string memory description, string memory ABI, string memory sourceCode, string memory image
-    ) public onlyOwner onlyActive returns (bool) {
+    function updateProjectByName (string memory name, bool activeProject, address master,         
+            string memory description, string memory ABI
+        ) public onlyOwner onlyActive returns (bool) {
         if (!exists(name))
             return false;
         
@@ -96,8 +86,6 @@ contract AcademyProjectList is AccessControl {
         projectInfo[index].master = master;
         projectInfo[index].description = description;
         projectInfo[index].ABI = ABI;
-        projectInfo[index].sourceCode = sourceCode;
-        projectInfo[index].image = image;
         emit ProjectUpdated(name, description, master, active);
         return true;
     }
@@ -118,15 +106,15 @@ contract AcademyProjectList is AccessControl {
         return projectInfo[projectIndexName[name]-1].active;
     }
     
-    function getProjectByName (string memory name_) public view returns (ProjectStruct memory) {
-        require (exists(name_), "not exists");
-        uint256 index = projectIndexName[name_]-1;
+    function getProjectByName (string memory name) public view returns (ProjectStruct memory) {
+        require (exists(name), "not exists");
+        uint256 index = projectIndexName[name]-1;
         return projectInfo[index];
     }
     
-    function getMasterAddressByName (string memory name_) public view returns (address) {
-        require (exists(name_), "not exists");
-        uint256 index = projectIndexName[name_]-1;
+    function getMasterAddressByName (string memory name) public view returns (address) {
+        require (exists(name), "not exists");
+        uint256 index = projectIndexName[name]-1;
         return projectInfo[index].master;
     }    
 
@@ -135,8 +123,8 @@ contract AcademyProjectList is AccessControl {
         return projectInfo[index-1];
     }
     
-    function getIndexByName (string memory name_) public view returns (uint256) {
-        return projectIndexName[name_];
+    function getIndexByName (string memory name) public view returns (uint256) {
+        return projectIndexName[name];
     }    
  
     function countProjects () public view returns (uint256) {

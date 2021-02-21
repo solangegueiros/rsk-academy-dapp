@@ -5,59 +5,43 @@ pragma solidity 0.8.1;
 //import '@openzeppelin/contracts/access/AccessControl.sol';
 import './oz-contracts/access/AccessControl.sol';
 
-
-struct StudentStruct {
-    uint index;
-    address ownerAddress;
-    address portfolioAddress;
-    address activeClass;
-    address[] studentClasses;
-}
-    
-interface iName {
-    function owner() external view returns (address);
-    function getName() external view returns (string memory);
-}
-
-interface iAcademyStudents {
-    function isStudent(address account) external view returns (bool);
-    function getStudentByAddress (address account) external view returns (StudentStruct memory);
-}
-
-interface iStudentPortfolio {
-    function addProject (address projectAddress, string memory projectName) external returns (uint256);
-    function deleteProjectByAddress (address projectAddress) external returns (bool);
-}    
+import './iName.sol';
+import './iAcademyStudents.sol';
+import './iStudentPortfolio.sol';
 
 
 /*
-    Precisa existir um Project para ter um Master que valide este project.
-    
-    Todo Master deve ter um PROJECT_NAME como o nome do project associado.
-    O Master está associado a addressAcademy e addressStudentList
-    Após criar um Master:
-        seus address deve ser atualizado na ProjectList
-        seu address deve ser autorizado em Academy
+    It must have a Project in AcademyProjectList in order to a Master works.
+    The Master validate the project which is in AcademyProjectList.
+
+    PROJECT_NAMEis a key.
+    So every Master must hava a PROJECT_NAME which the same name in project in AcademyProjectList.
+
+    Master is linked to addressStudentList
+    After creater a Master:
+        your address must be updated in the project in AcademyProjectList.
         
-    O Master tem a lista dos estudantes que submeteram este projeto.
+    A Master has the student list who submited this project.
+
+    MasterName validates the Name and add in student's portfolio.
+    MasterName has the student's names = student list!
 */
 
-// MasterName valida Name e acrescenta no Portfolio
-// Lista do MasterName = Lista de Estudantes!
+struct NameStruct {
+    address owner;
+    address scName;
+    string name;
+}
 
 contract MasterName is AccessControl {
 
     string constant PROJECT_NAME = "Name";
-    struct NameStruct {
-        address owner;
-        address scName;
-        string name;
-    }
+    iAcademyStudents public studentList;
+
     NameStruct[] private nameInfo;
     mapping(address => uint256) private ownerIndex;
     mapping(address => uint256) private scNameIndex;
     
-    iAcademyStudents public studentList;
 
     constructor(address addressStudentList) {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
@@ -84,7 +68,7 @@ contract MasterName is AccessControl {
     }
     
     function _addName (address scOwner, address scNameAddress,  string memory name) private returns (bool) {
-        //Verificar se ja existe
+        //Does it already exist?
         require (!existsSCName(scNameAddress), "scName exists");
         require (!existsOwner(scOwner), "owner exists");
         
@@ -155,15 +139,12 @@ contract MasterName is AccessControl {
         delete ownerIndex[scOwner];
         delete scNameIndex[scNameToDelete];
         nameInfo.pop();
-
         
         StudentStruct memory s = studentList.getStudentByAddress(scOwner); 
         if (s.portfolioAddress != address(0x0)) {
             iStudentPortfolio p = iStudentPortfolio(s.portfolioAddress);
             p.deleteProjectByAddress(scNameToDelete);
         }
-        /*
-        */
 
         emit NameDeleted (scOwner, scNameToDelete);
         return true;
@@ -174,7 +155,7 @@ contract MasterName is AccessControl {
         return true;
     }
     
-    //Owner pode ter mais de um SCName? NO
+    //Owner can have more than one SCName? NO
     function existsOwner(address account) public view returns (bool) {
         if (ownerIndex[account] == 0)
             return false;
@@ -189,11 +170,11 @@ contract MasterName is AccessControl {
             return true;
     }
     
-    function checkName (address scNameAddress, string memory name_) public view returns (bool) {
+    function checkName (address scNameAddress, string memory name) public view returns (bool) {
         //Name stored in scName equal name_
         iName scName = iName(scNameAddress);
-        string memory name = scName.getName();
-        if (compareStrings(name, name_)) {
+        string memory nameInSC = scName.getName();
+        if (compareStrings(nameInSC, name)) {
             return true;
         }
         return false;

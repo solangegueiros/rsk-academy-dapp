@@ -5,46 +5,15 @@ pragma solidity 0.8.1;
 //import '@openzeppelin/contracts/access/AccessControl.sol';
 import './oz-contracts/access/AccessControl.sol';
 
-
-struct StudentStruct {
-    uint index;
-    address ownerAddress;
-    address portfolioAddress;
-    address activeClass;
-    address[] studentClasses;
-}
-
-struct ProjectStruct {
-    bool active;
-    address master;
-    string name;
-    string description;
-    string ABI;
-    string sourceCode;
-}
-
-interface iName {
-    //function owner() external returns (address);
-    //function getName() external view returns (string memory);
-}
-
-interface iAcademyClass {
-    function addStudent (address account) external returns (bool);
-    function isStudent (address account) external view returns (bool);
-}
-
-interface iAcademyProjectList {
-   function exists(string memory name) external view returns (bool);
-    function isActive(string memory name) external view returns (bool);
-    function getProjectByName (string memory name_) external view returns (ProjectStruct memory);
-    function getMasterAddressByName (string memory name_) external view returns (address);
-}
+import './StudentPortfolio.sol';
+import './iAcademyClass.sol';
+import './iAcademyStudents.sol';
 
 
 contract AcademyStudents is AccessControl {
 
     address public projectListAddress;
-    bool active;
+    bool public active;
 
     mapping(address => StudentStruct) private studentInfo;
     address[] private studentIndex;
@@ -144,7 +113,7 @@ contract AcademyStudents is AccessControl {
         return _updateActiveClass(account, classAddress);
     }
 
-    function _updateActiveClass (address account, address classAddress) public onlyActive returns (bool) {
+    function _updateActiveClass (address account, address classAddress) private onlyActive returns (bool) {
         if (!isStudent(account))
             return false;
         studentInfo[account].activeClass = classAddress;
@@ -152,7 +121,7 @@ contract AcademyStudents is AccessControl {
         return true;
     }
 
-    function changeActive () public onlyOwner returns (bool) {
+    function changeActive() public onlyOwner returns (bool) {
         active = !active;
         return active;
     }
@@ -191,158 +160,6 @@ contract AcademyStudents is AccessControl {
 }
 
 
-
-contract StudentPortfolio is AccessControl {
-    //One StudentPortfolio per Student
-    
-    struct PortfolioStruct {
-        address projectAddress; // Key
-        //iAcademyProjects.ProjectStruct name;
-        string name;    // Key for iAcademyProjects.ProjectStruct
-    }
-    PortfolioStruct[] private portfolioProjects;
-    //private
-
-    mapping(address => uint256) private addressIndex;
-    mapping(string => uint256) public nameIndex;
-
-    address public student;
-    //address public projectList;
-    iAcademyProjectList public projectList;
-    
-    constructor(address account, address addressProjectList) {
-        _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
-        student = account;
-        //projectList = addressProjectList;
-        projectList = iAcademyProjectList(addressProjectList);
-        
-        //addProject(0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2,"P1");
-    }
-
-    event PortfolioProjectAdded(address indexed projectAddress, string projectName);
-    event PortfolioProjectDeleted(address indexed projectAddress, string projectName);
-
-    modifier onlyOwner() {
-        require(hasRole(DEFAULT_ADMIN_ROLE, msg.sender), "StudentPortfolio: only owner");
-        _;
-    }
-    
-    modifier onlyOwnerOrStudent() {
-        require(hasRole(DEFAULT_ADMIN_ROLE, msg.sender) || (msg.sender == student), "StudentPortfolio: only student or owner");
-        _;
-    }
-
-    function addProject (address projectAddress, string memory projectName) public returns(uint256) {
-        //Owners serão os Masters ou Academy. Somente eles podem adicionar projetos, porque validam cada projeto antes de adicionar.
-        //melhor somente Academy pode adicionar, Masters chamam Academy
-        require (!compareStrings(projectName, ""), "portfolio: invalid name");
-        require (!(projectAddress == address(0x0)), "portfolio: invalid address");
-        require (projectList.exists(projectName), "portfolio: project not exists");
-        require (projectList.isActive(projectName), "portfolio: project not active");
-        require(msg.sender == projectList.getMasterAddressByName(projectName), "Only Master can add project in portfolio");
-        
-        // O estudante pode ter mais de um address por projeto? NÃO
-        require (!addressInPortfolio(projectAddress), "portfolio: address exists");
-        require (!nameInPortfolio(projectName), "portfolio: project exists");
-
-        PortfolioStruct memory p;
-        p.projectAddress = projectAddress;
-        p.name = projectName;
-
-        portfolioProjects.push(p);
-        uint256 index = portfolioProjects.length; 
-        addressIndex[projectAddress] = index;
-        nameIndex[projectName] = index;
-
-        emit PortfolioProjectAdded(projectAddress, projectName);
-        return index;
-    }
-    
-    function deleteProjectByAddress (address projectAddress) public returns (bool) {
-        //Se o estudante não gostar do seu projeto, pode apagá-lo para submete-lo novamente.
-        //onlyOwnerOrStudent
-        require (!(projectAddress == address(0x0)), "invalid address");
-        require (addressInPortfolio(projectAddress), "address not exists");
-
-        //Porém, dependendo do projeto, ele terá que apagar no MasterProject.
-        //Definir que um projeto só pode ser apagado em seu MasterProject? SIM!
-        address masterAddress = projectList.getMasterAddressByName(portfolioProjects[addressIndex[projectAddress]-1].name);
-        require(msg.sender == masterAddress, "Only Master can add project in portfolio");
-
-        uint256 indexToDelete = addressIndex[projectAddress]-1;
-        string memory nameToDelete =  portfolioProjects[indexToDelete].name;
-
-        
-        uint256 indexToMove = portfolioProjects.length-1;
-        address keyToMove = portfolioProjects[indexToMove].projectAddress;
-        portfolioProjects[indexToDelete] = portfolioProjects[indexToMove];
-        addressIndex[keyToMove] = indexToDelete+1;
-        nameIndex[portfolioProjects[indexToMove].name] = indexToDelete+1;
-        
-        //addressIndex[projectAddress] = 0;
-        //nameIndex[nameToDelete] = 0;
-        delete addressIndex[projectAddress];
-        delete nameIndex[nameToDelete];    
-        portfolioProjects.pop();
-
-        emit PortfolioProjectDeleted(projectAddress, nameToDelete);
-        /*
-        */
-        
-        return true;
-    }
- 
-    function updateProjectList (address addressProjectList) public onlyOwner returns (bool) {
-        projectList = iAcademyProjectList(addressProjectList);
-        return true;
-    }
-
-    function addressInPortfolio (address projectAddress) public view returns (bool) {
-        //if(portfolioProjects.length == 0) return false;
-        
-        if (addressIndex[projectAddress] == 0)
-            return false;
-        else
-            return true;
-    }
-
-    function nameInPortfolio (string memory projectName) public view returns (bool) {
-        if (nameIndex[projectName] == 0)
-            return false;
-        else
-            return true;
-    }
-    
-    function listPortfolio () public view returns (PortfolioStruct[] memory) {
-        return (portfolioProjects);
-    }
-    
-    function countPortfolio () public view returns (uint) {
-        return (portfolioProjects.length);
-    }
-
-    function projectByName (string memory projectName) public view returns (PortfolioStruct memory) {
-        return portfolioProjects[nameIndex[projectName]-1];
-    }
-    
-    function projectByAddress (address projectAddress) public view returns (PortfolioStruct memory) {
-        return portfolioProjects[addressIndex[projectAddress]-1];
-    }
-    
-    function projectByIndex (uint256 index) public view returns (PortfolioStruct memory) {
-        require ((index > 0 ) && (index <= portfolioProjects.length), "out of range");
-        return portfolioProjects[index-1];
-    }    
-
-    function indexOfProject (address projectAddress) public view returns (uint) {
-        return addressIndex[projectAddress];
-    }
-    
-    function compareStrings(string memory a, string memory b) private pure returns (bool) {
-        return (keccak256(abi.encodePacked((a))) == keccak256(abi.encodePacked((b))));
-    }
-    
-}
 
 
 

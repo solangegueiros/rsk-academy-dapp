@@ -7,9 +7,24 @@ const MasterName = artifacts.require("MasterName");
 const NameSol = artifacts.require("NameSol");
 const Name = artifacts.require("Name");
 
+/*
+This migration file is to be used locally.
+It creates all structure, including:
+- 3 projects in AcademyProjectList: "Name", "Pig Bank", "Token"
+- a student: accounts[1]
+- 2 classes: 
+    class01 = "Devs 2021-01"
+    class02 = "Business 2021-02"
+- the student subscribe on 2 classes
+
+User case: a student submit the name project, 
+but he did a mistake, then delete it and submit again
+*/
+
 module.exports = async (deployer, network, accounts) => {
 
-  accountStudent = accounts[1];
+  //accountStudent = accounts[1];
+  const [academyOwner, accountStudent] = accounts;
   DEFAULT_ADMIN_ROLE = "0x0000000000000000000000000000000000000000000000000000000000000000";
 
   //Deploy AcademyClassList
@@ -55,7 +70,7 @@ module.exports = async (deployer, network, accounts) => {
   console.log("class02Address: ", class02Address);
   console.log("class02.Address: ", class02.address);  
 
-  //AcademyClass.subscribe class01
+  //Student subscribe class01 => AcademyClass.subscribe class01
   console.log("\n\nAcademyClass.subscribe");
   await class01.subscribe({from: accountStudent});
 
@@ -64,7 +79,7 @@ module.exports = async (deployer, network, accounts) => {
   student = await academyStudents.getStudentByAddress(accountStudent);
   console.log("\n student info\n", student);
 
-  //AcademyClass.subscribe class02
+  //Student subscribe class02 => AcademyClass.subscribe class02
   console.log("\n\nAcademyClass.subscribe");
   await class02.subscribe({from: accountStudent});
 
@@ -84,7 +99,13 @@ module.exports = async (deployer, network, accounts) => {
   //academyStudents = await AcademyStudents.at("0x73f2aa5D251DbdEd6C950257124eA93bb00c0Ec0");
   //academyProjectList = await AcademyProjectList.at("0x24AfE1784672750155C2a504DB4b6f1eD76bBAEf");
 
-  //In AcademyProjectList, addProject "Name" => DONE
+  //In AcademyProjectList, addProject "Name"
+  await academyProjectList.addProject("Name","Your name stored in a smart contract", {from: accounts[0]});
+  await academyProjectList.addProject("Pig Bank","smart contract to save economies", {from: accounts[0]});
+  await academyProjectList.addProject("Token","Mintable token ERC20", {from: accounts[0]});
+  //await academyProjectList.addProject("CRUD","A basic database to Create Read Update Delete", {from: accounts[0]});
+  //await academyProjectList.addProject("Photo Album","Photos stored in IPFS and hashes in a smart contract", {from: accounts[0]});
+
   //Deploy MasterName
   nameProject = "Name";
   masterName = await deployer.deploy(MasterName, academyStudents.address, {from: accounts[0]});
@@ -94,8 +115,7 @@ module.exports = async (deployer, network, accounts) => {
   //console.log("\nproject\n", project);  
   //console.log("project.master", project.master);
   console.log("Update Master in Project Name");
-  await academyProjectList.updateProjectByName(project.name, project.active, masterName.address, project.description, 
-    project.ABI, project.sourceCode , project.image);
+  await academyProjectList.updateProjectByName(project.name, project.active, masterName.address, project.description, project.ABI);
 
   project = await academyProjectList.getProjectByName(nameProject);
   console.log("\nproject AFTER\n", project);
@@ -149,25 +169,9 @@ module.exports = async (deployer, network, accounts) => {
   console.log("\n portfolio\n", result); 
 
 
-
-
 /*  
 */
 
-
-  /*    
-  
-  //AcademyClass.subscribe
-  await class01.subscribe({from: accountStudent});
-*/
-console.log("\n\n\n");
-
-
-/*  
-  academyClassList = await AcademyClassList.deployed();
-  academyClassListAddress = academyClassList.address;
-  console.log("academyClassList.address", academyClassList.address);  
-
-  deployer.deploy(MasterName);
-*/  
+  console.log("\n\n\n");
+ 
 };
