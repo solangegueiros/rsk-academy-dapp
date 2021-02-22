@@ -9,7 +9,9 @@ module.exports = {
 
   networks: {
     develop: {
-      port: 8545
+      host: "127.0.0.1",
+      port: 8545,
+      //gas: 6500000,
     },    
     development: {
       host: "127.0.0.1",
@@ -27,7 +29,8 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.5.4",
+      version: "0.8.1",
+      //version: "0.5.4",
       //version: "0.7.5",
     }
   }
