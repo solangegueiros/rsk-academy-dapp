@@ -7,7 +7,7 @@ const MasterName = artifacts.require("MasterName");
 const NameSol = artifacts.require("NameSol");
 const Name = artifacts.require("Name");
 const MasterQuote = artifacts.require("MasterQuote");
-
+const Quote = artifacts.require("Quote");
 
 /*
 This migration file is to be used locally.
