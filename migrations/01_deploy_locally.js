@@ -27,7 +27,7 @@ but he did a mistake, then delete it and submit again
 module.exports = async (deployer, network, accounts) => {
 
   //accountStudent = accounts[1];
-  const [academyOwner, accountStudent] = accounts;
+  const [academyOwner, accountStudent, accountStudent2] = accounts;
   DEFAULT_ADMIN_ROLE = "0x0000000000000000000000000000000000000000000000000000000000000000";
 
   //Deploy AcademyClassList
@@ -173,7 +173,6 @@ module.exports = async (deployer, network, accounts) => {
 
   //Second Project, Quote, only for tests
 
-
   //Deploy MasterQuote
   nameProject = "Quote";
   await academyProjectList.addProject("Quote","Write your phrases for eternity", {from: accounts[0]});
@@ -186,6 +185,18 @@ module.exports = async (deployer, network, accounts) => {
 
   console.log("\nValidate project in Master");
   await masterQuote.validate(yourName.address, {from: accountStudent});
+
+  //Student2 - Name
+  //Student2 subscribe class01 => AcademyClass.subscribe class01
+  console.log("\n\nStudent2 - AcademyClass.subscribe");
+  await class01.subscribe({from: accountStudent2});
+
+  yourName2 = await deployer.deploy(Name, {from: accountStudent2});
+  console.log("yourName2.Address: ", yourName2.address);
+
+  console.log("\nValidate project Name in Mastername");
+  await masterName.addName(yourName2.address, "Your name", {from: accountStudent2});
+  
 /*  
 */
 

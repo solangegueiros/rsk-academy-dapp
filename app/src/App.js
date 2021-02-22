@@ -34,9 +34,9 @@ function App() {
   const [studentName, setStudentName] = useState(null);
 
 
-  const [masterListNames, setMasterListNames] = useState();
-  const [inputMasterNameAddNameAddress, setInputMasterNameAddNameAddress] = useState();
-  const [inputMasterNameAddNameStudentName, setInputMasterNameAddNameStudentName] = useState();
+  const [masterListNames, setMasterListNames] = useState(null);
+  const [inputMasterNameAddNameAddress, setInputMasterNameAddNameAddress] = useState(null);
+  const [inputMasterNameAddNameStudentName, setInputMasterNameAddNameStudentName] = useState(null);
   
 
   useEffect(() => {
@@ -254,17 +254,6 @@ function App() {
     await getName(studentPortfolioList);    
   };  
 
-
-  const handleListNames = e => {
-    e.preventDefault();
-    
-    scMasterName.methods.listNameInfo().call()
-      .then( function(nameInfos) {
-        console.log ('nameInfos: ', nameInfos);
-        setMasterListNames(nameInfos);
-      });
-  };
-
   const handleAcademyStudentList = e => {
     e.preventDefault();
     
@@ -274,6 +263,19 @@ function App() {
         setAcademyStudentsList(list);
       });
   };
+
+
+  const handleMasterNameListNames = e => {
+    e.preventDefault();
+    
+    let list = [];
+    scMasterName.methods.listNameInfo().call()
+      .then( function(nameInfos) {
+        console.log ('nameInfos: ', nameInfos);
+        setMasterListNames(nameInfos);
+      });
+  };
+
 
   
   return (
@@ -378,7 +380,7 @@ function App() {
             {academyStudentsList && 
               <p>List: 
                 {academyStudentsList.map((item, i) => 
-                  <li key={item.i}>{item}</li>
+                  <li key={i}>{item}</li>
                   )}
               </p>
             }
@@ -389,14 +391,14 @@ function App() {
         <h2>MasterName</h2>
         <div>
           <br/>
-          <Form onSubmit={handleListNames}>
+          <Form onSubmit={handleMasterNameListNames}>
               <Button type="submit">List Names</Button>
           </Form>
           <Row>
             {masterListNames && 
               <p>List: 
                 {masterListNames.map((item, i) => 
-                  <li key={item.i}>{item[0]} - {item[1]} - {item[2]}</li>
+                  <li key={i}>{item[0]} - {item[1]} - {item[2]}</li>
                   )}
               </p>
             }
