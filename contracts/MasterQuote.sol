@@ -51,7 +51,7 @@ contract MasterQuote is AccessControl {
         require (!existsScProject(scProjectAddress), "scProject exists");
         require (!existsOwner(scOwner), "owner exists");
         
-        //Call Project and validate it
+        //TODO: call Project and validate it
 
         //Only owner's sc can add
         //require (scProject.owner() == scOwner, "only sc owner");

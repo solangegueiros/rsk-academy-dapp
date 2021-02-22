@@ -17,6 +17,8 @@ In the folder `migrations`, be sure that you only have the file `deploy_locally.
 ### Truffle develop
 To develop locally, I'm using only the `truffle develop` environment.
 
+> Truffle develop environment is a blockchain simulator, so you don't need to run a node when use `truffle develop` 
+
 Verify if exists the file .secret
 If don't exists, create it. It can be empty when you are using truffle develop. 
 

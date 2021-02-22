@@ -183,8 +183,13 @@ module.exports = async (deployer, network, accounts) => {
   console.log("Update Master in Project Quote");
   await academyProjectList.updateProjectByName(project.name, project.active, masterQuote.address, project.description, project.ABI);
 
-  console.log("\nValidate project in Master");
-  await masterQuote.validate(yourName.address, {from: accountStudent});
+  //Quote for student1
+  quote1 = await deployer.deploy(Quote, {from: accountStudent});
+  console.log("quote1.Address: ", quote1.address);
+  result = await quote1.setQuote("Have a nice day");
+
+  console.log("\nValidate project Quote in Master");
+  await masterQuote.validate(quote1.address, {from: accountStudent});
 
   //Student2 - Name
   //Student2 subscribe class01 => AcademyClass.subscribe class01
@@ -196,7 +201,7 @@ module.exports = async (deployer, network, accounts) => {
 
   console.log("\nValidate project Name in Mastername");
   await masterName.addName(yourName2.address, "Your name", {from: accountStudent2});
-  
+
 /*  
 */
 
