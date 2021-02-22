@@ -12,17 +12,7 @@ npm i
 truffle compile
 ```
 
-### Migrations
-
 In the folder `migrations`, be sure that you only have the file `deploy_locally.js` in the folder.
-
-The folder `migrations-TESTs` has 2 files:
-
-- deploy_locally.js => to deploy locally
-- deploy_network.js => to deploy on network
-
-Copy the file of your choice for the folder `migrations`, 
-but be sure that you only have one of these files in `migrations`.
 
 ### Truffle develop
 To develop locally, I'm using only the `truffle develop` environment.
@@ -35,7 +25,25 @@ truffle develop
 migrate --reset
 ```
 
+## Run the dApp frontend
 
+```shell
+cd app
+```
+
+In the first time:
+
+```shell
+cd app
+```
+
+to run the dApp:
+
+```shell
+npm run start
+```
+
+## Extra information
 
 ### Deploy sequence
 
@@ -48,41 +56,42 @@ migrate --reset
 7. Deploy MasterName, using addressStudentList. 
 8. In AcademyProjectList, updateProjectByName => update the MasterName address
 
+## TODO: Active course
+
+- Only after subscribe... think the best moment to check this.
+
+When the student chooses a course in the course menu, the active AcademyClass is saved in a global variable.
+
+When the student connects his wallet, his activeClass is checked.
+
+If AcademyClass for the selected course is different from activeClass, it will display this message:
+The active course is: XXX
+The selected course is YYY
+
+Your active course is XXX, but you selected the YYY course in menu.
+You need to change one or other.
 
 
-
-No App
-Quando o estudante escolhe um curso é salva qual a AcademyClass ativa
-
-Quando o estudante conecta, é verificado a activeClass dele.
-
-Se AcademyClass do curso selecionado é diferente da activeClass, apresenta mensagens:
-O curso ativo é: XXX
-O curso selecionado é YYY
-
-Seu curso ativo é diferente do curso selecionado.
-
-No futuro
-Verifica se o estudante está inscrito no curso ativo
-  Se tiver, pergunta se quer trocar o curso ativo.
+No futuro: 
+verifica se o estudante está inscrito no curso ativo
+  - Se tiver, pergunta se quer trocar o curso ativo.
 ou
-Pergunta se quer se inscrever no curso selecionado
+- Pergunta se quer se inscrever no curso selecionado
 ou
-Pergunta se quer ir para o curso ativo
-
+- Pergunta se quer ir para o curso ativo
 
 Seleciona um curso.
-O estudante tem uma wallet => subscribe in AcademyClass
+- O estudante tem uma wallet => subscribe in AcademyClass
 
 # Smart contract Name
 
-1. O estudante faz seu smart contract Name
-2. In MasterName, addName. 
-4. Lista seu portfolio
-5. Olha o Name
-6. Esqueceu de atualizar seu "name", não gosta do resultado => in MasterName deleteProjectByAddress
+1. The student develop and publish his smart contract Name 
+2. In MasterName, addName 
+4. List your portfolio
+5. Check his smart contract Name
+6. He forgot to update "your name", so in MasterName, run deleteProjectByAddress
 
-MasterName chama Portfolio.deleteProjectByAddress
+MasterName calls Portfolio.deleteProjectByAddress
 
 
 ## Course completed
@@ -97,11 +106,14 @@ Then it will generate a certificate registered in Blockchain
 > TODO
 
 
+## Deploy on Blockchain
+Use the file deploy_network.js located in folder `migrations-TESTs`.
 
+Copy the file of your choice for the folder `migrations`, 
+but be sure that you only have one of these files in `migrations`.
 
-
-
-
-
+The folder `migrations-TESTs` has these files:
+- deploy_locally.js => to deploy locally
+- deploy_network.js => to deploy on network
 
 

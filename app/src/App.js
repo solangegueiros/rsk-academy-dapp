@@ -264,7 +264,6 @@ function App() {
       });
   };
 
-
   const handleMasterNameListNames = e => {
     e.preventDefault();
     
@@ -275,7 +274,6 @@ function App() {
         setMasterListNames(nameInfos);
       });
   };
-
 
   
   return (
