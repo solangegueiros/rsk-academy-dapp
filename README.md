@@ -9,6 +9,7 @@ Run these commands:
 git clone https://github.com/solangegueiros/rsk-academy-dapp.git
 cd rsk-academy-dapp
 npm i
+truffle compile
 ```
 
 ### Migrations

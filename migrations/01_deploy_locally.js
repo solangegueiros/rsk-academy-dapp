@@ -6,6 +6,8 @@ const StudentPortfolio = artifacts.require("StudentPortfolio");
 const MasterName = artifacts.require("MasterName");
 const NameSol = artifacts.require("NameSol");
 const Name = artifacts.require("Name");
+const MasterQuote = artifacts.require("MasterQuote");
+
 
 /*
 This migration file is to be used locally.
@@ -20,6 +22,7 @@ It creates all structure, including:
 User case: a student submit the name project, 
 but he did a mistake, then delete it and submit again
 */
+
 
 module.exports = async (deployer, network, accounts) => {
 
@@ -168,7 +171,21 @@ module.exports = async (deployer, network, accounts) => {
   result = await portfolio.listPortfolio();
   console.log("\n portfolio\n", result); 
 
+  //Second Project, Quote, only for tests
 
+
+  //Deploy MasterQuote
+  nameProject = "Quote";
+  await academyProjectList.addProject("Quote","Write your phrases for eternity", {from: accounts[0]});
+  masterQuote = await deployer.deploy(MasterQuote, academyStudents.address, {from: accounts[0]});
+  console.log("masterQuote.Address: ", masterQuote.address);
+
+  project = await academyProjectList.getProjectByName(nameProject);
+  console.log("Update Master in Project Quote");
+  await academyProjectList.updateProjectByName(project.name, project.active, masterQuote.address, project.description, project.ABI);
+
+  console.log("\nValidate project in Master");
+  await masterQuote.validate(yourName.address, {from: accountStudent});
 /*  
 */
 

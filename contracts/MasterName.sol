@@ -50,7 +50,6 @@ contract MasterName is AccessControl {
     
     event NameAdded (address indexed owner, address indexed scName, string name);
     event NameDeleted (address indexed owner, address indexed scName);
-    event NameDeleted1 (address indexed owner, uint256 nameIndex);
 
     modifier onlyOwner() {
         require(hasRole(DEFAULT_ADMIN_ROLE, msg.sender), "MasterName: only owner");
@@ -69,7 +68,7 @@ contract MasterName is AccessControl {
     
     function _addName (address scOwner, address scNameAddress,  string memory name) private returns (bool) {
         //Does it already exist?
-        require (!existsSCName(scNameAddress), "scName exists");
+        require (!existsScName(scNameAddress), "scName exists");
         require (!existsOwner(scOwner), "owner exists");
         
         iName scName = iName(scNameAddress);
@@ -99,11 +98,8 @@ contract MasterName is AccessControl {
         if (!studentList.isStudent(scOwner))
             return false;
 
-        /* */
         StudentStruct memory s = studentList.getStudentByAddress(scOwner);        
         if (s.portfolioAddress != address(0x0)) {
-            //Only AcademyStudents is allowed to adds projects
-
             iStudentPortfolio p = iStudentPortfolio(s.portfolioAddress);
             p.addProject(scNameAddress, PROJECT_NAME);
         }
@@ -125,7 +121,6 @@ contract MasterName is AccessControl {
         require (existsOwner(scOwner), "owner not exists");
 
         uint256 indexToDelete = ownerIndex[scOwner] - 1;
-        emit NameDeleted1 (scOwner, indexToDelete);
         address scNameToDelete = nameInfo[indexToDelete].scName;
 
         uint256 indexToMove = nameInfo.length - 1;
@@ -163,7 +158,7 @@ contract MasterName is AccessControl {
             return true;
     }
     
-    function existsSCName(address scAddress) public view returns (bool) {
+    function existsScName(address scAddress) public view returns (bool) {
         if (scNameIndex[scAddress] == 0)
             return false;
         else
@@ -188,7 +183,7 @@ contract MasterName is AccessControl {
         return (nameInfo.length);
     }
 
-    function getOwnerSC (address scNameAddress) public view returns (address) {
+    function getOwnerSc (address scNameAddress) public view returns (address) {
         iName scName = iName(scNameAddress);
         return scName.owner();
     }

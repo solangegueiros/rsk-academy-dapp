@@ -6,12 +6,8 @@ pragma solidity 0.8.1;
 import './oz-contracts/access/AccessControl.sol';
 
 import './iAcademyProjectList.sol';
+import './iStudentPortfolio.sol';
 
-struct PortfolioStruct {
-    address projectAddress; // Key
-    //iAcademyProjects.ProjectStruct name;
-    string name;    // Key for iAcademyProjects.ProjectStruct
-}
 
 contract StudentPortfolio is AccessControl {
     //One StudentPortfolio per Student
