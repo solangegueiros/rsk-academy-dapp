@@ -45,6 +45,8 @@ to run the dApp:
 npm run start
 ```
 
+In your webwallet, use the same mnemonic from truffle develop.
+
 ## Extra information
 
 ### Deploy sequence
