@@ -69,21 +69,22 @@ module.exports = async (deployer, network, accounts) => {
   console.log("\nValidate project nameTalip in Mastername");
   await masterName.addName(nameTalip.address, "Talip Altas", {from: StudentTalip});
 
-/*
+  quoteSolAddress = ' 0x952f4F0c10D633E3FcD4691F977Aa5D2A146618D';
+  quoteSol = await Quote.at(quoteSolAddress);
+  console.log("quoteSol.Address: ", quoteSol.address);
+
+  quoteTalipAddress = ' 0xCEe6544b1f9eF2C1412bf0A615831cDb1BE0e8f7';
+  quoteTalip = await Quote.at(quoteTalipAddress);
+  console.log("quoteTalip.Address: ", quoteTalip.address);
+  
+  
   //StudentOther submit Name.sol
   yourName = await deployer.deploy(Name, {from: StudentOther});
   console.log("yourName.Address: ", yourName.address);
   console.log("\nValidate project Name in Mastername");
   await masterName.addName(yourName.address, "Your name", {from: StudentOther});
 
-
-  //Quote for StudentSol
-  quoteSol = await deployer.deploy(Quote, {from: StudentSol});
-  console.log("quoteSol.Address: ", quoteSol.address);
-  result = await quoteSol.setQuote("Have a nice day");
-
-  console.log("\nValidate project quoteSol in Master");
-  await masterQuote.validate(quoteSol.address, {from: StudentSol});
+/*
 
 
 /*  

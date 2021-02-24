@@ -58,7 +58,12 @@ module.exports = {
       provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co', 0, 10, true, "m/44'/37310'/0'/0/"),
       network_id: 31,
       gasPrice: Math.floor(minimumGasPriceTestnet * 1.2),
-      networkCheckTimeout: 1e9
+      networkCheckTimeout: 1e9,
+      //Source: https://dappsdev.org/blog/2021-02-24-how-to-configure-truffle-to-connect-to-rsk/
+      timeoutBlocks: 100,
+      // Higher polling interval to check for blocks less frequently
+      // during deployment
+      deploymentPollingInterval: 15e3,      
     },    
     testnetm: { //Testenet with dPathEthereum = metamask addresses
       provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co', 0, 10),
