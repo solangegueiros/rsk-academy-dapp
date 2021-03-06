@@ -8,6 +8,7 @@ import './oz-contracts/access/AccessControl.sol';
 import './AcademyClass.sol';
 import './iAcademyClassList.sol';
 import './iAcademyStudents.sol';
+import './iAcademyStudentQuiz.sol';
 
 
 contract AcademyClassList is AccessControl {
@@ -36,11 +37,11 @@ contract AcademyClassList is AccessControl {
         _;
     } 
 
-    function createAcademyClass(address addressStudentList, string memory className) public onlyOwner onlyActive returns (address) {
+    function createAcademyClass(address addressStudentList, address addressStudentQuiz, string memory className) public onlyOwner onlyActive returns (address) {
         //className = "Devs 2021-01";
         //Can repeat className? YES
         
-        AcademyClass ac = new AcademyClass(addressStudentList, className);
+        AcademyClass ac = new AcademyClass(addressStudentList, addressStudentQuiz, className);
         address classAddress = address(ac);
         
         ClassStruct memory c;
@@ -53,6 +54,9 @@ contract AcademyClassList is AccessControl {
 
         iAcademyStudents studentList = iAcademyStudents(addressStudentList);
         studentList.grantRole(DEFAULT_ADMIN_ROLE, classAddress);
+
+        iAcademyStudentQuiz studentQuiz = iAcademyStudentQuiz(addressStudentQuiz);
+        studentQuiz.grantRole(DEFAULT_ADMIN_ROLE, classAddress);
 
         emit AcademyClassCreated (classAddress, className);
         return classAddress;

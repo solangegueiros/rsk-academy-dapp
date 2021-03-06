@@ -7,6 +7,7 @@ import './oz-contracts/access/AccessControl.sol';
 
 import './iAcademyClass.sol';
 import './iAcademyStudents.sol';
+import './iAcademyStudentQuiz.sol';
 
 
 contract AcademyClass is AccessControl {
@@ -15,14 +16,16 @@ contract AcademyClass is AccessControl {
     string public className;
 
     iAcademyStudents public studentList;
+    iAcademyStudentQuiz public studentQuiz;
     mapping(address => StudentInClass) private studentInClassInfo;
     address[] private studentAddressList;
 
-    constructor(address addressStudentList, string memory className_) {
+    constructor(address addressStudentList, address addressStudentQuiz, string memory className_) {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         className = className_;
         active = true;
         studentList = iAcademyStudents(addressStudentList);
+        studentQuiz = iAcademyStudentQuiz(addressStudentQuiz);
     }
     
     event StudentAddedInClass(address indexed _studentAddress);
@@ -97,7 +100,13 @@ contract AcademyClass is AccessControl {
         studentInClassInfo[account].end = block.timestamp;
         emit StudentStatusChanged (account, StudentStatus.Canceled);
     }
-    
+
+    function addQuizAnswer (string memory quiz, string memory answer, uint8 total, uint8 grade) public returns(uint256) {
+        require (isStudent(msg.sender), "student not exists");
+        uint256 index = studentQuiz.addStudentQuizAnswer(msg.sender, quiz, answer, total, grade);        
+        return index;
+    }
+
     function changeClassStatus () public onlyOwner returns (bool) {
         active = !active;
         return active;
