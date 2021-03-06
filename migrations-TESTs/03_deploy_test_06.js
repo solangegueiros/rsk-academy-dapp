@@ -66,6 +66,9 @@ module.exports = async (deployer, network, accounts) => {
   nameTalip = await NameTalip.at(nameTalipAddress);
   console.log("nameTalip.Address: ", nameTalip.address);  
 
+  //Quotes
+  //https://everydaypower.com/quotes-about-education/
+  
   //Quote for StudentSol
   quoteSol = await deployer.deploy(Quote, {from: StudentSol});
   console.log("quoteSol.Address: ", quoteSol.address);
