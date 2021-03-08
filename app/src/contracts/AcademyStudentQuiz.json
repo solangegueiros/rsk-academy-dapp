@@ -148,8 +148,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -168,8 +167,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -193,8 +191,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -213,8 +210,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -256,8 +252,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -356,8 +351,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -381,8 +375,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -438,8 +431,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -490,8 +482,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -510,8 +501,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -530,8 +520,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -550,8 +539,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -570,8 +558,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"previousAdminRole\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"newAdminRole\",\"type\":\"bytes32\"}],\"name\":\"RoleAdminChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"}],\"name\":\"RoleGranted\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"}],\"name\":\"RoleRevoked\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"total\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"grade\",\"type\":\"uint8\"},{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"attempt\",\"type\":\"uint8\"}],\"name\":\"StudentGradeAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"}],\"name\":\"StudentGradeDeleted\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"DEFAULT_ADMIN_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"answer\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"total\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"grade\",\"type\":\"uint8\"}],\"name\":\"addStudentQuizAnswer\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"}],\"name\":\"countQuizByStudent\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"}],\"name\":\"countStudentByQuiz\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"}],\"name\":\"exists\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"}],\"name\":\"getRoleAdmin\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getRoleMember\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"}],\"name\":\"getRoleMemberCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"}],\"name\":\"getStudentQuiz\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"total\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"grade\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"attempt\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"answer\",\"type\":\"string\"}],\"internalType\":\"struct StudentQuizStruct\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getStudentQuiz\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"total\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"grade\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"attempt\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"answer\",\"type\":\"string\"}],\"internalType\":\"struct StudentQuizStruct\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"grantRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"hasRole\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"}],\"name\":\"indexOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"}],\"name\":\"listQuizByStudent\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"\",\"type\":\"string[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"}],\"name\":\"listStudentByQuiz\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"renounceRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"revokeRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getRoleAdmin(bytes32)\":{\"details\":\"Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}.\"},\"getRoleMember(bytes32,uint256)\":{\"details\":\"Returns one of the accounts that have `role`. `index` must be a value between 0 and {getRoleMemberCount}, non-inclusive. Role bearers are not sorted in any particular way, and their ordering may change at any point. WARNING: When using {getRoleMember} and {getRoleMemberCount}, make sure you perform all queries on the same block. See the following https://forum.openzeppelin.com/t/iterating-over-elements-on-enumerableset-in-openzeppelin-contracts/2296[forum post] for more information.\"},\"getRoleMemberCount(bytes32)\":{\"details\":\"Returns the number of accounts that have `role`. Can be used together with {getRoleMember} to enumerate all bearers of a role.\"},\"grantRole(bytes32,address)\":{\"details\":\"Grants `role` to `account`. If `account` had not been already granted `role`, emits a {RoleGranted} event. Requirements: - the caller must have ``role``'s admin role.\"},\"hasRole(bytes32,address)\":{\"details\":\"Returns `true` if `account` has been granted `role`.\"},\"renounceRole(bytes32,address)\":{\"details\":\"Revokes `role` from the calling account. Roles are often managed via {grantRole} and {revokeRole}: this function's purpose is to provide a mechanism for accounts to lose their privileges if they are compromised (such as when a trusted device is misplaced). If the calling account had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must be `account`.\"},\"revokeRole(bytes32,address)\":{\"details\":\"Revokes `role` from `account`. If `account` had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must have ``role``'s admin role.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/AcademyStudentQuiz.sol\":\"AcademyStudentQuiz\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/AcademyStudentQuiz.sol\":{\"keccak256\":\"0x9cc0b6f662a4ff5f7417a70a5faa0bd4d6eae3bbb00c69096fdc25215329d0df\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://719d2bfa329b4ee676590875b62fc07229c33527300cd7bca6fa10bfc1a1a7b8\",\"dweb:/ipfs/QmW75UTmV9ZEtJ1AfbBmBBaTa32od5hopXQEtHNtPDMPFD\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyStudentQuiz.sol\":{\"keccak256\":\"0x82003f5be23f6717390d0d80a29270e45335d17d4d652b521fddae48d2d477e2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d11af87351b266eb85d1ce038ec8d5a9d8279cfddad1a13a227061c1f7009cdf\",\"dweb:/ipfs/QmV88oWmLd6Q9SunvyVA9JoBdFURaxBsLPqJvhDBEkmzdD\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/access/AccessControl.sol\":{\"keccak256\":\"0x877dc2a75f1b3d7de3aa259d97d8c58e75b386435cf28f6e1b87e2f2167cc546\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cabfdd2b9505230852827e7755c9cabe3459c3d3382905667dc1e5545a41dd49\",\"dweb:/ipfs/QmZandfiQLrS9RjKZgFmdvK5sdkSGgfgPt9jUSy59DTERs\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/Address.sol\":{\"keccak256\":\"0x055865e412a376d7467750cd42c47930aef7a372306e032e40eda9a132e2f1b2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cfd6532c00cc0b54fced1ea7c20f23c191a460dc9e8afffcf288752a471c7838\",\"dweb:/ipfs/QmTFgWb8DaLaFZCHHWwWu1PmT3yprGsntnEtYrWP9CqPZ6\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/Context.sol\":{\"keccak256\":\"0x458d9bbcd900f10c2a72ec11752df54db7877f86070ec72ce15994c39d0cb9ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1b784af1c7c2e20a8f0aa445f06f12a62f97fbe6521d24eb334c5f7cfbc27398\",\"dweb:/ipfs/QmXo9fKr6PvYXyPLtrSTJXPJCkbDHy9WaKv1L7bRqMUWVe\"]},\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/oz-contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x2962f9258c7b6d44fd0c7c9b618cf99178919b1a6fd25a3880f42e0a576d5154\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2c31cf5db9b4bee162e074f1ecc678e04ec4b2827b35493bec19b0a42a5f1d20\",\"dweb:/ipfs/QmSXMLWEAiuCT1a9uPbhmXuHNKhDwa6s8s8WpcLbCt771Q\"]}},\"version\":1}",
@@ -24042,7 +24029,7 @@
     "version": "0.8.1+commit.df193b15.Emscripten.clang"
   },
   "networks": {
-    "5777": {
+    "5": {
       "events": {
         "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
           "anonymous": false,
@@ -24177,13 +24164,150 @@
         }
       },
       "links": {},
-      "address": "0x581b7786240818ca0654F37f863E3C18cf80A52f",
-      "transactionHash": "0x1c7a1961999a071ac18300140f3d518a52e763477cadb93c38db18e5c7433a34"
+      "address": "0x996BECf5278d512554fD3cd4d127C8D3085Db88E",
+      "transactionHash": ""
+    },
+    "31": {
+      "events": {
+        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "previousAdminRole",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "newAdminRole",
+              "type": "bytes32"
+            }
+          ],
+          "name": "RoleAdminChanged",
+          "type": "event"
+        },
+        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            }
+          ],
+          "name": "RoleGranted",
+          "type": "event"
+        },
+        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            }
+          ],
+          "name": "RoleRevoked",
+          "type": "event"
+        },
+        "0x2347cfcbc0b0b972d739d0aa4b2db2d97c137def689b4e0126546e00f2ccb2df": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "student",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "string",
+              "name": "quiz",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint8",
+              "name": "total",
+              "type": "uint8"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint8",
+              "name": "grade",
+              "type": "uint8"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint8",
+              "name": "attempt",
+              "type": "uint8"
+            }
+          ],
+          "name": "StudentGradeAdded",
+          "type": "event"
+        },
+        "0xde8d0e6106c0bc6580b858b29eaf41c4d105c013e1a8e5cb4401194a00276efe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "student",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "quiz",
+              "type": "string"
+            }
+          ],
+          "name": "StudentGradeDeleted",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x9792E3660B9CE434e4c777f2815968b9d9607168",
+      "transactionHash": "0x86cc3e187344211dab3e08a2eb8863002189b1e77f0e234e26da5b9eb7e210ea"
     }
   },
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-03-06T20:47:28.723Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-03-06T16:52:40.262Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
