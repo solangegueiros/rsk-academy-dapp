@@ -32,8 +32,7 @@ function App() {
   const [studentActiveClassStatus, setStudentActiveClassStatus] = useState('');
   const [studentActiveClassStart, setStudentActiveClassStart] = useState('');
 
-  const [academyQuizByStudentList, setQuizByStudentList] = useState(null);
-
+  const [academyQuizByStudentList, setAcademyQuizByStudentList] = useState(null);
   const [academyStudentsList, setAcademyStudentsList] = useState(null);
 
   const [scStudentName, setScStudentName] = useState(null);
@@ -332,45 +331,29 @@ function App() {
     }
   };
 
-  async function getStudentQuiz (student, quizName) {
-    scAcademyStudentQuiz.methods.getStudentQuiz(student, quizName).call()
+  async function getStudentQuiz (student, quizName) {    
+    const result = scAcademyStudentQuiz.methods.getStudentQuiz(student, quizName).call()
       .then( function(res) {
         console.log ('getStudentQuiz: \n', res);
         return res;
       });
+      return result;
   };
 
   async function handleQuizByStudentList (e) {
     e.preventDefault();
 
-    let list = [];
-
-    /*
-    scAcademyStudentQuiz.methods.listQuizByStudent(account).call()
-      .then(function(aux) {
-        console.log ('scAcademyStudentQuiz listQuizByStudent: \n', aux);
-        for(let i = 0; i < aux.length; i++ ) {
-          getStudentQuiz(account, aux[i])
-          .then (function(item) {
-            console.log (i, ":", item);
-            list.push(item);
-          });      
-        }
-        setQuizByStudentList(list);
-      });
-    */
-
     var aux = await scAcademyStudentQuiz.methods.listQuizByStudent(account).call();
     if (aux) {
-      console.log ('scAcademyStudentQuiz listQuizByStudent: \n', aux);
+      let list = [];
+
       for(let i = 0; i < aux.length; i++ ) {
-        let item = await getStudentQuiz(account, aux[i]);
-        await list.push(item);
+        const item = await getStudentQuiz(account, aux[i]);
+         //setQuizResultByStudentList(prev => [...prev, result])
         console.log (i, ":", item);
+        list.push(item);
       }
-      console.log ('list: \n', list);
-      setQuizByStudentList(list); 
-      setQuizByStudentList(aux);  
+      setAcademyQuizByStudentList(list);      
     }
 
   };  
@@ -449,6 +432,7 @@ function App() {
       });
   };
 
+  console.log ('academyQuizByStudentList Before RETURN', academyQuizByStudentList);
   
   return (
     <Container>
@@ -606,7 +590,7 @@ function App() {
             {academyQuizByStudentList && 
               <p>List: 
                 {academyQuizByStudentList.map((item, i) => 
-                  <li key={i}>{item}</li>
+                  <li key={i}>{JSON.stringify(item)}</li>
                   )}
               </p>
             }          
