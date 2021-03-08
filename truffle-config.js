@@ -54,32 +54,42 @@ module.exports = {
       port: 4444,
       network_id: "*"
     }, 
-    testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co', 0, 10, true, "m/44'/37310'/0'/0/"),
+    testnet: { //Testnet RSK with dPathEthereum = metamask addresses
+      //https://www.npmjs.com/package/@truffle/hdwallet-provider
+      //provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co', 0, 10),
+      provider: () => new HDWalletProvider({
+        mnemonic: { phrase: mnemonic },
+        providerOrUrl: 'https://public-node.testnet.rsk.co',
+        numberOfAddresses: 10,
+        pollingInterval: 15e3 
+      }),
       network_id: 31,
-      gasPrice: Math.floor(minimumGasPriceTestnet * 1.2),
-      networkCheckTimeout: 1e9,
+      gasPrice: Math.floor(minimumGasPriceTestnet * 1.3),
+      networkCheckTimeout: 1e6, //1h = 36e5
       //Source: https://dappsdev.org/blog/2021-02-24-how-to-configure-truffle-to-connect-to-rsk/
-      timeoutBlocks: 100,
       // Higher polling interval to check for blocks less frequently
       // during deployment
+      deploymentPollingInterval: 15e3,  //15s = 15e3, default is 4e3
+      timeoutBlocks: 100,
+    },
+    testnetRSK: {
+      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co', 0, 10, true, "m/44'/37310'/0'/0/"),
+      network_id: 31,
+      gasPrice: Math.floor(minimumGasPriceTestnet * 1.3),
+      networkCheckTimeout: 1e6,
+      timeoutBlocks: 100,
       deploymentPollingInterval: 15e3,      
     },    
-    testnetm: { //Testenet with dPathEthereum = metamask addresses
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co', 0, 10),
-      network_id: 31,
-      gasPrice: Math.floor(minimumGasPriceTestnet * 1.2),
-      networkCheckTimeout: 1e9
-    },
     mainnet: {
       provider: () => new HDWalletProvider(mnemonic, 'https://public-node.rsk.co', 0, 1, true, "m/44'/137'/0'/0/"),
       network_id: 30,
       gasPrice: Math.floor(minimumGasPriceMainnet * 1.02),
-      networkCheckTimeout: 1e9
+      networkCheckTimeout: 1e6
     },
     goerli: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://rpc.goerli.mudit.blog/', 0, 10),
-      network_id: 5
+      provider: () => new HDWalletProvider(mnemonic, 'https://rpc.goerli.mudit.blog/', 0, 10),      
+      network_id: 5,
+      networkCheckTimeout: 1e6, //1h = 36e5
     },    
     mumbai: {
       provider: () => new HDWalletProvider(mnemonic, "https://rpc-mumbai.matic.today"),

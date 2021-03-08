@@ -1,30 +1,24 @@
+/*
+This migration file is to be used in a network.
+It creates all structure, including:
+- 1 project in AcademyProjectList: "Name"
+- 1 class: 
+    class01 = "Devs 2021-01"
+
+NEW SEED: jaguar recipe oval ecology woman misery firm dutch payment hero symbol radar
+*/
+
 const AcademyClassList = artifacts.require("AcademyClassList");
 const AcademyClass = artifacts.require("AcademyClass");
 const AcademyProjectList = artifacts.require("AcademyProjectList");
 const AcademyStudents = artifacts.require("AcademyStudents");
 const AcademyStudentQuiz = artifacts.require("AcademyStudentQuiz");
-const StudentPortfolio = artifacts.require("StudentPortfolio");
 const MasterName = artifacts.require("MasterName");
+const StudentPortfolio = artifacts.require("StudentPortfolio");
 const NameSol = artifacts.require("NameSol");
 const Name = artifacts.require("Name");
 const MasterQuote = artifacts.require("MasterQuote");
 const Quote = artifacts.require("Quote");
-
-/*
-This migration file is to be used locally.
-It creates all structure, including:
-- 3 projects in AcademyProjectList: "Name", "Pig Bank", "Token"
-- a student: accounts[1]
-- 2 classes: 
-    class01 = "Devs 2021-01"
-    class02 = "Business 2021-02"
-- the student subscribe on 2 classes
-
-User case: a student submit the name project, 
-but he did a mistake, then delete it and submit again
-*/
-
-
 
 module.exports = async (deployer, network, accounts) => {
 
@@ -81,7 +75,6 @@ module.exports = async (deployer, network, accounts) => {
   console.log("AcademyClassList admin in academyStudentQuiz", result);  
 
 
-
 ////////////////////////////// class "Devs 2021-01"
   //AcademyClassList.createAcademyClass
   className = "Devs 2021-01";
@@ -104,26 +97,6 @@ module.exports = async (deployer, network, accounts) => {
   console.log("class01 admin in academyStudentQuiz", result);  
 
 
-////////////////////////////// class "Business 2021-02"
-  //AcademyClassList.createAcademyClass
-  className = "Business 2021-02";
-  console.log("\nAcademyClassList.createAcademyClass ", className);
-  
-  class02 = await academyClassList.createAcademyClass(academyStudents.address, academyStudentQuiz.address, className, {from: academyOwner});
-  class02Address = await class02.logs[3].args[0];
-  //console.log(JSON.stringify(class02));
-  //class02Address = '0x2dD6Ce85e5d9A92CBCA9a5d2A306dEbe52496E76';
-  class02 = await AcademyClass.at(class02Address);
-  console.log("class02Address: ", class02Address);
-  console.log("class02.Address: ", class02.address); 
-
-  //Is class02 admin in academyStudents?
-  result = await academyStudents.hasRole(DEFAULT_ADMIN_ROLE, class02.address);
-  console.log("class02 admin in academyStudents", result);
-
-  //Is class01 admin in AcademyStudentQuiz?
-  result = await academyStudentQuiz.hasRole(DEFAULT_ADMIN_ROLE, class02.address);
-  console.log("class02 admin in academyStudentQuiz", result);    
 
 /*  
 */

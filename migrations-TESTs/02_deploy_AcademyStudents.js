@@ -1,30 +1,24 @@
+/*
+This migration file is to be used in a network.
+It creates all structure, including:
+- 1 project in AcademyProjectList: "Name"
+- 1 class: 
+    class01 = "Devs 2021-01"
+
+NEW SEED: jaguar recipe oval ecology woman misery firm dutch payment hero symbol radar
+*/
+
 const AcademyClassList = artifacts.require("AcademyClassList");
 const AcademyClass = artifacts.require("AcademyClass");
 const AcademyProjectList = artifacts.require("AcademyProjectList");
 const AcademyStudents = artifacts.require("AcademyStudents");
 const AcademyStudentQuiz = artifacts.require("AcademyStudentQuiz");
-const StudentPortfolio = artifacts.require("StudentPortfolio");
 const MasterName = artifacts.require("MasterName");
+const StudentPortfolio = artifacts.require("StudentPortfolio");
 const NameSol = artifacts.require("NameSol");
 const Name = artifacts.require("Name");
 const MasterQuote = artifacts.require("MasterQuote");
 const Quote = artifacts.require("Quote");
-
-/*
-This migration file is to be used locally.
-It creates all structure, including:
-- 3 projects in AcademyProjectList: "Name", "Pig Bank", "Token"
-- a student: accounts[1]
-- 2 classes: 
-    class01 = "Devs 2021-01"
-    class02 = "Business 2021-02"
-- the student subscribe on 2 classes
-
-User case: a student submit the name project, 
-but he did a mistake, then delete it and submit again
-*/
-
-
 
 module.exports = async (deployer, network, accounts) => {
 
@@ -39,8 +33,6 @@ module.exports = async (deployer, network, accounts) => {
 
   //Deploy AcademyProjectList
   academyProjectList = await deployer.deploy(AcademyProjectList, {from: accounts[0]});
-  //If I didn't do this in the first deploy, I didn't get the contract.address...
-  academyProjectList = await AcademyProjectList.deployed();   
   //academyProjectListAddress = '0x080c4cBb2b107ecEB49D6ebed39Aa18DB262C758';
   //academyProjectList = await AcademyProjectList.at(academyProjectListAddress);
   console.log("academyProjectList.address: ", academyProjectList.address);  
@@ -51,11 +43,16 @@ module.exports = async (deployer, network, accounts) => {
   //academyStudents = await AcademyStudents.at(academyStudentsAddress);
   console.log("academyStudents.address: ", academyStudents.address);
 
+  //revokeRole for OLD AcademyClassList in academyStudents
+  //academyClassListAddress = '0x0658fA4678C2D1d1c8931B50153Ca8D59e24C962';
+  //academyStudents.revokeRole(DEFAULT_ADMIN_ROLE, academyClassListAddress, {from: accounts[0]});
+  //TODO: Deactivate OLD classes
+
   //Deploy AcademyClassList
-  academyClassList = await deployer.deploy(AcademyClassList, {from: accounts[0]});
-  //academyClassListAddress = '0xf10A7106f7b3Ef3a933a6E177f6871Bad86a9606';
-  //academyClassList = await AcademyClassList.at(academyClassListAddress);
-  console.log("academyClassList.address: ", academyClassList.address);
+  await deployer.deploy(AcademyClassList, {from: accounts[0]});
+  academyClassList = await AcademyClassList.deployed();
+  academyClassListAddress = academyClassList.address;
+  console.log("academyClassList.address: ", academyClassListAddress);
 
   //grantRole for AcademyClassList in academyStudents
   //"0x0000000000000000000000000000000000000000000000000000000000000000","0x0fC5025C764cE34df352757e82f7B5c4Df39A836"
@@ -63,13 +60,12 @@ module.exports = async (deployer, network, accounts) => {
   await academyStudents.grantRole(DEFAULT_ADMIN_ROLE, academyClassList.address, {from: accounts[0]});
   
   //Is AcademyClassList admin in academyStudents?
+  console.log("Is AcademyClassList admin in academyStudents?");
   result = await academyStudents.hasRole(DEFAULT_ADMIN_ROLE, academyClassList.address);
   console.log("AcademyClassList admin in academyStudents", result);
 
   //Deploy AcademyStudentQuiz
   academyStudentQuiz = await deployer.deploy(AcademyStudentQuiz, {from: accounts[0]});
-  //academyStudentQuizAddress = '0x9792E3660B9CE434e4c777f2815968b9d9607168';
-  //academyStudentQuiz = await AcademyStudentQuiz.at(academyStudentQuizAddress);  
   console.log("academyStudentQuiz.address: ", academyStudentQuiz.address);
 
   //grantRole for AcademyClassList in AcademyStudentQuiz
@@ -77,22 +73,21 @@ module.exports = async (deployer, network, accounts) => {
   await academyStudentQuiz.grantRole(DEFAULT_ADMIN_ROLE, academyClassList.address, {from: accounts[0]});
   
   //Is AcademyClassList admin in academyStudentQuiz?
+  console.log("Is AcademyClassList admin in academyStudentQuiz?");
   result = await academyStudentQuiz.hasRole(DEFAULT_ADMIN_ROLE, academyClassList.address);
   console.log("AcademyClassList admin in academyStudentQuiz", result);  
 
 
-
-////////////////////////////// class "Devs 2021-01"
   //AcademyClassList.createAcademyClass
   className = "Devs 2021-01";
-  console.log("\nAcademyClassList.createAcademyClass ", className);
+  console.log("\nAcademyClassList.createAcademyClass (addressStudentList, className) ", className);
   console.log("\n", academyStudents.address, academyStudentQuiz.address, className);
   class01 = await academyClassList.createAcademyClass(academyStudents.address, academyStudentQuiz.address, className, {from: accounts[0]});
-  class01Address = class01.logs[3].args[0];  
-  console.log("OK\n", JSON.stringify(class01.logs));
 
-  //class01Address = '0x2dD6Ce85e5d9A92CBCA9a5d2A306dEbe52496E76';
+  console.log("OK\n", JSON.stringify(class01.logs));
+  class01Address = await class01.logs[3].args[0];
   class01 = await AcademyClass.at(class01Address);
+  console.log("class01Address: ", class01Address);
   console.log("class01.Address: ", class01.address);
 
   //Is class01 admin in academyStudents?
@@ -100,31 +95,26 @@ module.exports = async (deployer, network, accounts) => {
   console.log("class01 admin in academyStudents", result);
 
   //Is class01 admin in AcademyStudentQuiz?
+  console.log("Is class01 admin in academyAcademyStudentQuiztudents?");
   result = await academyStudentQuiz.hasRole(DEFAULT_ADMIN_ROLE, class01.address);
   console.log("class01 admin in academyStudentQuiz", result);  
 
 
-////////////////////////////// class "Business 2021-02"
-  //AcademyClassList.createAcademyClass
-  className = "Business 2021-02";
-  console.log("\nAcademyClassList.createAcademyClass ", className);
+  //In AcademyProjectList, addProject "Name"
+  await academyProjectList.addProject("Name","Your name stored in a smart contract", {from: accounts[0]});
+
+  //Deploy MasterName
+  nameProject = "Name";
+  masterName = await deployer.deploy(MasterName, academyStudents.address, {from: accounts[0]});
+  console.log("masterName.Address: ", masterName.address);
+
+  project = await academyProjectList.getProjectByName(nameProject);
+  //console.log("\nproject\n", project);  
+  //console.log("project.master", project.master);
+  console.log("Update Master in Project Name");
+  await academyProjectList.updateProjectByName(project.name, project.active, masterName.address, project.description, project.ABI);
+
   
-  class02 = await academyClassList.createAcademyClass(academyStudents.address, academyStudentQuiz.address, className, {from: academyOwner});
-  class02Address = await class02.logs[3].args[0];
-  //console.log(JSON.stringify(class02));
-  //class02Address = '0x2dD6Ce85e5d9A92CBCA9a5d2A306dEbe52496E76';
-  class02 = await AcademyClass.at(class02Address);
-  console.log("class02Address: ", class02Address);
-  console.log("class02.Address: ", class02.address); 
-
-  //Is class02 admin in academyStudents?
-  result = await academyStudents.hasRole(DEFAULT_ADMIN_ROLE, class02.address);
-  console.log("class02 admin in academyStudents", result);
-
-  //Is class01 admin in AcademyStudentQuiz?
-  result = await academyStudentQuiz.hasRole(DEFAULT_ADMIN_ROLE, class02.address);
-  console.log("class02 admin in academyStudentQuiz", result);    
-
 /*  
 */
 
