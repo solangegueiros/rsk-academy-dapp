@@ -15,38 +15,38 @@
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyClassList.sol",
     "exportedSymbols": {
       "ClassStruct": [
-        4069
+        4529
       ],
       "iAcademyClassList": [
-        4070
+        4530
       ]
     },
-    "id": 4071,
+    "id": 4531,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4062,
+        "id": 4522,
         "literals": [
           "solidity",
           "0.8",
           ".1"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:13"
+        "src": "33:22:14"
       },
       {
         "canonicalName": "ClassStruct",
-        "id": 4069,
+        "id": 4529,
         "members": [
           {
             "constant": false,
-            "id": 4064,
+            "id": 4524,
             "mutability": "mutable",
             "name": "classAddress",
             "nodeType": "VariableDeclaration",
-            "scope": 4069,
-            "src": "87:20:13",
+            "scope": 4529,
+            "src": "87:20:14",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -54,10 +54,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 4063,
+              "id": 4523,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "87:7:13",
+              "src": "87:7:14",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -68,12 +68,12 @@
           },
           {
             "constant": false,
-            "id": 4066,
+            "id": 4526,
             "mutability": "mutable",
             "name": "active",
             "nodeType": "VariableDeclaration",
-            "scope": 4069,
-            "src": "114:11:13",
+            "scope": 4529,
+            "src": "114:11:14",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -81,10 +81,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 4065,
+              "id": 4525,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "114:4:13",
+              "src": "114:4:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -94,12 +94,12 @@
           },
           {
             "constant": false,
-            "id": 4068,
+            "id": 4528,
             "mutability": "mutable",
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 4069,
-            "src": "132:11:13",
+            "scope": 4529,
+            "src": "132:11:14",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -107,10 +107,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 4067,
+              "id": 4527,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "132:6:13",
+              "src": "132:6:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -121,8 +121,8 @@
         ],
         "name": "ClassStruct",
         "nodeType": "StructDefinition",
-        "scope": 4071,
-        "src": "61:86:13",
+        "scope": 4531,
+        "src": "61:86:14",
         "visibility": "public"
       },
       {
@@ -131,55 +131,55 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": true,
-        "id": 4070,
+        "id": 4530,
         "linearizedBaseContracts": [
-          4070
+          4530
         ],
         "name": "iAcademyClassList",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 4071,
-        "src": "151:36:13"
+        "scope": 4531,
+        "src": "151:36:14"
       }
     ],
-    "src": "33:154:13"
+    "src": "33:154:14"
   },
   "legacyAST": {
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyClassList.sol",
     "exportedSymbols": {
       "ClassStruct": [
-        4069
+        4529
       ],
       "iAcademyClassList": [
-        4070
+        4530
       ]
     },
-    "id": 4071,
+    "id": 4531,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4062,
+        "id": 4522,
         "literals": [
           "solidity",
           "0.8",
           ".1"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:13"
+        "src": "33:22:14"
       },
       {
         "canonicalName": "ClassStruct",
-        "id": 4069,
+        "id": 4529,
         "members": [
           {
             "constant": false,
-            "id": 4064,
+            "id": 4524,
             "mutability": "mutable",
             "name": "classAddress",
             "nodeType": "VariableDeclaration",
-            "scope": 4069,
-            "src": "87:20:13",
+            "scope": 4529,
+            "src": "87:20:14",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -187,10 +187,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 4063,
+              "id": 4523,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "87:7:13",
+              "src": "87:7:14",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -201,12 +201,12 @@
           },
           {
             "constant": false,
-            "id": 4066,
+            "id": 4526,
             "mutability": "mutable",
             "name": "active",
             "nodeType": "VariableDeclaration",
-            "scope": 4069,
-            "src": "114:11:13",
+            "scope": 4529,
+            "src": "114:11:14",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -214,10 +214,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 4065,
+              "id": 4525,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "114:4:13",
+              "src": "114:4:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -227,12 +227,12 @@
           },
           {
             "constant": false,
-            "id": 4068,
+            "id": 4528,
             "mutability": "mutable",
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 4069,
-            "src": "132:11:13",
+            "scope": 4529,
+            "src": "132:11:14",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -240,10 +240,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 4067,
+              "id": 4527,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "132:6:13",
+              "src": "132:6:14",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -254,8 +254,8 @@
         ],
         "name": "ClassStruct",
         "nodeType": "StructDefinition",
-        "scope": 4071,
-        "src": "61:86:13",
+        "scope": 4531,
+        "src": "61:86:14",
         "visibility": "public"
       },
       {
@@ -264,18 +264,18 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": true,
-        "id": 4070,
+        "id": 4530,
         "linearizedBaseContracts": [
-          4070
+          4530
         ],
         "name": "iAcademyClassList",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 4071,
-        "src": "151:36:13"
+        "scope": 4531,
+        "src": "151:36:14"
       }
     ],
-    "src": "33:154:13"
+    "src": "33:154:14"
   },
   "compiler": {
     "name": "solc",
@@ -283,7 +283,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-03-06T20:47:22.019Z",
+  "updatedAt": "2021-03-09T23:39:02.606Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

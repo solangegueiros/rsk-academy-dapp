@@ -45,8 +45,8 @@ function App() {
 
 
   const [masterListNames, setMasterListNames] = useState(null);
-  const [inputMasterNameAddNameAddress, setInputMasterNameAddNameAddress] = useState(null);
-  const [inputMasterNameAddNameStudentName, setInputMasterNameAddNameStudentName] = useState(null);
+  const [inputMasterNameAddNameAddress, setInputMasterNameAddNameAddress] = useState('');
+  const [inputMasterNameAddNameStudentName, setInputMasterNameAddNameStudentName] = useState('');
   
 
   useEffect(() => {
@@ -148,8 +148,9 @@ function App() {
     e.preventDefault();
     
     let studentInfo = await scAcademyStudents.methods.getStudentByAddress(account.toLowerCase()).call()
+    console.log ('studentInfo: ', JSON.stringify(studentInfo));
 
-    if (studentInfo) {
+    if (studentInfo[0] != "0") {
       console.log ('studentInfo: ', JSON.stringify(studentInfo));
       setStudentProfile(JSON.stringify(studentInfo));
 
@@ -432,7 +433,7 @@ function App() {
       });
   };
 
-  console.log ('academyQuizByStudentList Before RETURN', academyQuizByStudentList);
+  //console.log ('academyQuizByStudentList Before RETURN', academyQuizByStudentList);
   
   return (
     <Container>
