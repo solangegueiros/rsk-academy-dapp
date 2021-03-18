@@ -54,88 +54,88 @@
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyClass.sol",
     "exportedSymbols": {
       "StudentInClass": [
-        4505
+        856
       ],
       "StudentStatus": [
-        4497
+        848
       ],
       "iAcademyClass": [
-        4520
+        871
       ]
     },
-    "id": 4521,
+    "id": 872,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4493,
+        "id": 844,
         "literals": [
           "solidity",
           "0.8",
           ".1"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:13"
+        "src": "33:22:2"
       },
       {
         "canonicalName": "StudentStatus",
-        "id": 4497,
+        "id": 848,
         "members": [
           {
-            "id": 4494,
+            "id": 845,
             "name": "Canceled",
             "nodeType": "EnumValue",
-            "src": "149:8:13"
+            "src": "149:8:2"
           },
           {
-            "id": 4495,
+            "id": 846,
             "name": "InProgress",
             "nodeType": "EnumValue",
-            "src": "159:10:13"
+            "src": "159:10:2"
           },
           {
-            "id": 4496,
+            "id": 847,
             "name": "Completed",
             "nodeType": "EnumValue",
-            "src": "171:9:13"
+            "src": "171:9:2"
           }
         ],
         "name": "StudentStatus",
         "nodeType": "EnumDefinition",
-        "src": "129:52:13"
+        "src": "129:52:2"
       },
       {
         "canonicalName": "StudentInClass",
-        "id": 4505,
+        "id": 856,
         "members": [
           {
             "constant": false,
-            "id": 4500,
+            "id": 851,
             "mutability": "mutable",
             "name": "status",
             "nodeType": "VariableDeclaration",
-            "scope": 4505,
-            "src": "214:20:13",
+            "scope": 856,
+            "src": "214:20:2",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_enum$_StudentStatus_$4497",
+              "typeIdentifier": "t_enum$_StudentStatus_$848",
               "typeString": "enum StudentStatus"
             },
             "typeName": {
-              "id": 4499,
+              "id": 850,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 4498,
+                "id": 849,
                 "name": "StudentStatus",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 4497,
-                "src": "214:13:13"
+                "referencedDeclaration": 848,
+                "src": "214:13:2"
               },
-              "referencedDeclaration": 4497,
-              "src": "214:13:13",
+              "referencedDeclaration": 848,
+              "src": "214:13:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_enum$_StudentStatus_$4497",
+                "typeIdentifier": "t_enum$_StudentStatus_$848",
                 "typeString": "enum StudentStatus"
               }
             },
@@ -143,12 +143,12 @@
           },
           {
             "constant": false,
-            "id": 4502,
+            "id": 853,
             "mutability": "mutable",
             "name": "start",
             "nodeType": "VariableDeclaration",
-            "scope": 4505,
-            "src": "241:10:13",
+            "scope": 856,
+            "src": "241:10:2",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -156,10 +156,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 4501,
+              "id": 852,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "241:4:13",
+              "src": "241:4:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -169,12 +169,12 @@
           },
           {
             "constant": false,
-            "id": 4504,
+            "id": 855,
             "mutability": "mutable",
             "name": "end",
             "nodeType": "VariableDeclaration",
-            "scope": 4505,
-            "src": "310:8:13",
+            "scope": 856,
+            "src": "310:8:2",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -182,10 +182,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 4503,
+              "id": 854,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "310:4:13",
+              "src": "310:4:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -196,8 +196,8 @@
         ],
         "name": "StudentInClass",
         "nodeType": "StructDefinition",
-        "scope": 4521,
-        "src": "185:188:13",
+        "scope": 872,
+        "src": "185:188:2",
         "visibility": "public"
       },
       {
@@ -206,33 +206,33 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 4520,
+        "id": 871,
         "linearizedBaseContracts": [
-          4520
+          871
         ],
         "name": "iAcademyClass",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "bd06ea19",
-            "id": 4512,
+            "id": 863,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "addStudent",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4508,
+              "id": 859,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4507,
+                  "id": 858,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4512,
-                  "src": "429:15:13",
+                  "scope": 863,
+                  "src": "429:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -240,10 +240,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4506,
+                    "id": 857,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "429:7:13",
+                    "src": "429:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -253,20 +253,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "428:17:13"
+              "src": "428:17:2"
             },
             "returnParameters": {
-              "id": 4511,
+              "id": 862,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4510,
+                  "id": 861,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4512,
-                  "src": "464:4:13",
+                  "scope": 863,
+                  "src": "464:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -274,10 +274,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4509,
+                    "id": 860,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "464:4:13",
+                    "src": "464:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -286,34 +286,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "463:6:13"
+              "src": "463:6:2"
             },
-            "scope": 4520,
-            "src": "408:62:13",
+            "scope": 871,
+            "src": "408:62:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "82f7d392",
-            "id": 4519,
+            "id": 870,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "isStudent",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4515,
+              "id": 866,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4514,
+                  "id": 865,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4519,
-                  "src": "496:15:13",
+                  "scope": 870,
+                  "src": "496:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -321,10 +321,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4513,
+                    "id": 864,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "496:7:13",
+                    "src": "496:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -334,20 +334,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "495:17:13"
+              "src": "495:17:2"
             },
             "returnParameters": {
-              "id": 4518,
+              "id": 869,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4517,
+                  "id": 868,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4519,
-                  "src": "536:4:13",
+                  "scope": 870,
+                  "src": "536:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -355,10 +355,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4516,
+                    "id": 867,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "536:4:13",
+                    "src": "536:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -367,107 +367,107 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "535:6:13"
+              "src": "535:6:2"
             },
-            "scope": 4520,
-            "src": "476:66:13",
+            "scope": 871,
+            "src": "476:66:2",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 4521,
-        "src": "377:168:13"
+        "scope": 872,
+        "src": "377:168:2"
       }
     ],
-    "src": "33:514:13"
+    "src": "33:514:2"
   },
   "legacyAST": {
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyClass.sol",
     "exportedSymbols": {
       "StudentInClass": [
-        4505
+        856
       ],
       "StudentStatus": [
-        4497
+        848
       ],
       "iAcademyClass": [
-        4520
+        871
       ]
     },
-    "id": 4521,
+    "id": 872,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4493,
+        "id": 844,
         "literals": [
           "solidity",
           "0.8",
           ".1"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:13"
+        "src": "33:22:2"
       },
       {
         "canonicalName": "StudentStatus",
-        "id": 4497,
+        "id": 848,
         "members": [
           {
-            "id": 4494,
+            "id": 845,
             "name": "Canceled",
             "nodeType": "EnumValue",
-            "src": "149:8:13"
+            "src": "149:8:2"
           },
           {
-            "id": 4495,
+            "id": 846,
             "name": "InProgress",
             "nodeType": "EnumValue",
-            "src": "159:10:13"
+            "src": "159:10:2"
           },
           {
-            "id": 4496,
+            "id": 847,
             "name": "Completed",
             "nodeType": "EnumValue",
-            "src": "171:9:13"
+            "src": "171:9:2"
           }
         ],
         "name": "StudentStatus",
         "nodeType": "EnumDefinition",
-        "src": "129:52:13"
+        "src": "129:52:2"
       },
       {
         "canonicalName": "StudentInClass",
-        "id": 4505,
+        "id": 856,
         "members": [
           {
             "constant": false,
-            "id": 4500,
+            "id": 851,
             "mutability": "mutable",
             "name": "status",
             "nodeType": "VariableDeclaration",
-            "scope": 4505,
-            "src": "214:20:13",
+            "scope": 856,
+            "src": "214:20:2",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_enum$_StudentStatus_$4497",
+              "typeIdentifier": "t_enum$_StudentStatus_$848",
               "typeString": "enum StudentStatus"
             },
             "typeName": {
-              "id": 4499,
+              "id": 850,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 4498,
+                "id": 849,
                 "name": "StudentStatus",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 4497,
-                "src": "214:13:13"
+                "referencedDeclaration": 848,
+                "src": "214:13:2"
               },
-              "referencedDeclaration": 4497,
-              "src": "214:13:13",
+              "referencedDeclaration": 848,
+              "src": "214:13:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_enum$_StudentStatus_$4497",
+                "typeIdentifier": "t_enum$_StudentStatus_$848",
                 "typeString": "enum StudentStatus"
               }
             },
@@ -475,12 +475,12 @@
           },
           {
             "constant": false,
-            "id": 4502,
+            "id": 853,
             "mutability": "mutable",
             "name": "start",
             "nodeType": "VariableDeclaration",
-            "scope": 4505,
-            "src": "241:10:13",
+            "scope": 856,
+            "src": "241:10:2",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -488,10 +488,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 4501,
+              "id": 852,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "241:4:13",
+              "src": "241:4:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -501,12 +501,12 @@
           },
           {
             "constant": false,
-            "id": 4504,
+            "id": 855,
             "mutability": "mutable",
             "name": "end",
             "nodeType": "VariableDeclaration",
-            "scope": 4505,
-            "src": "310:8:13",
+            "scope": 856,
+            "src": "310:8:2",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -514,10 +514,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 4503,
+              "id": 854,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "310:4:13",
+              "src": "310:4:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -528,8 +528,8 @@
         ],
         "name": "StudentInClass",
         "nodeType": "StructDefinition",
-        "scope": 4521,
-        "src": "185:188:13",
+        "scope": 872,
+        "src": "185:188:2",
         "visibility": "public"
       },
       {
@@ -538,33 +538,33 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 4520,
+        "id": 871,
         "linearizedBaseContracts": [
-          4520
+          871
         ],
         "name": "iAcademyClass",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "bd06ea19",
-            "id": 4512,
+            "id": 863,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "addStudent",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4508,
+              "id": 859,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4507,
+                  "id": 858,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4512,
-                  "src": "429:15:13",
+                  "scope": 863,
+                  "src": "429:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -572,10 +572,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4506,
+                    "id": 857,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "429:7:13",
+                    "src": "429:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -585,20 +585,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "428:17:13"
+              "src": "428:17:2"
             },
             "returnParameters": {
-              "id": 4511,
+              "id": 862,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4510,
+                  "id": 861,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4512,
-                  "src": "464:4:13",
+                  "scope": 863,
+                  "src": "464:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -606,10 +606,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4509,
+                    "id": 860,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "464:4:13",
+                    "src": "464:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -618,34 +618,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "463:6:13"
+              "src": "463:6:2"
             },
-            "scope": 4520,
-            "src": "408:62:13",
+            "scope": 871,
+            "src": "408:62:2",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "82f7d392",
-            "id": 4519,
+            "id": 870,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "isStudent",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4515,
+              "id": 866,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4514,
+                  "id": 865,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4519,
-                  "src": "496:15:13",
+                  "scope": 870,
+                  "src": "496:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -653,10 +653,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4513,
+                    "id": 864,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "496:7:13",
+                    "src": "496:7:2",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -666,20 +666,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "495:17:13"
+              "src": "495:17:2"
             },
             "returnParameters": {
-              "id": 4518,
+              "id": 869,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4517,
+                  "id": 868,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4519,
-                  "src": "536:4:13",
+                  "scope": 870,
+                  "src": "536:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -687,10 +687,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4516,
+                    "id": 867,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "536:4:13",
+                    "src": "536:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -699,28 +699,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "535:6:13"
+              "src": "535:6:2"
             },
-            "scope": 4520,
-            "src": "476:66:13",
+            "scope": 871,
+            "src": "476:66:2",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 4521,
-        "src": "377:168:13"
+        "scope": 872,
+        "src": "377:168:2"
       }
     ],
-    "src": "33:514:13"
+    "src": "33:514:2"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.1+commit.df193b15.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.3",
-  "updatedAt": "2021-03-09T23:39:02.586Z",
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-18T02:29:28.750Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

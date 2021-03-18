@@ -25,7 +25,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getQuote\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_message\",\"type\":\"string\"}],\"name\":\"setQuote\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/Quote.sol\":\"Quote\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/Quote.sol\":{\"keccak256\":\"0x291f52dcce4c5ac762e61e6dd8b3070eae2887c44ae7536b07ee1e5048a68f06\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dab2da5180fd6b5630e9962a60a244193bf777cb1a23c955a9ad3828b24e81da\",\"dweb:/ipfs/QmVS3Dsah1iHrPgFXiFox6r8jHykTiwJ4ZqHw3oGAmeqHp\"]}},\"version\":1}",
@@ -3068,9 +3069,16 @@
     "name": "solc",
     "version": "0.8.1+commit.df193b15.Emscripten.clang"
   },
-  "networks": {},
-  "schemaVersion": "3.3.3",
-  "updatedAt": "2021-03-09T23:40:29.448Z",
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x3F0B31DAd40476a14EbC1606606a5916F31AA6e9",
+      "transactionHash": "0xfd1d577463b6bc0f4e0686341aaf3eeb7988654a6f966bae68e7e09fc01c3d4d"
+    }
+  },
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-18T02:30:56.344Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

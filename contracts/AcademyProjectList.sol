@@ -20,11 +20,6 @@ contract AcademyProjectList is AccessControl {
     constructor() {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         active = true;
-        addProject("Name","Your name stored in a smart contract");
-        addProject("Pig Bank","smart contract to save economies");
-        addProject("Token","Mintable token ERC20");
-        addProject("Photo Album","Photos stored in IPFS and hashes in a smart contract");
-        addProject("CRUD","A basic database to Create Read Update Delete");
     } 
     
     event ProjectAdded(string name, string description);

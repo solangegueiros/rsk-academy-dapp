@@ -5,8 +5,7 @@ It creates all structure, including:
 - 1 class: 
     class01 = "Devs 2021-01"
 
-SEED V2: jaguar recipe oval ecology woman misery firm dutch payment hero symbol radar
-SEED V3: arrow fortune talk evolve palm wrist bleak silver raccoon bounce cat uphold
+NEW SEED: jaguar recipe oval ecology woman misery firm dutch payment hero symbol radar
 */
 
 const AcademyClassList = artifacts.require("AcademyClassList");
@@ -51,7 +50,7 @@ module.exports = async (deployer, network, accounts) => {
   //Deploy AcademyClassList
   academyClassList = await deployer.deploy(AcademyClassList, {from: accounts[0]});
   //academyClassList = await AcademyClassList.deployed();
-  console.log("academyClassList.address: ", academyClassList.address);
+  console.log("academyClassList.address: ", academyClassList.addres);
 
   //grantRole for AcademyClassList in academyStudents
   //"0x0000000000000000000000000000000000000000000000000000000000000000","0x0fC5025C764cE34df352757e82f7B5c4Df39A836"

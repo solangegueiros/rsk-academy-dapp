@@ -12,7 +12,8 @@ import './iAcademyStudentQuiz.sol';
 
 contract AcademyClass is AccessControl {
     
-    bool public active;    // If NOT active, can't add students
+    bool public active;    // If NOT active, can't _addStudent, _cancelStudent, courseComplete, addQuizAnswer 
+    bool public open;    // If NOT open, can't add students
     string public className;
 
     iAcademyStudents public studentList;
@@ -24,6 +25,7 @@ contract AcademyClass is AccessControl {
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         className = className_;
         active = true;
+        open = true;
         studentList = iAcademyStudents(addressStudentList);
         studentQuiz = iAcademyStudentQuiz(addressStudentQuiz);
     }
@@ -41,17 +43,22 @@ contract AcademyClass is AccessControl {
         _;
     }
 
-    function subscribe () public returns (bool) {
+    modifier onlyOpen() {
+        require(open, "AcademyClass: not open");
+        _;
+    }
+
+    function subscribe () public onlyOpen returns (bool) {
         _addStudent(msg.sender);
         return true;
     }
     
-    function addStudent (address account) public onlyOwner returns (bool) {
+    function addStudent (address account) public onlyOwner onlyActive returns (bool) {
         _addStudent(account);
         return true;
     }    
     
-    function _addStudent (address account) private onlyActive returns (uint256) {
+    function _addStudent (address account) private returns (uint256) {
         require (!isStudent(account), "student already exists");
         uint256 indexStudent = 0;
 
@@ -101,7 +108,7 @@ contract AcademyClass is AccessControl {
         emit StudentStatusChanged (account, StudentStatus.Canceled);
     }
 
-    function addQuizAnswer (string memory quiz, string memory answer, uint8 total, uint8 grade) public returns(uint256) {
+    function addQuizAnswer (string memory quiz, string memory answer, uint8 total, uint8 grade) public onlyActive returns(uint256) {
         require (isStudent(msg.sender), "student not exists");
         uint256 index = studentQuiz.addStudentQuizAnswer(msg.sender, quiz, answer, total, grade);        
         return index;
@@ -111,6 +118,11 @@ contract AcademyClass is AccessControl {
         active = !active;
         return active;
     }
+
+    function changeClassOpen () public onlyOwner returns (bool) {
+        open = !open;
+        return open;
+    }    
     
     function isStudent (address account) public view returns (bool) {
         //if (!compareStrings(studentInfo[account].name, ""))

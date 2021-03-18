@@ -7,7 +7,6 @@ import './oz-contracts/access/AccessControl.sol';
 
 import './iAcademyStudentQuiz.sol';
 
-
 // Off-contract: must be a subscribed student
 // A quiz isn't linked to a class, it must be implemented
 

@@ -37,27 +37,27 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.1;\r\n\r\n\r\ninterface iName {\r\n    function owner() external view returns (address);\r\n    function getName() external view returns (string memory);\r\n}\r\n\r\n",
-  "sourcePath": "C:\\ACADEMY\\GITHUB\\rsk-academy-dapp\\contracts\\iName.sol",
+  "sourcePath": "C:/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iName.sol",
   "ast": {
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iName.sol",
     "exportedSymbols": {
       "iName": [
-        4686
+        1554
       ]
     },
-    "id": 4687,
+    "id": 1555,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4675,
+        "id": 1543,
         "literals": [
           "solidity",
           "0.8",
           ".1"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:18"
+        "src": "33:22:8"
       },
       {
         "abstract": false,
@@ -65,39 +65,39 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 4686,
+        "id": 1554,
         "linearizedBaseContracts": [
-          4686
+          1554
         ],
         "name": "iName",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "8da5cb5b",
-            "id": 4680,
+            "id": 1548,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "owner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4676,
+              "id": 1544,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "98:2:18"
+              "src": "98:2:8"
             },
             "returnParameters": {
-              "id": 4679,
+              "id": 1547,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4678,
+                  "id": 1546,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4680,
-                  "src": "124:7:18",
+                  "scope": 1548,
+                  "src": "124:7:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -105,10 +105,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4677,
+                    "id": 1545,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "124:7:18",
+                    "src": "124:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -118,40 +118,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "123:9:18"
+              "src": "123:9:8"
             },
-            "scope": 4686,
-            "src": "84:49:18",
+            "scope": 1554,
+            "src": "84:49:8",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "17d7de7c",
-            "id": 4685,
+            "id": 1553,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getName",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4681,
+              "id": 1549,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "155:2:18"
+              "src": "155:2:8"
             },
             "returnParameters": {
-              "id": 4684,
+              "id": 1552,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4683,
+                  "id": 1551,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4685,
-                  "src": "181:13:18",
+                  "scope": 1553,
+                  "src": "181:13:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -159,10 +159,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4682,
+                    "id": 1550,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "181:6:18",
+                    "src": "181:6:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -171,41 +171,41 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "180:15:18"
+              "src": "180:15:8"
             },
-            "scope": 4686,
-            "src": "139:57:18",
+            "scope": 1554,
+            "src": "139:57:8",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 4687,
-        "src": "61:138:18"
+        "scope": 1555,
+        "src": "61:138:8"
       }
     ],
-    "src": "33:170:18"
+    "src": "33:170:8"
   },
   "legacyAST": {
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iName.sol",
     "exportedSymbols": {
       "iName": [
-        4686
+        1554
       ]
     },
-    "id": 4687,
+    "id": 1555,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4675,
+        "id": 1543,
         "literals": [
           "solidity",
           "0.8",
           ".1"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:18"
+        "src": "33:22:8"
       },
       {
         "abstract": false,
@@ -213,39 +213,39 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 4686,
+        "id": 1554,
         "linearizedBaseContracts": [
-          4686
+          1554
         ],
         "name": "iName",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "8da5cb5b",
-            "id": 4680,
+            "id": 1548,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "owner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4676,
+              "id": 1544,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "98:2:18"
+              "src": "98:2:8"
             },
             "returnParameters": {
-              "id": 4679,
+              "id": 1547,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4678,
+                  "id": 1546,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4680,
-                  "src": "124:7:18",
+                  "scope": 1548,
+                  "src": "124:7:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -253,10 +253,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4677,
+                    "id": 1545,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "124:7:18",
+                    "src": "124:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -266,40 +266,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "123:9:18"
+              "src": "123:9:8"
             },
-            "scope": 4686,
-            "src": "84:49:18",
+            "scope": 1554,
+            "src": "84:49:8",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "17d7de7c",
-            "id": 4685,
+            "id": 1553,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getName",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4681,
+              "id": 1549,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "155:2:18"
+              "src": "155:2:8"
             },
             "returnParameters": {
-              "id": 4684,
+              "id": 1552,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4683,
+                  "id": 1551,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4685,
-                  "src": "181:13:18",
+                  "scope": 1553,
+                  "src": "181:13:8",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -307,10 +307,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4682,
+                    "id": 1550,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "181:6:18",
+                    "src": "181:6:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -319,28 +319,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "180:15:18"
+              "src": "180:15:8"
             },
-            "scope": 4686,
-            "src": "139:57:18",
+            "scope": 1554,
+            "src": "139:57:8",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 4687,
-        "src": "61:138:18"
+        "scope": 1555,
+        "src": "61:138:8"
       }
     ],
-    "src": "33:170:18"
+    "src": "33:170:8"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.1+commit.df193b15.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.3",
-  "updatedAt": "2021-03-09T23:39:02.698Z",
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-17T02:40:19.389Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

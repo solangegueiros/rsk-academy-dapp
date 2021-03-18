@@ -32,16 +32,17 @@ module.exports = async (deployer, network, accounts) => {
   console.log ("StudentOther: ", StudentOther); 
   DEFAULT_ADMIN_ROLE = "0x0000000000000000000000000000000000000000000000000000000000000000";
 
+
   //Deploy AcademyProjectList
   await deployer.deploy(AcademyProjectList, {from: accounts[0]});
   academyProjectList = await AcademyProjectList.deployed();
-  //academyProjectListAddress = '0x080c4cBb2b107ecEB49D6ebed39Aa18DB262C758';
+  //academyProjectListAddress = '0x95ce912A875E4b68F5eF3c761eABF625D84DDb12';
   //academyProjectList = await AcademyProjectList.at(academyProjectListAddress);
   console.log("academyProjectList.address: ", academyProjectList.address);  
   
   //Deploy AcademyStudents, using addressProjectList
   academyStudents = await deployer.deploy(AcademyStudents, academyProjectList.address, {from: accounts[0]});
-  //academyStudentsAddress = '0x82c7E2534A6d69165fCc0552535907f11D6ed0a9';
+  //academyStudentsAddress = '0xaF3F20347f455edBD79d90a03f75193f3a3Daec3';
   //academyStudents = await AcademyStudents.at(academyStudentsAddress);
   console.log("academyStudents.address: ", academyStudents.address);
 
@@ -50,11 +51,12 @@ module.exports = async (deployer, network, accounts) => {
 
   //Deploy AcademyClassList
   academyClassList = await deployer.deploy(AcademyClassList, {from: accounts[0]});
-  //academyClassList = await AcademyClassList.deployed();
+  academyClassList = await AcademyClassList.deployed();
+  //academyClassListAddress = '0x1762a9E9567bd46E71C2aA5626e87De7C1665741';
+  //academyClassList = await AcademyClassList.at(academyClassListAddress);
   console.log("academyClassList.address: ", academyClassList.address);
 
   //grantRole for AcademyClassList in academyStudents
-  //"0x0000000000000000000000000000000000000000000000000000000000000000","0x0fC5025C764cE34df352757e82f7B5c4Df39A836"
   console.log("grantRole for AcademyClassList in academyStudents");
   await academyStudents.grantRole(DEFAULT_ADMIN_ROLE, academyClassList.address, {from: accounts[0]});
   
@@ -65,11 +67,13 @@ module.exports = async (deployer, network, accounts) => {
 
   //Deploy AcademyStudentQuiz
   academyStudentQuiz = await deployer.deploy(AcademyStudentQuiz, {from: accounts[0]});
+  //academyStudentQuizAddress = '0x9C092457403Ce334cCDd14dC136A046F434f7EaC';
+  //academyStudentQuiz = await AcademyStudentQuiz.at(academyStudentQuizAddress);  
   console.log("academyStudentQuiz.address: ", academyStudentQuiz.address);
 
   //grantRole for AcademyClassList in AcademyStudentQuiz
-  console.log("\ngrantRole for AcademyClassList in AcademyStudentQuiz");
-  await academyStudentQuiz.grantRole(DEFAULT_ADMIN_ROLE, academyClassList.address, {from: accounts[0]});
+  //console.log("\ngrantRole for AcademyClassList in AcademyStudentQuiz");
+  //await academyStudentQuiz.grantRole(DEFAULT_ADMIN_ROLE, academyClassList.address, {from: accounts[0]});
   
   //Is AcademyClassList admin in academyStudentQuiz?
   console.log("Is AcademyClassList admin in academyStudentQuiz?");
