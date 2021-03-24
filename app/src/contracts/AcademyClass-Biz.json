@@ -23749,120 +23749,6 @@
     "version": "0.8.1+commit.df193b15.Emscripten.clang"
   },
   "networks": {
-    "5": {
-      "events": {
-        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "previousAdminRole",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "newAdminRole",
-              "type": "bytes32"
-            }
-          ],
-          "name": "RoleAdminChanged",
-          "type": "event"
-        },
-        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleGranted",
-          "type": "event"
-        },
-        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleRevoked",
-          "type": "event"
-        },
-        "0xc2cd73f6970f5e40dce13d5b14924b73bf1a89d678b30618a3135716213a2c65": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_studentAddress",
-              "type": "address"
-            }
-          ],
-          "name": "StudentAddedInClass",
-          "type": "event"
-        },
-        "0xfcac4ad276b3d596f594dd2e15d40999195593dfd3631982e5d8f03e9b62042b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "_studentAddress",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "internalType": "enum StudentStatus",
-              "name": "_status",
-              "type": "uint8"
-            }
-          ],
-          "name": "StudentStatusChanged",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0xB6f4F955a344764811012bf59B14B01a6AaaBf22",
-      "transactionHash": ""
-    },    
     "31": {
       "events": {
         "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
@@ -23974,7 +23860,7 @@
         }
       },
       "links": {},
-      "address": "0xe9b9a72b3fea9fa30c8881f4dbdf95ca9e73160f",
+      "address": "0x406657dC292E080f4c919b573f4A774773860adb",
       "transactionHash": ""
     }
   },
