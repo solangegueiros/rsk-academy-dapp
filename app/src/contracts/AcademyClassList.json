@@ -20117,6 +20117,107 @@
       "address": "0xB2510CC85f359BAA45B4af24442E339B80450B64",
       "transactionHash": "0x05ed59cab51ad2c95db0ef105ca488595e48b2f4f7798a3c95104d873e1b08bd"
     },
+    "1337": {
+      "events": {
+        "0x19593ab970a97e30b1488866dc5490452380f3bffb1be271efb0577b1ad73496": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "classAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "className",
+              "type": "string"
+            }
+          ],
+          "name": "AcademyClassCreated",
+          "type": "event"
+        },
+        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "previousAdminRole",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "newAdminRole",
+              "type": "bytes32"
+            }
+          ],
+          "name": "RoleAdminChanged",
+          "type": "event"
+        },
+        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            }
+          ],
+          "name": "RoleGranted",
+          "type": "event"
+        },
+        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            }
+          ],
+          "name": "RoleRevoked",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x860FF3C56B59e3a5a83ff02b19Cd1795809Ee0D9",
+      "transactionHash": "0x284fbffb21ec29241a1350c7015eed8231cd69de46ef693cd213c4c7ed1ce0b9"
+    },
     "5777": {
       "events": {
         "0x19593ab970a97e30b1488866dc5490452380f3bffb1be271efb0577b1ad73496": {
@@ -20215,12 +20316,12 @@
         }
       },
       "links": {},
-      "address": "0x64837eF0C124F1A9105e3bba6eBAbA517bbc37E2",
-      "transactionHash": "0x0cd35fa640b4f69caf35a3f037d76fc38e4e7e8b8e8b5f22b1e83923ccdd0a49"
+      "address": "0x860FF3C56B59e3a5a83ff02b19Cd1795809Ee0D9",
+      "transactionHash": "0x52075ebd6f77c3826b4acdbd71c9220eab7f549b0496b7341c74acba4d34e077"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-18T02:30:56.169Z",
+  "updatedAt": "2021-03-29T19:30:52.605Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
