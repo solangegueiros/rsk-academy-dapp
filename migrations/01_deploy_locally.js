@@ -3,6 +3,7 @@ const AcademyClass = artifacts.require("AcademyClass");
 const AcademyProjectList = artifacts.require("AcademyProjectList");
 const AcademyStudents = artifacts.require("AcademyStudents");
 const AcademyStudentQuiz = artifacts.require("AcademyStudentQuiz");
+const AcademyWallet = artifacts.require("AcademyWallet");
 const StudentPortfolio = artifacts.require("StudentPortfolio");
 const MasterName = artifacts.require("MasterName");
 const NameSol = artifacts.require("NameSol");
@@ -24,8 +25,6 @@ User case: a student submit the name project,
 but he did a mistake, then delete it and submit again
 */
 
-
-
 module.exports = async (deployer, network, accounts) => {
 
   //StudentSol = accounts[1];
@@ -36,6 +35,11 @@ module.exports = async (deployer, network, accounts) => {
   console.log ("StudentTalip: ", StudentTalip); 
   console.log ("StudentOther: ", StudentOther); 
   DEFAULT_ADMIN_ROLE = "0x0000000000000000000000000000000000000000000000000000000000000000";
+
+  //Deploy AcademyWallet
+  await deployer.deploy(AcademyWallet, {from: academyOwner});
+  academyWallet = await AcademyWallet.deployed();
+  console.log("academyWallet.address", academyWallet.address);
 
   //Deploy AcademyProjectList
   academyProjectList = await deployer.deploy(AcademyProjectList, {from: accounts[0]});
