@@ -259,7 +259,8 @@ module.exports = async (deployer, network, accounts) => {
 
   result = await portfolio.listPortfolio();
   console.log("\n portfolio\n", result); 
-
+  
+/*
   //Second Project, Quote, only for tests
 
   //Deploy MasterQuote

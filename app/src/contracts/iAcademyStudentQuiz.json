@@ -57,9 +57,108 @@
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "student",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "quiz",
+          "type": "string"
+        }
+      ],
+      "name": "exists",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "student",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "quiz",
+          "type": "string"
+        }
+      ],
+      "name": "indexOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getStudentQuiz",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "student",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "total",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "grade",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "attempt",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "quiz",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "answer",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct StudentQuizStruct",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"answer\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"total\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"grade\",\"type\":\"uint8\"}],\"name\":\"addStudentQuizAnswer\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"grantRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyStudentQuiz.sol\":\"iAcademyStudentQuiz\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyStudentQuiz.sol\":{\"keccak256\":\"0x82003f5be23f6717390d0d80a29270e45335d17d4d652b521fddae48d2d477e2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d11af87351b266eb85d1ce038ec8d5a9d8279cfddad1a13a227061c1f7009cdf\",\"dweb:/ipfs/QmV88oWmLd6Q9SunvyVA9JoBdFURaxBsLPqJvhDBEkmzdD\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"answer\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"total\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"grade\",\"type\":\"uint8\"}],\"name\":\"addStudentQuizAnswer\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"}],\"name\":\"exists\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getStudentQuiz\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"total\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"grade\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"attempt\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"answer\",\"type\":\"string\"}],\"internalType\":\"struct StudentQuizStruct\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"grantRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"student\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"quiz\",\"type\":\"string\"}],\"name\":\"indexOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyStudentQuiz.sol\":\"iAcademyStudentQuiz\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyStudentQuiz.sol\":{\"keccak256\":\"0x119c6282eb7df5900ee472d9127a67a688c931382cb916b7ff45fe25d1f73008\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f9b42d2cae2b49257540f8ffa2fe09ae9c84540e4fabb82c21b98d1124ed5583\",\"dweb:/ipfs/QmSGtKh1aEhPFzM3Fw3KCxG7fcxHfwHB3B7RJvtaYhb4yM\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -67,7 +166,7 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.1;\r\n\r\nstruct StudentQuizStruct {\r\n    address student;\r\n    uint8 total;\r\n    uint8 grade;\r\n    uint8 attempt;\r\n    string quiz;\r\n    string answer;\r\n}\r\n\r\ninterface iAcademyStudentQuiz {\r\n    function addStudentQuizAnswer (address student, string memory quiz, string memory answer, uint8 total, uint8 grade) external returns(uint256);\r\n    function grantRole (bytes32 role, address account) external;\r\n}\r\n",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.1;\r\n\r\nstruct StudentQuizStruct {\r\n    address student;\r\n    uint8 total;\r\n    uint8 grade;\r\n    uint8 attempt;\r\n    string quiz;\r\n    string answer;\r\n}\r\n\r\ninterface iAcademyStudentQuiz {\r\n    function addStudentQuizAnswer (address student, string memory quiz, string memory answer, uint8 total, uint8 grade) external returns(uint256);\r\n    function grantRole (bytes32 role, address account) external;\r\n    function exists(address student, string memory quiz) external view returns (bool);\r\n    function indexOf(address student, string memory quiz) external view returns (uint256);\r\n    function getStudentQuiz (uint256 index) external view returns (StudentQuizStruct memory);\r\n}\r\n",
   "sourcePath": "C:\\ACADEMY\\GITHUB\\rsk-academy-dapp\\contracts\\iAcademyStudentQuiz.sol",
   "ast": {
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyStudentQuiz.sol",
@@ -76,10 +175,10 @@
         896
       ],
       "iAcademyStudentQuiz": [
-        919
+        945
       ]
     },
-    "id": 920,
+    "id": 946,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -257,7 +356,7 @@
         ],
         "name": "StudentQuizStruct",
         "nodeType": "StructDefinition",
-        "scope": 920,
+        "scope": 946,
         "src": "59:145:4",
         "visibility": "public"
       },
@@ -267,9 +366,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 919,
+        "id": 945,
         "linearizedBaseContracts": [
-          919
+          945
         ],
         "name": "iAcademyStudentQuiz",
         "nodeType": "ContractDefinition",
@@ -453,7 +552,7 @@
               ],
               "src": "377:9:4"
             },
-            "scope": 919,
+            "scope": 945,
             "src": "245:142:4",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -533,18 +632,319 @@
               "parameters": [],
               "src": "452:0:4"
             },
-            "scope": 919,
+            "scope": 945,
             "src": "393:60:4",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
+          },
+          {
+            "functionSelector": "775a4cb0",
+            "id": 927,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exists",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 923,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 920,
+                  "mutability": "mutable",
+                  "name": "student",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 927,
+                  "src": "475:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 919,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "475:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 922,
+                  "mutability": "mutable",
+                  "name": "quiz",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 927,
+                  "src": "492:18:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 921,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "492:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "474:37:4"
+            },
+            "returnParameters": {
+              "id": 926,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 925,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 927,
+                  "src": "535:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 924,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "535:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "534:6:4"
+            },
+            "scope": 945,
+            "src": "459:82:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2ab62198",
+            "id": 936,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "indexOf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 932,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 929,
+                  "mutability": "mutable",
+                  "name": "student",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 936,
+                  "src": "564:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 928,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "564:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 931,
+                  "mutability": "mutable",
+                  "name": "quiz",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 936,
+                  "src": "581:18:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 930,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "581:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "563:37:4"
+            },
+            "returnParameters": {
+              "id": 935,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 934,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 936,
+                  "src": "624:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 933,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "624:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "623:9:4"
+            },
+            "scope": 945,
+            "src": "547:86:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "5c2c7390",
+            "id": 944,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStudentQuiz",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 939,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 938,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 944,
+                  "src": "664:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 937,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "664:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "663:15:4"
+            },
+            "returnParameters": {
+              "id": 943,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 942,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 944,
+                  "src": "702:24:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_StudentQuizStruct_$896_memory_ptr",
+                    "typeString": "struct StudentQuizStruct"
+                  },
+                  "typeName": {
+                    "id": 941,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 940,
+                      "name": "StudentQuizStruct",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 896,
+                      "src": "702:17:4"
+                    },
+                    "referencedDeclaration": 896,
+                    "src": "702:17:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_StudentQuizStruct_$896_storage_ptr",
+                      "typeString": "struct StudentQuizStruct"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "701:26:4"
+            },
+            "scope": 945,
+            "src": "639:89:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
           }
         ],
-        "scope": 920,
-        "src": "208:248:4"
+        "scope": 946,
+        "src": "208:523:4"
       }
     ],
-    "src": "33:425:4"
+    "src": "33:700:4"
   },
   "legacyAST": {
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iAcademyStudentQuiz.sol",
@@ -553,10 +953,10 @@
         896
       ],
       "iAcademyStudentQuiz": [
-        919
+        945
       ]
     },
-    "id": 920,
+    "id": 946,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -734,7 +1134,7 @@
         ],
         "name": "StudentQuizStruct",
         "nodeType": "StructDefinition",
-        "scope": 920,
+        "scope": 946,
         "src": "59:145:4",
         "visibility": "public"
       },
@@ -744,9 +1144,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 919,
+        "id": 945,
         "linearizedBaseContracts": [
-          919
+          945
         ],
         "name": "iAcademyStudentQuiz",
         "nodeType": "ContractDefinition",
@@ -930,7 +1330,7 @@
               ],
               "src": "377:9:4"
             },
-            "scope": 919,
+            "scope": 945,
             "src": "245:142:4",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1010,26 +1410,327 @@
               "parameters": [],
               "src": "452:0:4"
             },
-            "scope": 919,
+            "scope": 945,
             "src": "393:60:4",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
+          },
+          {
+            "functionSelector": "775a4cb0",
+            "id": 927,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exists",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 923,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 920,
+                  "mutability": "mutable",
+                  "name": "student",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 927,
+                  "src": "475:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 919,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "475:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 922,
+                  "mutability": "mutable",
+                  "name": "quiz",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 927,
+                  "src": "492:18:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 921,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "492:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "474:37:4"
+            },
+            "returnParameters": {
+              "id": 926,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 925,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 927,
+                  "src": "535:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 924,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "535:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "534:6:4"
+            },
+            "scope": 945,
+            "src": "459:82:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2ab62198",
+            "id": 936,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "indexOf",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 932,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 929,
+                  "mutability": "mutable",
+                  "name": "student",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 936,
+                  "src": "564:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 928,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "564:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 931,
+                  "mutability": "mutable",
+                  "name": "quiz",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 936,
+                  "src": "581:18:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 930,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "581:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "563:37:4"
+            },
+            "returnParameters": {
+              "id": 935,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 934,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 936,
+                  "src": "624:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 933,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "624:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "623:9:4"
+            },
+            "scope": 945,
+            "src": "547:86:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "5c2c7390",
+            "id": 944,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStudentQuiz",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 939,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 938,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 944,
+                  "src": "664:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 937,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "664:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "663:15:4"
+            },
+            "returnParameters": {
+              "id": 943,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 942,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 944,
+                  "src": "702:24:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_StudentQuizStruct_$896_memory_ptr",
+                    "typeString": "struct StudentQuizStruct"
+                  },
+                  "typeName": {
+                    "id": 941,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 940,
+                      "name": "StudentQuizStruct",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 896,
+                      "src": "702:17:4"
+                    },
+                    "referencedDeclaration": 896,
+                    "src": "702:17:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_StudentQuizStruct_$896_storage_ptr",
+                      "typeString": "struct StudentQuizStruct"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "701:26:4"
+            },
+            "scope": 945,
+            "src": "639:89:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
           }
         ],
-        "scope": 920,
-        "src": "208:248:4"
+        "scope": 946,
+        "src": "208:523:4"
       }
     ],
-    "src": "33:425:4"
+    "src": "33:700:4"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.1+commit.df193b15.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-24T03:44:21.479Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-08T14:06:15.318Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

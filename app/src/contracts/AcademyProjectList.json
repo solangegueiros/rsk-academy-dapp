@@ -3803,7 +3803,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr",
+                      "name": "abi_encode_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "4956:95:26"
                     },
@@ -3820,7 +3820,7 @@
                 }
               ]
             },
-            "name": "abi_encodeUpdatedPos_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr",
+            "name": "abi_encodeUpdatedPos_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3985,7 +3985,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_length_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_length_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "5580:78:26"
                     },
@@ -4018,7 +4018,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "5681:104:26"
                     },
@@ -4113,7 +4113,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_dataslot_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_dataslot_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "5899:80:26"
                     },
@@ -4237,7 +4237,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "abi_encodeUpdatedPos_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr",
+                            "name": "abi_encodeUpdatedPos_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "6200:105:26"
                           },
@@ -4264,7 +4264,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "array_nextElement_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr",
+                            "name": "array_nextElement_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "6349:83:26"
                           },
@@ -4438,7 +4438,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "abi_encode_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6785,7 +6785,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr",
+            "name": "abi_encode_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7488,7 +7488,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr_fromStack",
+            "name": "abi_encode_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7881,7 +7881,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "abi_encode_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "14589:155:26"
                     },
@@ -7898,7 +7898,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -10152,7 +10152,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr_fromStack",
+                      "name": "abi_encode_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "20343:105:26"
                     },
@@ -10169,7 +10169,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_struct$_ProjectStruct_$4196_memory_ptr__to_t_struct$_ProjectStruct_$4196_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_struct$_ProjectStruct_$4274_memory_ptr__to_t_struct$_ProjectStruct_$4274_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -10618,7 +10618,7 @@
                 }
               ]
             },
-            "name": "array_dataslot_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr",
+            "name": "array_dataslot_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -10672,7 +10672,7 @@
                 }
               ]
             },
-            "name": "array_length_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr",
+            "name": "array_length_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -10787,7 +10787,7 @@
                 }
               ]
             },
-            "name": "array_nextElement_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr",
+            "name": "array_nextElement_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -10873,7 +10873,7 @@
                 }
               ]
             },
-            "name": "array_storeLengthForEncoding_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "array_storeLengthForEncoding_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -13992,7 +13992,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert(0, 0) }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_bool(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bool(value)\n    }\n\n    function abi_decode_t_bytes32(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bytes32(value)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_bytes32(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptr(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptrt_boolt_addresst_string_memory_ptrt_string_memory_ptr(headStart, dataEnd) -> value0, value1, value2, value3, value4 {\n        if slt(sub(dataEnd, headStart), 160) { revert(0, 0) }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_bool(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 96))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value3 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 128))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value4 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptrt_string_memory_ptr(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 32))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value1 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr(value0, pos)\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    // struct ProjectStruct[] -> struct ProjectStruct[]\n    function abi_encode_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_t_bool_to_t_bool(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_bytes32_to_t_bytes32_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bytes32(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_nonPadded_inplace_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, length)\n    }\n\n    function abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 34)\n        store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 12)\n        store_literal_in_memory_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 30)\n        store_literal_in_memory_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 48)\n        store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 10)\n        store_literal_in_memory_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 30)\n        store_literal_in_memory_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(pos)\n        end := add(pos, 64)\n    }\n\n    // struct ProjectStruct -> struct ProjectStruct\n    function abi_encode_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // active\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_bool_to_t_bool(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // master\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // name\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // description\n\n            let memberValue0 := mload(add(value, 0x60))\n\n            mstore(add(pos, 0x60), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // ABI\n\n            let memberValue0 := mload(add(value, 0x80))\n\n            mstore(add(pos, 0x80), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    // struct ProjectStruct -> struct ProjectStruct\n    function abi_encode_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr_fromStack(value, pos)  -> end  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // active\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_bool_to_t_bool(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // master\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // name\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // description\n\n            let memberValue0 := mload(add(value, 0x60))\n\n            mstore(add(pos, 0x60), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // ABI\n\n            let memberValue0 := mload(add(value, 0x80))\n\n            mstore(add(pos, 0x80), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_packed_t_string_memory_ptr__to_t_string_memory_ptr__nonPadded_inplace_fromStack_reversed(pos , value0) -> end {\n\n        pos := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value0,  pos)\n\n        end := pos\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_bytes32__to_t_bytes32__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bytes32_to_t_bytes32_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr__to_t_string_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr_t_string_memory_ptr__to_t_string_memory_ptr_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr_t_string_memory_ptr_t_bool__to_t_string_memory_ptr_t_string_memory_ptr_t_bool__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value2,  add(headStart, 64))\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_struct$_ProjectStruct_$4196_memory_ptr__to_t_struct$_ProjectStruct_$4196_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_struct$_ProjectStruct_$4196_memory_ptr_to_t_struct$_ProjectStruct_$4196_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function allocate_memory(size) -> memPtr {\n        memPtr := allocate_unbounded()\n        finalize_allocation(memPtr, size)\n    }\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := round_up_to_mul_of_32(length)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_dataslot_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function array_length_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_nextElement_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_nonPadded_inplace_fromStack(pos, length) -> updated_pos {\n        updated_pos := pos\n    }\n\n    function checked_add_t_uint256(x, y) -> sum {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        // overflow, if x > (maxValue - y)\n        if gt(x, sub(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, y)) { panic_error_0x11() }\n\n        sum := add(x, y)\n    }\n\n    function checked_sub_t_uint256(x, y) -> diff {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        if lt(x, y) { panic_error_0x11() }\n\n        diff := sub(x, y)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function cleanup_t_bytes32(value) -> cleaned {\n        cleaned := value\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function finalize_allocation(memPtr, size) {\n        let newFreePtr := add(memPtr, round_up_to_mul_of_32(size))\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(memPtr) {\n\n        mstore(add(memPtr, 0), \"EnumerableSet: index out of boun\")\n\n        mstore(add(memPtr, 32), \"ds\")\n\n    }\n\n    function store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to grant\")\n\n    }\n\n    function store_literal_in_memory_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f(memPtr) {\n\n        mstore(add(memPtr, 0), \"out of range\")\n\n    }\n\n    function store_literal_in_memory_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9(memPtr) {\n\n        mstore(add(memPtr, 0), \"AcademyProjectList: only owner\")\n\n    }\n\n    function store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to revoke\")\n\n    }\n\n    function store_literal_in_memory_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233(memPtr) {\n\n        mstore(add(memPtr, 0), \"not exists\")\n\n    }\n\n    function store_literal_in_memory_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f(memPtr) {\n\n        mstore(add(memPtr, 0), \"AcademyProjectList: not active\")\n\n    }\n\n    function store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: can only renounce\")\n\n        mstore(add(memPtr, 32), \" roles for self\")\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bool(value) {\n        if iszero(eq(value, cleanup_t_bool(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bytes32(value) {\n        if iszero(eq(value, cleanup_t_bytes32(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
+      "contents": "{\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert(0, 0) }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_bool(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bool(value)\n    }\n\n    function abi_decode_t_bytes32(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bytes32(value)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_bytes32(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptr(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptrt_boolt_addresst_string_memory_ptrt_string_memory_ptr(headStart, dataEnd) -> value0, value1, value2, value3, value4 {\n        if slt(sub(dataEnd, headStart), 160) { revert(0, 0) }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_bool(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 96))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value3 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 128))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value4 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptrt_string_memory_ptr(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 32))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value1 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr(value0, pos)\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    // struct ProjectStruct[] -> struct ProjectStruct[]\n    function abi_encode_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_t_bool_to_t_bool(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_bytes32_to_t_bytes32_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bytes32(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_nonPadded_inplace_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, length)\n    }\n\n    function abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 34)\n        store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 12)\n        store_literal_in_memory_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 30)\n        store_literal_in_memory_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 48)\n        store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 10)\n        store_literal_in_memory_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 30)\n        store_literal_in_memory_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(pos)\n        end := add(pos, 64)\n    }\n\n    // struct ProjectStruct -> struct ProjectStruct\n    function abi_encode_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // active\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_bool_to_t_bool(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // master\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // name\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // description\n\n            let memberValue0 := mload(add(value, 0x60))\n\n            mstore(add(pos, 0x60), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // ABI\n\n            let memberValue0 := mload(add(value, 0x80))\n\n            mstore(add(pos, 0x80), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    // struct ProjectStruct -> struct ProjectStruct\n    function abi_encode_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr_fromStack(value, pos)  -> end  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // active\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_bool_to_t_bool(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // master\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // name\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // description\n\n            let memberValue0 := mload(add(value, 0x60))\n\n            mstore(add(pos, 0x60), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        {\n            // ABI\n\n            let memberValue0 := mload(add(value, 0x80))\n\n            mstore(add(pos, 0x80), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_packed_t_string_memory_ptr__to_t_string_memory_ptr__nonPadded_inplace_fromStack_reversed(pos , value0) -> end {\n\n        pos := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value0,  pos)\n\n        end := pos\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_bytes32__to_t_bytes32__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bytes32_to_t_bytes32_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr__to_t_string_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr_t_string_memory_ptr__to_t_string_memory_ptr_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr_t_string_memory_ptr_t_bool__to_t_string_memory_ptr_t_string_memory_ptr_t_bool__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value2,  add(headStart, 64))\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_struct$_ProjectStruct_$4274_memory_ptr__to_t_struct$_ProjectStruct_$4274_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_struct$_ProjectStruct_$4274_memory_ptr_to_t_struct$_ProjectStruct_$4274_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function allocate_memory(size) -> memPtr {\n        memPtr := allocate_unbounded()\n        finalize_allocation(memPtr, size)\n    }\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := round_up_to_mul_of_32(length)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_dataslot_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function array_length_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_nextElement_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_nonPadded_inplace_fromStack(pos, length) -> updated_pos {\n        updated_pos := pos\n    }\n\n    function checked_add_t_uint256(x, y) -> sum {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        // overflow, if x > (maxValue - y)\n        if gt(x, sub(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, y)) { panic_error_0x11() }\n\n        sum := add(x, y)\n    }\n\n    function checked_sub_t_uint256(x, y) -> diff {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        if lt(x, y) { panic_error_0x11() }\n\n        diff := sub(x, y)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function cleanup_t_bytes32(value) -> cleaned {\n        cleaned := value\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function finalize_allocation(memPtr, size) {\n        let newFreePtr := add(memPtr, round_up_to_mul_of_32(size))\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(memPtr) {\n\n        mstore(add(memPtr, 0), \"EnumerableSet: index out of boun\")\n\n        mstore(add(memPtr, 32), \"ds\")\n\n    }\n\n    function store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to grant\")\n\n    }\n\n    function store_literal_in_memory_4934c70f1bf51b646cb3956d013ab2370a398e96f48ecb9a678f6b946d390d1f(memPtr) {\n\n        mstore(add(memPtr, 0), \"out of range\")\n\n    }\n\n    function store_literal_in_memory_63d30f7fb98cbd57fa851d8dd7d5fba6f731126dc5aed37752c4b3ebb4cfe8b9(memPtr) {\n\n        mstore(add(memPtr, 0), \"AcademyProjectList: only owner\")\n\n    }\n\n    function store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to revoke\")\n\n    }\n\n    function store_literal_in_memory_7837f335264bd360641b4416fff1ee6c3f2797a341254bb9c2f747eb27a03233(memPtr) {\n\n        mstore(add(memPtr, 0), \"not exists\")\n\n    }\n\n    function store_literal_in_memory_857a4c368ea2aaa09492e6c5406e909b6e7b49b222c70d3fe2e7cd2d8503ef6f(memPtr) {\n\n        mstore(add(memPtr, 0), \"AcademyProjectList: not active\")\n\n    }\n\n    function store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: can only renounce\")\n\n        mstore(add(memPtr, 32), \" roles for self\")\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bool(value) {\n        if iszero(eq(value, cleanup_t_bool(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bytes32(value) {\n        if iszero(eq(value, cleanup_t_bytes32(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
       "id": 26,
       "language": "Yul",
       "name": "#utility.yul"
@@ -14009,22 +14009,22 @@
         1321
       ],
       "AccessControl": [
-        4649
+        4727
       ],
       "Address": [
-        4945
+        5023
       ],
       "Context": [
-        4971
+        5049
       ],
       "EnumerableSet": [
-        6066
+        6144
       ],
       "ProjectStruct": [
-        4196
+        4274
       ],
       "iAcademyProjectList": [
-        4226
+        4304
       ]
     },
     "id": 1322,
@@ -14047,7 +14047,7 @@
         "id": 845,
         "nodeType": "ImportDirective",
         "scope": 1322,
-        "sourceUnit": 4650,
+        "sourceUnit": 4728,
         "src": "236:49:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -14058,7 +14058,7 @@
         "id": 846,
         "nodeType": "ImportDirective",
         "scope": 1322,
-        "sourceUnit": 4227,
+        "sourceUnit": 4305,
         "src": "289:35:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -14071,7 +14071,7 @@
               "id": 847,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4649,
+              "referencedDeclaration": 4727,
               "src": "363:13:2"
             },
             "id": 848,
@@ -14080,16 +14080,16 @@
           }
         ],
         "contractDependencies": [
-          4649,
-          4971
+          4727,
+          5049
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 1321,
         "linearizedBaseContracts": [
           1321,
-          4649,
-          4971
+          4727,
+          5049
         ],
         "name": "AcademyProjectList",
         "nodeType": "ContractDefinition",
@@ -14131,7 +14131,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
               "typeString": "struct ProjectStruct[]"
             },
             "typeName": {
@@ -14142,13 +14142,13 @@
                   "id": 851,
                   "name": "ProjectStruct",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 4196,
+                  "referencedDeclaration": 4274,
                   "src": "406:13:2"
                 },
-                "referencedDeclaration": 4196,
+                "referencedDeclaration": 4274,
                 "src": "406:13:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                  "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                   "typeString": "struct ProjectStruct"
                 }
               },
@@ -14156,7 +14156,7 @@
               "nodeType": "ArrayTypeName",
               "src": "406:15:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage_ptr",
                 "typeString": "struct ProjectStruct[]"
               }
             },
@@ -14221,7 +14221,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4392,
+                        "referencedDeclaration": 4470,
                         "src": "675:18:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -14270,7 +14270,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4575,
+                      "referencedDeclaration": 4653,
                       "src": "664:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -14617,7 +14617,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4392,
+                            "referencedDeclaration": 4470,
                             "src": "1000:18:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -14666,7 +14666,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4438,
+                          "referencedDeclaration": 4516,
                           "src": "992:7:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -14989,7 +14989,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                         "typeString": "struct ProjectStruct"
                       },
                       "typeName": {
@@ -14999,13 +14999,13 @@
                           "id": 935,
                           "name": "ProjectStruct",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4196,
+                          "referencedDeclaration": 4274,
                           "src": "1421:13:2"
                         },
-                        "referencedDeclaration": 4196,
+                        "referencedDeclaration": 4274,
                         "src": "1421:13:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                           "typeString": "struct ProjectStruct"
                         }
                       },
@@ -15032,7 +15032,7 @@
                         "referencedDeclaration": 937,
                         "src": "1454:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       },
@@ -15043,7 +15043,7 @@
                       "lValueRequested": true,
                       "memberName": "name",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4191,
+                      "referencedDeclaration": 4269,
                       "src": "1454:6:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -15090,7 +15090,7 @@
                         "referencedDeclaration": 937,
                         "src": "1478:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       },
@@ -15101,7 +15101,7 @@
                       "lValueRequested": true,
                       "memberName": "description",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4193,
+                      "referencedDeclaration": 4271,
                       "src": "1478:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -15148,7 +15148,7 @@
                         "referencedDeclaration": 937,
                         "src": "1516:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       },
@@ -15159,7 +15159,7 @@
                       "lValueRequested": true,
                       "memberName": "active",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4187,
+                      "referencedDeclaration": 4265,
                       "src": "1516:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -15205,7 +15205,7 @@
                         "referencedDeclaration": 937,
                         "src": "1569:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       }
@@ -15213,7 +15213,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       ],
@@ -15225,7 +15225,7 @@
                         "referencedDeclaration": 854,
                         "src": "1552:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -15238,7 +15238,7 @@
                       "nodeType": "MemberAccess",
                       "src": "1552:16:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_ProjectStruct_$4196_storage_$returns$__$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_ProjectStruct_$4274_storage_$returns$__$",
                         "typeString": "function (struct ProjectStruct storage ref)"
                       }
                     },
@@ -15303,7 +15303,7 @@
                       "referencedDeclaration": 854,
                       "src": "1598:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                         "typeString": "struct ProjectStruct storage ref[] storage ref"
                       }
                     },
@@ -15865,7 +15865,7 @@
                         "referencedDeclaration": 854,
                         "src": "1980:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -15952,7 +15952,7 @@
                         "referencedDeclaration": 854,
                         "src": "2037:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -15976,7 +15976,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2037:24:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
@@ -15987,7 +15987,7 @@
                     "lValueRequested": false,
                     "memberName": "name",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 4191,
+                    "referencedDeclaration": 4269,
                     "src": "2037:29:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
@@ -16013,7 +16013,7 @@
                         "referencedDeclaration": 854,
                         "src": "2087:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -16037,7 +16037,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2087:26:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
@@ -16052,7 +16052,7 @@
                         "referencedDeclaration": 854,
                         "src": "2116:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -16076,13 +16076,13 @@
                       "nodeType": "IndexAccess",
                       "src": "2116:24:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
                     "src": "2087:53:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                       "typeString": "struct ProjectStruct storage ref"
                     }
                   },
@@ -16262,7 +16262,7 @@
                         "referencedDeclaration": 854,
                         "src": "2249:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -16699,7 +16699,7 @@
                           "referencedDeclaration": 854,
                           "src": "2680:11:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                             "typeString": "struct ProjectStruct storage ref[] storage ref"
                           }
                         },
@@ -16723,7 +16723,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2680:18:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                           "typeString": "struct ProjectStruct storage ref"
                         }
                       },
@@ -16734,7 +16734,7 @@
                       "lValueRequested": true,
                       "memberName": "active",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4187,
+                      "referencedDeclaration": 4265,
                       "src": "2680:25:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -16782,7 +16782,7 @@
                           "referencedDeclaration": 854,
                           "src": "2732:11:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                             "typeString": "struct ProjectStruct storage ref[] storage ref"
                           }
                         },
@@ -16806,7 +16806,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2732:18:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                           "typeString": "struct ProjectStruct storage ref"
                         }
                       },
@@ -16817,7 +16817,7 @@
                       "lValueRequested": true,
                       "memberName": "master",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4189,
+                      "referencedDeclaration": 4267,
                       "src": "2732:25:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -16865,7 +16865,7 @@
                           "referencedDeclaration": 854,
                           "src": "2777:11:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                             "typeString": "struct ProjectStruct storage ref[] storage ref"
                           }
                         },
@@ -16889,7 +16889,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2777:18:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                           "typeString": "struct ProjectStruct storage ref"
                         }
                       },
@@ -16900,7 +16900,7 @@
                       "lValueRequested": true,
                       "memberName": "description",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4193,
+                      "referencedDeclaration": 4271,
                       "src": "2777:30:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -16948,7 +16948,7 @@
                           "referencedDeclaration": 854,
                           "src": "2832:11:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                             "typeString": "struct ProjectStruct storage ref[] storage ref"
                           }
                         },
@@ -16972,7 +16972,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2832:18:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                           "typeString": "struct ProjectStruct storage ref"
                         }
                       },
@@ -16983,7 +16983,7 @@
                       "lValueRequested": true,
                       "memberName": "ABI",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4195,
+                      "referencedDeclaration": 4273,
                       "src": "2832:22:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -17721,7 +17721,7 @@
                         "referencedDeclaration": 854,
                         "src": "3370:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -17804,7 +17804,7 @@
                       "nodeType": "IndexAccess",
                       "src": "3370:37:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
@@ -17815,7 +17815,7 @@
                     "lValueRequested": false,
                     "memberName": "active",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 4187,
+                    "referencedDeclaration": 4265,
                     "src": "3370:44:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -18143,7 +18143,7 @@
                       "referencedDeclaration": 854,
                       "src": "3640:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                         "typeString": "struct ProjectStruct storage ref[] storage ref"
                       }
                     },
@@ -18167,7 +18167,7 @@
                     "nodeType": "IndexAccess",
                     "src": "3640:18:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                       "typeString": "struct ProjectStruct storage ref"
                     }
                   },
@@ -18233,7 +18233,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                    "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                     "typeString": "struct ProjectStruct"
                   },
                   "typeName": {
@@ -18243,13 +18243,13 @@
                       "id": 1181,
                       "name": "ProjectStruct",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4196,
+                      "referencedDeclaration": 4274,
                       "src": "3502:13:2"
                     },
-                    "referencedDeclaration": 4196,
+                    "referencedDeclaration": 4274,
                     "src": "3502:13:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                       "typeString": "struct ProjectStruct"
                     }
                   },
@@ -18500,7 +18500,7 @@
                         "referencedDeclaration": 854,
                         "src": "3877:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -18524,7 +18524,7 @@
                       "nodeType": "IndexAccess",
                       "src": "3877:18:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
@@ -18535,7 +18535,7 @@
                     "lValueRequested": false,
                     "memberName": "master",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 4189,
+                    "referencedDeclaration": 4267,
                     "src": "3877:25:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -18747,7 +18747,7 @@
                                   "referencedDeclaration": 854,
                                   "src": "4054:11:2",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                                    "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                                     "typeString": "struct ProjectStruct storage ref[] storage ref"
                                   }
                                 },
@@ -18861,7 +18861,7 @@
                       "referencedDeclaration": 854,
                       "src": "4108:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                         "typeString": "struct ProjectStruct storage ref[] storage ref"
                       }
                     },
@@ -18919,7 +18919,7 @@
                     "nodeType": "IndexAccess",
                     "src": "4108:20:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                       "typeString": "struct ProjectStruct storage ref"
                     }
                   },
@@ -18985,7 +18985,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                    "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                     "typeString": "struct ProjectStruct"
                   },
                   "typeName": {
@@ -18995,13 +18995,13 @@
                       "id": 1237,
                       "name": "ProjectStruct",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4196,
+                      "referencedDeclaration": 4274,
                       "src": "3986:13:2"
                     },
-                    "referencedDeclaration": 4196,
+                    "referencedDeclaration": 4274,
                     "src": "3986:13:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                       "typeString": "struct ProjectStruct"
                     }
                   },
@@ -19162,7 +19162,7 @@
                       "referencedDeclaration": 854,
                       "src": "4358:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                         "typeString": "struct ProjectStruct storage ref[] storage ref"
                       }
                     },
@@ -19253,7 +19253,7 @@
                     "referencedDeclaration": 854,
                     "src": "4485:11:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                       "typeString": "struct ProjectStruct storage ref[] storage ref"
                     }
                   },
@@ -19292,7 +19292,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct ProjectStruct[]"
                   },
                   "typeName": {
@@ -19303,13 +19303,13 @@
                         "id": 1285,
                         "name": "ProjectStruct",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 4196,
+                        "referencedDeclaration": 4274,
                         "src": "4443:13:2"
                       },
-                      "referencedDeclaration": 4196,
+                      "referencedDeclaration": 4274,
                       "src": "4443:13:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                         "typeString": "struct ProjectStruct"
                       }
                     },
@@ -19317,7 +19317,7 @@
                     "nodeType": "ArrayTypeName",
                     "src": "4443:15:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage_ptr",
                       "typeString": "struct ProjectStruct[]"
                     }
                   },
@@ -19726,22 +19726,22 @@
         1321
       ],
       "AccessControl": [
-        4649
+        4727
       ],
       "Address": [
-        4945
+        5023
       ],
       "Context": [
-        4971
+        5049
       ],
       "EnumerableSet": [
-        6066
+        6144
       ],
       "ProjectStruct": [
-        4196
+        4274
       ],
       "iAcademyProjectList": [
-        4226
+        4304
       ]
     },
     "id": 1322,
@@ -19764,7 +19764,7 @@
         "id": 845,
         "nodeType": "ImportDirective",
         "scope": 1322,
-        "sourceUnit": 4650,
+        "sourceUnit": 4728,
         "src": "236:49:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -19775,7 +19775,7 @@
         "id": 846,
         "nodeType": "ImportDirective",
         "scope": 1322,
-        "sourceUnit": 4227,
+        "sourceUnit": 4305,
         "src": "289:35:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -19788,7 +19788,7 @@
               "id": 847,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4649,
+              "referencedDeclaration": 4727,
               "src": "363:13:2"
             },
             "id": 848,
@@ -19797,16 +19797,16 @@
           }
         ],
         "contractDependencies": [
-          4649,
-          4971
+          4727,
+          5049
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 1321,
         "linearizedBaseContracts": [
           1321,
-          4649,
-          4971
+          4727,
+          5049
         ],
         "name": "AcademyProjectList",
         "nodeType": "ContractDefinition",
@@ -19848,7 +19848,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
               "typeString": "struct ProjectStruct[]"
             },
             "typeName": {
@@ -19859,13 +19859,13 @@
                   "id": 851,
                   "name": "ProjectStruct",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 4196,
+                  "referencedDeclaration": 4274,
                   "src": "406:13:2"
                 },
-                "referencedDeclaration": 4196,
+                "referencedDeclaration": 4274,
                 "src": "406:13:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                  "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                   "typeString": "struct ProjectStruct"
                 }
               },
@@ -19873,7 +19873,7 @@
               "nodeType": "ArrayTypeName",
               "src": "406:15:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage_ptr",
                 "typeString": "struct ProjectStruct[]"
               }
             },
@@ -19938,7 +19938,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4392,
+                        "referencedDeclaration": 4470,
                         "src": "675:18:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -19987,7 +19987,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4575,
+                      "referencedDeclaration": 4653,
                       "src": "664:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -20334,7 +20334,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4392,
+                            "referencedDeclaration": 4470,
                             "src": "1000:18:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -20383,7 +20383,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4438,
+                          "referencedDeclaration": 4516,
                           "src": "992:7:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -20706,7 +20706,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                         "typeString": "struct ProjectStruct"
                       },
                       "typeName": {
@@ -20716,13 +20716,13 @@
                           "id": 935,
                           "name": "ProjectStruct",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4196,
+                          "referencedDeclaration": 4274,
                           "src": "1421:13:2"
                         },
-                        "referencedDeclaration": 4196,
+                        "referencedDeclaration": 4274,
                         "src": "1421:13:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                           "typeString": "struct ProjectStruct"
                         }
                       },
@@ -20749,7 +20749,7 @@
                         "referencedDeclaration": 937,
                         "src": "1454:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       },
@@ -20760,7 +20760,7 @@
                       "lValueRequested": true,
                       "memberName": "name",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4191,
+                      "referencedDeclaration": 4269,
                       "src": "1454:6:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -20807,7 +20807,7 @@
                         "referencedDeclaration": 937,
                         "src": "1478:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       },
@@ -20818,7 +20818,7 @@
                       "lValueRequested": true,
                       "memberName": "description",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4193,
+                      "referencedDeclaration": 4271,
                       "src": "1478:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -20865,7 +20865,7 @@
                         "referencedDeclaration": 937,
                         "src": "1516:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       },
@@ -20876,7 +20876,7 @@
                       "lValueRequested": true,
                       "memberName": "active",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4187,
+                      "referencedDeclaration": 4265,
                       "src": "1516:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -20922,7 +20922,7 @@
                         "referencedDeclaration": 937,
                         "src": "1569:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       }
@@ -20930,7 +20930,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                           "typeString": "struct ProjectStruct memory"
                         }
                       ],
@@ -20942,7 +20942,7 @@
                         "referencedDeclaration": 854,
                         "src": "1552:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -20955,7 +20955,7 @@
                       "nodeType": "MemberAccess",
                       "src": "1552:16:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_ProjectStruct_$4196_storage_$returns$__$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_ProjectStruct_$4274_storage_$returns$__$",
                         "typeString": "function (struct ProjectStruct storage ref)"
                       }
                     },
@@ -21020,7 +21020,7 @@
                       "referencedDeclaration": 854,
                       "src": "1598:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                         "typeString": "struct ProjectStruct storage ref[] storage ref"
                       }
                     },
@@ -21582,7 +21582,7 @@
                         "referencedDeclaration": 854,
                         "src": "1980:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -21669,7 +21669,7 @@
                         "referencedDeclaration": 854,
                         "src": "2037:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -21693,7 +21693,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2037:24:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
@@ -21704,7 +21704,7 @@
                     "lValueRequested": false,
                     "memberName": "name",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 4191,
+                    "referencedDeclaration": 4269,
                     "src": "2037:29:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
@@ -21730,7 +21730,7 @@
                         "referencedDeclaration": 854,
                         "src": "2087:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -21754,7 +21754,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2087:26:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
@@ -21769,7 +21769,7 @@
                         "referencedDeclaration": 854,
                         "src": "2116:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -21793,13 +21793,13 @@
                       "nodeType": "IndexAccess",
                       "src": "2116:24:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
                     "src": "2087:53:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                       "typeString": "struct ProjectStruct storage ref"
                     }
                   },
@@ -21979,7 +21979,7 @@
                         "referencedDeclaration": 854,
                         "src": "2249:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -22416,7 +22416,7 @@
                           "referencedDeclaration": 854,
                           "src": "2680:11:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                             "typeString": "struct ProjectStruct storage ref[] storage ref"
                           }
                         },
@@ -22440,7 +22440,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2680:18:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                           "typeString": "struct ProjectStruct storage ref"
                         }
                       },
@@ -22451,7 +22451,7 @@
                       "lValueRequested": true,
                       "memberName": "active",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4187,
+                      "referencedDeclaration": 4265,
                       "src": "2680:25:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -22499,7 +22499,7 @@
                           "referencedDeclaration": 854,
                           "src": "2732:11:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                             "typeString": "struct ProjectStruct storage ref[] storage ref"
                           }
                         },
@@ -22523,7 +22523,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2732:18:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                           "typeString": "struct ProjectStruct storage ref"
                         }
                       },
@@ -22534,7 +22534,7 @@
                       "lValueRequested": true,
                       "memberName": "master",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4189,
+                      "referencedDeclaration": 4267,
                       "src": "2732:25:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -22582,7 +22582,7 @@
                           "referencedDeclaration": 854,
                           "src": "2777:11:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                             "typeString": "struct ProjectStruct storage ref[] storage ref"
                           }
                         },
@@ -22606,7 +22606,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2777:18:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                           "typeString": "struct ProjectStruct storage ref"
                         }
                       },
@@ -22617,7 +22617,7 @@
                       "lValueRequested": true,
                       "memberName": "description",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4193,
+                      "referencedDeclaration": 4271,
                       "src": "2777:30:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -22665,7 +22665,7 @@
                           "referencedDeclaration": 854,
                           "src": "2832:11:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                             "typeString": "struct ProjectStruct storage ref[] storage ref"
                           }
                         },
@@ -22689,7 +22689,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2832:18:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                          "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                           "typeString": "struct ProjectStruct storage ref"
                         }
                       },
@@ -22700,7 +22700,7 @@
                       "lValueRequested": true,
                       "memberName": "ABI",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4195,
+                      "referencedDeclaration": 4273,
                       "src": "2832:22:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -23438,7 +23438,7 @@
                         "referencedDeclaration": 854,
                         "src": "3370:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -23521,7 +23521,7 @@
                       "nodeType": "IndexAccess",
                       "src": "3370:37:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
@@ -23532,7 +23532,7 @@
                     "lValueRequested": false,
                     "memberName": "active",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 4187,
+                    "referencedDeclaration": 4265,
                     "src": "3370:44:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -23860,7 +23860,7 @@
                       "referencedDeclaration": 854,
                       "src": "3640:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                         "typeString": "struct ProjectStruct storage ref[] storage ref"
                       }
                     },
@@ -23884,7 +23884,7 @@
                     "nodeType": "IndexAccess",
                     "src": "3640:18:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                       "typeString": "struct ProjectStruct storage ref"
                     }
                   },
@@ -23950,7 +23950,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                    "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                     "typeString": "struct ProjectStruct"
                   },
                   "typeName": {
@@ -23960,13 +23960,13 @@
                       "id": 1181,
                       "name": "ProjectStruct",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4196,
+                      "referencedDeclaration": 4274,
                       "src": "3502:13:2"
                     },
-                    "referencedDeclaration": 4196,
+                    "referencedDeclaration": 4274,
                     "src": "3502:13:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                       "typeString": "struct ProjectStruct"
                     }
                   },
@@ -24217,7 +24217,7 @@
                         "referencedDeclaration": 854,
                         "src": "3877:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                           "typeString": "struct ProjectStruct storage ref[] storage ref"
                         }
                       },
@@ -24241,7 +24241,7 @@
                       "nodeType": "IndexAccess",
                       "src": "3877:18:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                         "typeString": "struct ProjectStruct storage ref"
                       }
                     },
@@ -24252,7 +24252,7 @@
                     "lValueRequested": false,
                     "memberName": "master",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 4189,
+                    "referencedDeclaration": 4267,
                     "src": "3877:25:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -24464,7 +24464,7 @@
                                   "referencedDeclaration": 854,
                                   "src": "4054:11:2",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                                    "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                                     "typeString": "struct ProjectStruct storage ref[] storage ref"
                                   }
                                 },
@@ -24578,7 +24578,7 @@
                       "referencedDeclaration": 854,
                       "src": "4108:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                         "typeString": "struct ProjectStruct storage ref[] storage ref"
                       }
                     },
@@ -24636,7 +24636,7 @@
                     "nodeType": "IndexAccess",
                     "src": "4108:20:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage",
                       "typeString": "struct ProjectStruct storage ref"
                     }
                   },
@@ -24702,7 +24702,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_ProjectStruct_$4196_memory_ptr",
+                    "typeIdentifier": "t_struct$_ProjectStruct_$4274_memory_ptr",
                     "typeString": "struct ProjectStruct"
                   },
                   "typeName": {
@@ -24712,13 +24712,13 @@
                       "id": 1237,
                       "name": "ProjectStruct",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4196,
+                      "referencedDeclaration": 4274,
                       "src": "3986:13:2"
                     },
-                    "referencedDeclaration": 4196,
+                    "referencedDeclaration": 4274,
                     "src": "3986:13:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                      "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                       "typeString": "struct ProjectStruct"
                     }
                   },
@@ -24879,7 +24879,7 @@
                       "referencedDeclaration": 854,
                       "src": "4358:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                         "typeString": "struct ProjectStruct storage ref[] storage ref"
                       }
                     },
@@ -24970,7 +24970,7 @@
                     "referencedDeclaration": 854,
                     "src": "4485:11:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage",
                       "typeString": "struct ProjectStruct storage ref[] storage ref"
                     }
                   },
@@ -25009,7 +25009,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct ProjectStruct[]"
                   },
                   "typeName": {
@@ -25020,13 +25020,13 @@
                         "id": 1285,
                         "name": "ProjectStruct",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 4196,
+                        "referencedDeclaration": 4274,
                         "src": "4443:13:2"
                       },
-                      "referencedDeclaration": 4196,
+                      "referencedDeclaration": 4274,
                       "src": "4443:13:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_ProjectStruct_$4196_storage_ptr",
+                        "typeIdentifier": "t_struct$_ProjectStruct_$4274_storage_ptr",
                         "typeString": "struct ProjectStruct"
                       }
                     },
@@ -25034,7 +25034,7 @@
                     "nodeType": "ArrayTypeName",
                     "src": "4443:15:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4196_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_ProjectStruct_$4274_storage_$dyn_storage_ptr",
                       "typeString": "struct ProjectStruct[]"
                     }
                   },
@@ -25728,12 +25728,12 @@
         }
       },
       "links": {},
-      "address": "0x581b7786240818ca0654F37f863E3C18cf80A52f",
-      "transactionHash": "0xc00e2bb5edcc66e6e69e06f7a0f9f616f5f2b04586daa504d8d0e80dcb2477f6"
+      "address": "0x889b6a5f70a48e7Ae0B9d2E0C76918d28fDA9635",
+      "transactionHash": "0x2edc5639d4c0c42a0f1b4047d3ac19d23067052ffefbc61c71c753c7698c6471"
     }
   },
-  "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-24T03:46:11.749Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-08T14:11:26.588Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

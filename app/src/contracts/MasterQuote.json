@@ -2757,7 +2757,7 @@
                 }
               ]
             },
-            "name": "abi_decode_t_struct$_StudentStruct_$4278_memory_ptr_fromMemory",
+            "name": "abi_decode_t_struct$_StudentStruct_$4356_memory_ptr_fromMemory",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4512,7 +4512,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "abi_decode_t_struct$_StudentStruct_$4278_memory_ptr_fromMemory",
+                          "name": "abi_decode_t_struct$_StudentStruct_$4356_memory_ptr_fromMemory",
                           "nodeType": "YulIdentifier",
                           "src": "5517:62:26"
                         },
@@ -4531,7 +4531,7 @@
                 }
               ]
             },
-            "name": "abi_decode_tuple_t_struct$_StudentStruct_$4278_memory_ptr_fromMemory",
+            "name": "abi_decode_tuple_t_struct$_StudentStruct_$4356_memory_ptr_fromMemory",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5752,7 +5752,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "convert_t_contract$_iAcademyStudents_$4326_to_t_address",
+                          "name": "convert_t_contract$_iAcademyStudents_$4404_to_t_address",
                           "nodeType": "YulIdentifier",
                           "src": "8387:55:26"
                         },
@@ -5773,7 +5773,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_contract$_iAcademyStudents_$4326_to_t_address_fromStack",
+            "name": "abi_encode_t_contract$_iAcademyStudents_$4404_to_t_address_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -8741,7 +8741,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_contract$_iAcademyStudents_$4326_to_t_address_fromStack",
+                      "name": "abi_encode_t_contract$_iAcademyStudents_$4404_to_t_address_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "15841:68:26"
                     },
@@ -8753,7 +8753,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_contract$_iAcademyStudents_$4326__to_t_address__fromStack_reversed",
+            "name": "abi_encode_tuple_t_contract$_iAcademyStudents_$4404__to_t_address__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -11637,7 +11637,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "convert_t_contract$_iAcademyStudents_$4326_to_t_uint160",
+                      "name": "convert_t_contract$_iAcademyStudents_$4404_to_t_uint160",
                       "nodeType": "YulIdentifier",
                       "src": "22818:55:26"
                     },
@@ -11654,7 +11654,7 @@
                 }
               ]
             },
-            "name": "convert_t_contract$_iAcademyStudents_$4326_to_t_address",
+            "name": "convert_t_contract$_iAcademyStudents_$4404_to_t_address",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -11708,7 +11708,7 @@
                 }
               ]
             },
-            "name": "convert_t_contract$_iAcademyStudents_$4326_to_t_uint160",
+            "name": "convert_t_contract$_iAcademyStudents_$4404_to_t_uint160",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -13872,7 +13872,7 @@
           }
         ]
       },
-      "contents": "{\n\n    // address[]\n    function abi_decode_available_length_t_array$_t_address_$dyn_memory_ptr_fromMemory(offset, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_array$_t_address_$dyn_memory_ptr(length))\n        let dst := array\n        mstore(array, length) dst := add(array, 0x20)\n        let src := offset\n        if gt(add(src, mul(length, 0x20)), end) { revert(0, 0) }\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementPos := src\n            mstore(dst, abi_decode_t_address_fromMemory(elementPos, end))\n            dst := add(dst, 0x20)\n            src := add(src, 0x20)\n        }\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_address_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_address(value)\n    }\n\n    // address[]\n    function abi_decode_t_array$_t_address_$dyn_memory_ptr_fromMemory(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := mload(offset)\n        array := abi_decode_available_length_t_array$_t_address_$dyn_memory_ptr_fromMemory(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_t_bool_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_bool(value)\n    }\n\n    function abi_decode_t_bytes32(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bytes32(value)\n    }\n\n    // struct StudentStruct\n    function abi_decode_t_struct$_StudentStruct_$4278_memory_ptr_fromMemory(headStart, end) -> value {\n        if slt(sub(end, headStart), 0xa0) { revert(0, 0) }\n        value := allocate_memory(0xa0)\n\n        {\n            // index\n\n            let offset := 0\n\n            mstore(add(value, 0x00), abi_decode_t_uint256_fromMemory(add(headStart, offset), end))\n\n        }\n\n        {\n            // ownerAddress\n\n            let offset := 32\n\n            mstore(add(value, 0x20), abi_decode_t_address_fromMemory(add(headStart, offset), end))\n\n        }\n\n        {\n            // portfolioAddress\n\n            let offset := 64\n\n            mstore(add(value, 0x40), abi_decode_t_address_fromMemory(add(headStart, offset), end))\n\n        }\n\n        {\n            // activeClass\n\n            let offset := 96\n\n            mstore(add(value, 0x60), abi_decode_t_address_fromMemory(add(headStart, offset), end))\n\n        }\n\n        {\n            // studentClasses\n\n            let offset := mload(add(headStart, 128))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            mstore(add(value, 0x80), abi_decode_t_array$_t_address_$dyn_memory_ptr_fromMemory(add(headStart, offset), end))\n\n        }\n\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_t_uint256_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bool_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bool_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_struct$_StudentStruct_$4278_memory_ptr_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := mload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_struct$_StudentStruct_$4278_memory_ptr_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr(value0, pos)\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    // struct StudentProjectStruct[] -> struct StudentProjectStruct[]\n    function abi_encode_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_bytes32_to_t_bytes32_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bytes32(value))\n    }\n\n    function abi_encode_t_contract$_iAcademyStudents_$4326_to_t_address_fromStack(value, pos) {\n        mstore(pos, convert_t_contract$_iAcademyStudents_$4326_to_t_address(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 34)\n        store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 48)\n        store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 22)\n        store_literal_in_memory_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 16)\n        store_literal_in_memory_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 12)\n        store_literal_in_memory_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 16)\n        store_literal_in_memory_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(pos)\n        end := add(pos, 64)\n    }\n\n    // struct StudentProjectStruct -> struct StudentProjectStruct\n    function abi_encode_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0x60)\n\n        {\n            // owner\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // scProject\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // info\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    // struct StudentProjectStruct -> struct StudentProjectStruct\n    function abi_encode_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr_fromStack(value, pos)  -> end  {\n        let tail := add(pos, 0x60)\n\n        {\n            // owner\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // scProject\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // info\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_address_t_string_memory_ptr__to_t_address_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_bytes32__to_t_bytes32__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bytes32_to_t_bytes32_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_contract$_iAcademyStudents_$4326__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_contract$_iAcademyStudents_$4326_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_struct$_StudentProjectStruct_$3025_memory_ptr__to_t_struct$_StudentProjectStruct_$3025_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function allocate_memory(size) -> memPtr {\n        memPtr := allocate_unbounded()\n        finalize_allocation(memPtr, size)\n    }\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function array_allocation_size_t_array$_t_address_$dyn_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := mul(length, 0x20)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_dataslot_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function array_length_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_nextElement_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function checked_add_t_uint256(x, y) -> sum {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        // overflow, if x > (maxValue - y)\n        if gt(x, sub(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, y)) { panic_error_0x11() }\n\n        sum := add(x, y)\n    }\n\n    function checked_sub_t_uint256(x, y) -> diff {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        if lt(x, y) { panic_error_0x11() }\n\n        diff := sub(x, y)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function cleanup_t_bytes32(value) -> cleaned {\n        cleaned := value\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function convert_t_contract$_iAcademyStudents_$4326_to_t_address(value) -> converted {\n        converted := convert_t_contract$_iAcademyStudents_$4326_to_t_uint160(value)\n    }\n\n    function convert_t_contract$_iAcademyStudents_$4326_to_t_uint160(value) -> converted {\n        converted := cleanup_t_uint160(value)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function finalize_allocation(memPtr, size) {\n        let newFreePtr := add(memPtr, round_up_to_mul_of_32(size))\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(memPtr) {\n\n        mstore(add(memPtr, 0), \"EnumerableSet: index out of boun\")\n\n        mstore(add(memPtr, 32), \"ds\")\n\n    }\n\n    function store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to grant\")\n\n    }\n\n    function store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to revoke\")\n\n    }\n\n    function store_literal_in_memory_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675(memPtr) {\n\n        mstore(add(memPtr, 0), \"MasterName: only owner\")\n\n    }\n\n    function store_literal_in_memory_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb(memPtr) {\n\n        mstore(add(memPtr, 0), \"scProject exists\")\n\n    }\n\n    function store_literal_in_memory_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008(memPtr) {\n\n        mstore(add(memPtr, 0), \"owner exists\")\n\n    }\n\n    function store_literal_in_memory_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171(memPtr) {\n\n        mstore(add(memPtr, 0), \"owner not exists\")\n\n    }\n\n    function store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: can only renounce\")\n\n        mstore(add(memPtr, 32), \" roles for self\")\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bool(value) {\n        if iszero(eq(value, cleanup_t_bool(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bytes32(value) {\n        if iszero(eq(value, cleanup_t_bytes32(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
+      "contents": "{\n\n    // address[]\n    function abi_decode_available_length_t_array$_t_address_$dyn_memory_ptr_fromMemory(offset, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_array$_t_address_$dyn_memory_ptr(length))\n        let dst := array\n        mstore(array, length) dst := add(array, 0x20)\n        let src := offset\n        if gt(add(src, mul(length, 0x20)), end) { revert(0, 0) }\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementPos := src\n            mstore(dst, abi_decode_t_address_fromMemory(elementPos, end))\n            dst := add(dst, 0x20)\n            src := add(src, 0x20)\n        }\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_address_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_address(value)\n    }\n\n    // address[]\n    function abi_decode_t_array$_t_address_$dyn_memory_ptr_fromMemory(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := mload(offset)\n        array := abi_decode_available_length_t_array$_t_address_$dyn_memory_ptr_fromMemory(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_t_bool_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_bool(value)\n    }\n\n    function abi_decode_t_bytes32(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bytes32(value)\n    }\n\n    // struct StudentStruct\n    function abi_decode_t_struct$_StudentStruct_$4356_memory_ptr_fromMemory(headStart, end) -> value {\n        if slt(sub(end, headStart), 0xa0) { revert(0, 0) }\n        value := allocate_memory(0xa0)\n\n        {\n            // index\n\n            let offset := 0\n\n            mstore(add(value, 0x00), abi_decode_t_uint256_fromMemory(add(headStart, offset), end))\n\n        }\n\n        {\n            // ownerAddress\n\n            let offset := 32\n\n            mstore(add(value, 0x20), abi_decode_t_address_fromMemory(add(headStart, offset), end))\n\n        }\n\n        {\n            // portfolioAddress\n\n            let offset := 64\n\n            mstore(add(value, 0x40), abi_decode_t_address_fromMemory(add(headStart, offset), end))\n\n        }\n\n        {\n            // activeClass\n\n            let offset := 96\n\n            mstore(add(value, 0x60), abi_decode_t_address_fromMemory(add(headStart, offset), end))\n\n        }\n\n        {\n            // studentClasses\n\n            let offset := mload(add(headStart, 128))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            mstore(add(value, 0x80), abi_decode_t_array$_t_address_$dyn_memory_ptr_fromMemory(add(headStart, offset), end))\n\n        }\n\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_t_uint256_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bool_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bool_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_struct$_StudentStruct_$4356_memory_ptr_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := mload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_struct$_StudentStruct_$4356_memory_ptr_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr(value0, pos)\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    // struct StudentProjectStruct[] -> struct StudentProjectStruct[]\n    function abi_encode_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_bytes32_to_t_bytes32_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bytes32(value))\n    }\n\n    function abi_encode_t_contract$_iAcademyStudents_$4404_to_t_address_fromStack(value, pos) {\n        mstore(pos, convert_t_contract$_iAcademyStudents_$4404_to_t_address(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 34)\n        store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 48)\n        store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 22)\n        store_literal_in_memory_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 16)\n        store_literal_in_memory_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 12)\n        store_literal_in_memory_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 16)\n        store_literal_in_memory_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(pos)\n        end := add(pos, 64)\n    }\n\n    // struct StudentProjectStruct -> struct StudentProjectStruct\n    function abi_encode_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0x60)\n\n        {\n            // owner\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // scProject\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // info\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    // struct StudentProjectStruct -> struct StudentProjectStruct\n    function abi_encode_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr_fromStack(value, pos)  -> end  {\n        let tail := add(pos, 0x60)\n\n        {\n            // owner\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // scProject\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // info\n\n            let memberValue0 := mload(add(value, 0x40))\n\n            mstore(add(pos, 0x40), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_address_t_string_memory_ptr__to_t_address_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_bytes32__to_t_bytes32__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bytes32_to_t_bytes32_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_contract$_iAcademyStudents_$4404__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_contract$_iAcademyStudents_$4404_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_struct$_StudentProjectStruct_$3025_memory_ptr__to_t_struct$_StudentProjectStruct_$3025_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_struct$_StudentProjectStruct_$3025_memory_ptr_to_t_struct$_StudentProjectStruct_$3025_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function allocate_memory(size) -> memPtr {\n        memPtr := allocate_unbounded()\n        finalize_allocation(memPtr, size)\n    }\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function array_allocation_size_t_array$_t_address_$dyn_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := mul(length, 0x20)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_dataslot_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function array_length_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_nextElement_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_StudentProjectStruct_$3025_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function checked_add_t_uint256(x, y) -> sum {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        // overflow, if x > (maxValue - y)\n        if gt(x, sub(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, y)) { panic_error_0x11() }\n\n        sum := add(x, y)\n    }\n\n    function checked_sub_t_uint256(x, y) -> diff {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        if lt(x, y) { panic_error_0x11() }\n\n        diff := sub(x, y)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function cleanup_t_bytes32(value) -> cleaned {\n        cleaned := value\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function convert_t_contract$_iAcademyStudents_$4404_to_t_address(value) -> converted {\n        converted := convert_t_contract$_iAcademyStudents_$4404_to_t_uint160(value)\n    }\n\n    function convert_t_contract$_iAcademyStudents_$4404_to_t_uint160(value) -> converted {\n        converted := cleanup_t_uint160(value)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function finalize_allocation(memPtr, size) {\n        let newFreePtr := add(memPtr, round_up_to_mul_of_32(size))\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(memPtr) {\n\n        mstore(add(memPtr, 0), \"EnumerableSet: index out of boun\")\n\n        mstore(add(memPtr, 32), \"ds\")\n\n    }\n\n    function store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to grant\")\n\n    }\n\n    function store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to revoke\")\n\n    }\n\n    function store_literal_in_memory_64bf88bd7a4a3704a42ad969414e9f31a8a10aee9642d6e832355011e3003675(memPtr) {\n\n        mstore(add(memPtr, 0), \"MasterName: only owner\")\n\n    }\n\n    function store_literal_in_memory_a9da48218834bd3ddbee5fce6ea809ae29bf5601e96e410a31f12e253d19efeb(memPtr) {\n\n        mstore(add(memPtr, 0), \"scProject exists\")\n\n    }\n\n    function store_literal_in_memory_bc8dcb30c8da1a5b6ec1694cb87fecf94e99130ce9d52263986110d407b16008(memPtr) {\n\n        mstore(add(memPtr, 0), \"owner exists\")\n\n    }\n\n    function store_literal_in_memory_d087b42f66c61d193dd411ce7b63a50dca6e1a0e9da86fef734bf12d094f4171(memPtr) {\n\n        mstore(add(memPtr, 0), \"owner not exists\")\n\n    }\n\n    function store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: can only renounce\")\n\n        mstore(add(memPtr, 32), \" roles for self\")\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bool(value) {\n        if iszero(eq(value, cleanup_t_bool(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bytes32(value) {\n        if iszero(eq(value, cleanup_t_bytes32(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
       "id": 26,
       "language": "Yul",
       "name": "#utility.yul"
@@ -13886,34 +13886,34 @@
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/MasterQuote.sol",
     "exportedSymbols": {
       "AccessControl": [
-        4649
+        4727
       ],
       "Address": [
-        4945
+        5023
       ],
       "Context": [
-        4971
+        5049
       ],
       "EnumerableSet": [
-        6066
+        6144
       ],
       "MasterQuote": [
         3520
       ],
       "PortfolioStruct": [
-        4346
+        4424
       ],
       "StudentProjectStruct": [
         3025
       ],
       "StudentStruct": [
-        4278
+        4356
       ],
       "iAcademyStudents": [
-        4326
+        4404
       ],
       "iStudentPortfolio": [
-        4363
+        4441
       ]
     },
     "id": 3521,
@@ -13936,7 +13936,7 @@
         "id": 3016,
         "nodeType": "ImportDirective",
         "scope": 3521,
-        "sourceUnit": 4650,
+        "sourceUnit": 4728,
         "src": "236:49:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -13947,7 +13947,7 @@
         "id": 3017,
         "nodeType": "ImportDirective",
         "scope": 3521,
-        "sourceUnit": 4327,
+        "sourceUnit": 4405,
         "src": "289:32:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -13958,7 +13958,7 @@
         "id": 3018,
         "nodeType": "ImportDirective",
         "scope": 3521,
-        "sourceUnit": 4364,
+        "sourceUnit": 4442,
         "src": "323:33:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -14062,7 +14062,7 @@
               "id": 3026,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4649,
+              "referencedDeclaration": 4727,
               "src": "482:13:7"
             },
             "id": 3027,
@@ -14071,16 +14071,16 @@
           }
         ],
         "contractDependencies": [
-          4649,
-          4971
+          4727,
+          5049
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 3520,
         "linearizedBaseContracts": [
           3520,
-          4649,
-          4971
+          4727,
+          5049
         ],
         "name": "MasterQuote",
         "nodeType": "ContractDefinition",
@@ -14139,7 +14139,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+              "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
               "typeString": "contract iAcademyStudents"
             },
             "typeName": {
@@ -14149,13 +14149,13 @@
                 "id": 3031,
                 "name": "iAcademyStudents",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 4326,
+                "referencedDeclaration": 4404,
                 "src": "550:16:7"
               },
-              "referencedDeclaration": 4326,
+              "referencedDeclaration": 4404,
               "src": "550:16:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                 "typeString": "contract iAcademyStudents"
               }
             },
@@ -14307,7 +14307,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4392,
+                        "referencedDeclaration": 4470,
                         "src": "817:18:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -14356,7 +14356,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4575,
+                      "referencedDeclaration": 4653,
                       "src": "806:10:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -14397,7 +14397,7 @@
                       "referencedDeclaration": 3033,
                       "src": "859:11:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                        "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                         "typeString": "contract iAcademyStudents"
                       }
                     },
@@ -14429,10 +14429,10 @@
                         "name": "iAcademyStudents",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4326,
+                        "referencedDeclaration": 4404,
                         "src": "873:16:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_iAcademyStudents_$4326_$",
+                          "typeIdentifier": "t_type$_t_contract$_iAcademyStudents_$4404_$",
                           "typeString": "type(contract iAcademyStudents)"
                         }
                       },
@@ -14447,13 +14447,13 @@
                       "src": "873:36:7",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                        "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                         "typeString": "contract iAcademyStudents"
                       }
                     },
                     "src": "859:50:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                      "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                       "typeString": "contract iAcademyStudents"
                     }
                   },
@@ -14671,7 +14671,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4392,
+                            "referencedDeclaration": 4470,
                             "src": "1133:18:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -14720,7 +14720,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4438,
+                          "referencedDeclaration": 4516,
                           "src": "1125:7:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -16234,7 +16234,7 @@
                           "referencedDeclaration": 3033,
                           "src": "2578:11:7",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                            "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                             "typeString": "contract iAcademyStudents"
                           }
                         },
@@ -16245,7 +16245,7 @@
                         "lValueRequested": false,
                         "memberName": "isStudent",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4317,
+                        "referencedDeclaration": 4395,
                         "src": "2578:21:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -16314,7 +16314,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                         "typeString": "struct StudentStruct"
                       },
                       "typeName": {
@@ -16324,13 +16324,13 @@
                           "id": 3217,
                           "name": "StudentStruct",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4278,
+                          "referencedDeclaration": 4356,
                           "src": "2648:13:7"
                         },
-                        "referencedDeclaration": 4278,
+                        "referencedDeclaration": 4356,
                         "src": "2648:13:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                           "typeString": "struct StudentStruct"
                         }
                       },
@@ -16368,7 +16368,7 @@
                         "referencedDeclaration": 3033,
                         "src": "2673:11:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                          "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                           "typeString": "contract iAcademyStudents"
                         }
                       },
@@ -16379,10 +16379,10 @@
                       "lValueRequested": false,
                       "memberName": "getStudentByAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4325,
+                      "referencedDeclaration": 4403,
                       "src": "2673:31:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_struct$_StudentStruct_$4278_memory_ptr_$",
+                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_struct$_StudentStruct_$4356_memory_ptr_$",
                         "typeString": "function (address) view external returns (struct StudentStruct memory)"
                       }
                     },
@@ -16397,7 +16397,7 @@
                     "src": "2673:40:7",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                      "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                       "typeString": "struct StudentStruct memory"
                     }
                   },
@@ -16424,7 +16424,7 @@
                         "referencedDeclaration": 3219,
                         "src": "2736:1:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                           "typeString": "struct StudentStruct memory"
                         }
                       },
@@ -16435,7 +16435,7 @@
                       "lValueRequested": false,
                       "memberName": "portfolioAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4272,
+                      "referencedDeclaration": 4350,
                       "src": "2736:18:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -16534,7 +16534,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                              "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                               "typeString": "contract iStudentPortfolio"
                             },
                             "typeName": {
@@ -16544,13 +16544,13 @@
                                 "id": 3232,
                                 "name": "iStudentPortfolio",
                                 "nodeType": "IdentifierPath",
-                                "referencedDeclaration": 4363,
+                                "referencedDeclaration": 4441,
                                 "src": "2787:17:7"
                               },
-                              "referencedDeclaration": 4363,
+                              "referencedDeclaration": 4441,
                               "src": "2787:17:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                                 "typeString": "contract iStudentPortfolio"
                               }
                             },
@@ -16569,7 +16569,7 @@
                                 "referencedDeclaration": 3219,
                                 "src": "2827:1:7",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                                  "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                                   "typeString": "struct StudentStruct memory"
                                 }
                               },
@@ -16580,7 +16580,7 @@
                               "lValueRequested": false,
                               "memberName": "portfolioAddress",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4272,
+                              "referencedDeclaration": 4350,
                               "src": "2827:18:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -16599,10 +16599,10 @@
                             "name": "iStudentPortfolio",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4363,
+                            "referencedDeclaration": 4441,
                             "src": "2809:17:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_iStudentPortfolio_$4363_$",
+                              "typeIdentifier": "t_type$_t_contract$_iStudentPortfolio_$4441_$",
                               "typeString": "type(contract iStudentPortfolio)"
                             }
                           },
@@ -16617,7 +16617,7 @@
                           "src": "2809:37:7",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                            "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                             "typeString": "contract iStudentPortfolio"
                           }
                         },
@@ -16671,7 +16671,7 @@
                               "referencedDeclaration": 3234,
                               "src": "2861:1:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                                 "typeString": "contract iStudentPortfolio"
                               }
                             },
@@ -16682,7 +16682,7 @@
                             "lValueRequested": false,
                             "memberName": "addProject",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4355,
+                            "referencedDeclaration": 4433,
                             "src": "2861:12:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_string_memory_ptr_$returns$_t_uint256_$",
@@ -18230,7 +18230,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                         "typeString": "struct StudentStruct"
                       },
                       "typeName": {
@@ -18240,13 +18240,13 @@
                           "id": 3370,
                           "name": "StudentStruct",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4278,
+                          "referencedDeclaration": 4356,
                           "src": "4025:13:7"
                         },
-                        "referencedDeclaration": 4278,
+                        "referencedDeclaration": 4356,
                         "src": "4025:13:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                           "typeString": "struct StudentStruct"
                         }
                       },
@@ -18284,7 +18284,7 @@
                         "referencedDeclaration": 3033,
                         "src": "4050:11:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                          "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                           "typeString": "contract iAcademyStudents"
                         }
                       },
@@ -18295,10 +18295,10 @@
                       "lValueRequested": false,
                       "memberName": "getStudentByAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4325,
+                      "referencedDeclaration": 4403,
                       "src": "4050:31:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_struct$_StudentStruct_$4278_memory_ptr_$",
+                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_struct$_StudentStruct_$4356_memory_ptr_$",
                         "typeString": "function (address) view external returns (struct StudentStruct memory)"
                       }
                     },
@@ -18313,7 +18313,7 @@
                     "src": "4050:40:7",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                      "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                       "typeString": "struct StudentStruct memory"
                     }
                   },
@@ -18340,7 +18340,7 @@
                         "referencedDeclaration": 3372,
                         "src": "4106:1:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                           "typeString": "struct StudentStruct memory"
                         }
                       },
@@ -18351,7 +18351,7 @@
                       "lValueRequested": false,
                       "memberName": "portfolioAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4272,
+                      "referencedDeclaration": 4350,
                       "src": "4106:18:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -18450,7 +18450,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                              "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                               "typeString": "contract iStudentPortfolio"
                             },
                             "typeName": {
@@ -18460,13 +18460,13 @@
                                 "id": 3385,
                                 "name": "iStudentPortfolio",
                                 "nodeType": "IdentifierPath",
-                                "referencedDeclaration": 4363,
+                                "referencedDeclaration": 4441,
                                 "src": "4157:17:7"
                               },
-                              "referencedDeclaration": 4363,
+                              "referencedDeclaration": 4441,
                               "src": "4157:17:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                                 "typeString": "contract iStudentPortfolio"
                               }
                             },
@@ -18485,7 +18485,7 @@
                                 "referencedDeclaration": 3372,
                                 "src": "4197:1:7",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                                  "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                                   "typeString": "struct StudentStruct memory"
                                 }
                               },
@@ -18496,7 +18496,7 @@
                               "lValueRequested": false,
                               "memberName": "portfolioAddress",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4272,
+                              "referencedDeclaration": 4350,
                               "src": "4197:18:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -18515,10 +18515,10 @@
                             "name": "iStudentPortfolio",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4363,
+                            "referencedDeclaration": 4441,
                             "src": "4179:17:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_iStudentPortfolio_$4363_$",
+                              "typeIdentifier": "t_type$_t_contract$_iStudentPortfolio_$4441_$",
                               "typeString": "type(contract iStudentPortfolio)"
                             }
                           },
@@ -18533,7 +18533,7 @@
                           "src": "4179:37:7",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                            "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                             "typeString": "contract iStudentPortfolio"
                           }
                         },
@@ -18571,7 +18571,7 @@
                               "referencedDeclaration": 3387,
                               "src": "4231:1:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                                 "typeString": "contract iStudentPortfolio"
                               }
                             },
@@ -18582,7 +18582,7 @@
                             "lValueRequested": false,
                             "memberName": "deleteProjectByAddress",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4362,
+                            "referencedDeclaration": 4440,
                             "src": "4231:24:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$_t_bool_$",
@@ -18804,7 +18804,7 @@
                       "referencedDeclaration": 3033,
                       "src": "4486:11:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                        "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                         "typeString": "contract iAcademyStudents"
                       }
                     },
@@ -18836,10 +18836,10 @@
                         "name": "iAcademyStudents",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4326,
+                        "referencedDeclaration": 4404,
                         "src": "4500:16:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_iAcademyStudents_$4326_$",
+                          "typeIdentifier": "t_type$_t_contract$_iAcademyStudents_$4404_$",
                           "typeString": "type(contract iAcademyStudents)"
                         }
                       },
@@ -18854,13 +18854,13 @@
                       "src": "4500:36:7",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                        "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                         "typeString": "contract iAcademyStudents"
                       }
                     },
                     "src": "4486:50:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                      "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                       "typeString": "contract iAcademyStudents"
                     }
                   },
@@ -20030,34 +20030,34 @@
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/MasterQuote.sol",
     "exportedSymbols": {
       "AccessControl": [
-        4649
+        4727
       ],
       "Address": [
-        4945
+        5023
       ],
       "Context": [
-        4971
+        5049
       ],
       "EnumerableSet": [
-        6066
+        6144
       ],
       "MasterQuote": [
         3520
       ],
       "PortfolioStruct": [
-        4346
+        4424
       ],
       "StudentProjectStruct": [
         3025
       ],
       "StudentStruct": [
-        4278
+        4356
       ],
       "iAcademyStudents": [
-        4326
+        4404
       ],
       "iStudentPortfolio": [
-        4363
+        4441
       ]
     },
     "id": 3521,
@@ -20080,7 +20080,7 @@
         "id": 3016,
         "nodeType": "ImportDirective",
         "scope": 3521,
-        "sourceUnit": 4650,
+        "sourceUnit": 4728,
         "src": "236:49:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -20091,7 +20091,7 @@
         "id": 3017,
         "nodeType": "ImportDirective",
         "scope": 3521,
-        "sourceUnit": 4327,
+        "sourceUnit": 4405,
         "src": "289:32:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -20102,7 +20102,7 @@
         "id": 3018,
         "nodeType": "ImportDirective",
         "scope": 3521,
-        "sourceUnit": 4364,
+        "sourceUnit": 4442,
         "src": "323:33:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -20206,7 +20206,7 @@
               "id": 3026,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4649,
+              "referencedDeclaration": 4727,
               "src": "482:13:7"
             },
             "id": 3027,
@@ -20215,16 +20215,16 @@
           }
         ],
         "contractDependencies": [
-          4649,
-          4971
+          4727,
+          5049
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 3520,
         "linearizedBaseContracts": [
           3520,
-          4649,
-          4971
+          4727,
+          5049
         ],
         "name": "MasterQuote",
         "nodeType": "ContractDefinition",
@@ -20283,7 +20283,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+              "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
               "typeString": "contract iAcademyStudents"
             },
             "typeName": {
@@ -20293,13 +20293,13 @@
                 "id": 3031,
                 "name": "iAcademyStudents",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 4326,
+                "referencedDeclaration": 4404,
                 "src": "550:16:7"
               },
-              "referencedDeclaration": 4326,
+              "referencedDeclaration": 4404,
               "src": "550:16:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                 "typeString": "contract iAcademyStudents"
               }
             },
@@ -20451,7 +20451,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4392,
+                        "referencedDeclaration": 4470,
                         "src": "817:18:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -20500,7 +20500,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4575,
+                      "referencedDeclaration": 4653,
                       "src": "806:10:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -20541,7 +20541,7 @@
                       "referencedDeclaration": 3033,
                       "src": "859:11:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                        "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                         "typeString": "contract iAcademyStudents"
                       }
                     },
@@ -20573,10 +20573,10 @@
                         "name": "iAcademyStudents",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4326,
+                        "referencedDeclaration": 4404,
                         "src": "873:16:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_iAcademyStudents_$4326_$",
+                          "typeIdentifier": "t_type$_t_contract$_iAcademyStudents_$4404_$",
                           "typeString": "type(contract iAcademyStudents)"
                         }
                       },
@@ -20591,13 +20591,13 @@
                       "src": "873:36:7",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                        "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                         "typeString": "contract iAcademyStudents"
                       }
                     },
                     "src": "859:50:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                      "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                       "typeString": "contract iAcademyStudents"
                     }
                   },
@@ -20815,7 +20815,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4392,
+                            "referencedDeclaration": 4470,
                             "src": "1133:18:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -20864,7 +20864,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4438,
+                          "referencedDeclaration": 4516,
                           "src": "1125:7:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -22378,7 +22378,7 @@
                           "referencedDeclaration": 3033,
                           "src": "2578:11:7",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                            "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                             "typeString": "contract iAcademyStudents"
                           }
                         },
@@ -22389,7 +22389,7 @@
                         "lValueRequested": false,
                         "memberName": "isStudent",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4317,
+                        "referencedDeclaration": 4395,
                         "src": "2578:21:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -22458,7 +22458,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                         "typeString": "struct StudentStruct"
                       },
                       "typeName": {
@@ -22468,13 +22468,13 @@
                           "id": 3217,
                           "name": "StudentStruct",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4278,
+                          "referencedDeclaration": 4356,
                           "src": "2648:13:7"
                         },
-                        "referencedDeclaration": 4278,
+                        "referencedDeclaration": 4356,
                         "src": "2648:13:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                           "typeString": "struct StudentStruct"
                         }
                       },
@@ -22512,7 +22512,7 @@
                         "referencedDeclaration": 3033,
                         "src": "2673:11:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                          "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                           "typeString": "contract iAcademyStudents"
                         }
                       },
@@ -22523,10 +22523,10 @@
                       "lValueRequested": false,
                       "memberName": "getStudentByAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4325,
+                      "referencedDeclaration": 4403,
                       "src": "2673:31:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_struct$_StudentStruct_$4278_memory_ptr_$",
+                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_struct$_StudentStruct_$4356_memory_ptr_$",
                         "typeString": "function (address) view external returns (struct StudentStruct memory)"
                       }
                     },
@@ -22541,7 +22541,7 @@
                     "src": "2673:40:7",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                      "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                       "typeString": "struct StudentStruct memory"
                     }
                   },
@@ -22568,7 +22568,7 @@
                         "referencedDeclaration": 3219,
                         "src": "2736:1:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                           "typeString": "struct StudentStruct memory"
                         }
                       },
@@ -22579,7 +22579,7 @@
                       "lValueRequested": false,
                       "memberName": "portfolioAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4272,
+                      "referencedDeclaration": 4350,
                       "src": "2736:18:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -22678,7 +22678,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                              "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                               "typeString": "contract iStudentPortfolio"
                             },
                             "typeName": {
@@ -22688,13 +22688,13 @@
                                 "id": 3232,
                                 "name": "iStudentPortfolio",
                                 "nodeType": "IdentifierPath",
-                                "referencedDeclaration": 4363,
+                                "referencedDeclaration": 4441,
                                 "src": "2787:17:7"
                               },
-                              "referencedDeclaration": 4363,
+                              "referencedDeclaration": 4441,
                               "src": "2787:17:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                                 "typeString": "contract iStudentPortfolio"
                               }
                             },
@@ -22713,7 +22713,7 @@
                                 "referencedDeclaration": 3219,
                                 "src": "2827:1:7",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                                  "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                                   "typeString": "struct StudentStruct memory"
                                 }
                               },
@@ -22724,7 +22724,7 @@
                               "lValueRequested": false,
                               "memberName": "portfolioAddress",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4272,
+                              "referencedDeclaration": 4350,
                               "src": "2827:18:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -22743,10 +22743,10 @@
                             "name": "iStudentPortfolio",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4363,
+                            "referencedDeclaration": 4441,
                             "src": "2809:17:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_iStudentPortfolio_$4363_$",
+                              "typeIdentifier": "t_type$_t_contract$_iStudentPortfolio_$4441_$",
                               "typeString": "type(contract iStudentPortfolio)"
                             }
                           },
@@ -22761,7 +22761,7 @@
                           "src": "2809:37:7",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                            "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                             "typeString": "contract iStudentPortfolio"
                           }
                         },
@@ -22815,7 +22815,7 @@
                               "referencedDeclaration": 3234,
                               "src": "2861:1:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                                 "typeString": "contract iStudentPortfolio"
                               }
                             },
@@ -22826,7 +22826,7 @@
                             "lValueRequested": false,
                             "memberName": "addProject",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4355,
+                            "referencedDeclaration": 4433,
                             "src": "2861:12:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_string_memory_ptr_$returns$_t_uint256_$",
@@ -24374,7 +24374,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                         "typeString": "struct StudentStruct"
                       },
                       "typeName": {
@@ -24384,13 +24384,13 @@
                           "id": 3370,
                           "name": "StudentStruct",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4278,
+                          "referencedDeclaration": 4356,
                           "src": "4025:13:7"
                         },
-                        "referencedDeclaration": 4278,
+                        "referencedDeclaration": 4356,
                         "src": "4025:13:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                           "typeString": "struct StudentStruct"
                         }
                       },
@@ -24428,7 +24428,7 @@
                         "referencedDeclaration": 3033,
                         "src": "4050:11:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                          "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                           "typeString": "contract iAcademyStudents"
                         }
                       },
@@ -24439,10 +24439,10 @@
                       "lValueRequested": false,
                       "memberName": "getStudentByAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4325,
+                      "referencedDeclaration": 4403,
                       "src": "4050:31:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_struct$_StudentStruct_$4278_memory_ptr_$",
+                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_struct$_StudentStruct_$4356_memory_ptr_$",
                         "typeString": "function (address) view external returns (struct StudentStruct memory)"
                       }
                     },
@@ -24457,7 +24457,7 @@
                     "src": "4050:40:7",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                      "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                       "typeString": "struct StudentStruct memory"
                     }
                   },
@@ -24484,7 +24484,7 @@
                         "referencedDeclaration": 3372,
                         "src": "4106:1:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                           "typeString": "struct StudentStruct memory"
                         }
                       },
@@ -24495,7 +24495,7 @@
                       "lValueRequested": false,
                       "memberName": "portfolioAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4272,
+                      "referencedDeclaration": 4350,
                       "src": "4106:18:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -24594,7 +24594,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                              "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                               "typeString": "contract iStudentPortfolio"
                             },
                             "typeName": {
@@ -24604,13 +24604,13 @@
                                 "id": 3385,
                                 "name": "iStudentPortfolio",
                                 "nodeType": "IdentifierPath",
-                                "referencedDeclaration": 4363,
+                                "referencedDeclaration": 4441,
                                 "src": "4157:17:7"
                               },
-                              "referencedDeclaration": 4363,
+                              "referencedDeclaration": 4441,
                               "src": "4157:17:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                                 "typeString": "contract iStudentPortfolio"
                               }
                             },
@@ -24629,7 +24629,7 @@
                                 "referencedDeclaration": 3372,
                                 "src": "4197:1:7",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                                  "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                                   "typeString": "struct StudentStruct memory"
                                 }
                               },
@@ -24640,7 +24640,7 @@
                               "lValueRequested": false,
                               "memberName": "portfolioAddress",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4272,
+                              "referencedDeclaration": 4350,
                               "src": "4197:18:7",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -24659,10 +24659,10 @@
                             "name": "iStudentPortfolio",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4363,
+                            "referencedDeclaration": 4441,
                             "src": "4179:17:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_iStudentPortfolio_$4363_$",
+                              "typeIdentifier": "t_type$_t_contract$_iStudentPortfolio_$4441_$",
                               "typeString": "type(contract iStudentPortfolio)"
                             }
                           },
@@ -24677,7 +24677,7 @@
                           "src": "4179:37:7",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                            "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                             "typeString": "contract iStudentPortfolio"
                           }
                         },
@@ -24715,7 +24715,7 @@
                               "referencedDeclaration": 3387,
                               "src": "4231:1:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4363",
+                                "typeIdentifier": "t_contract$_iStudentPortfolio_$4441",
                                 "typeString": "contract iStudentPortfolio"
                               }
                             },
@@ -24726,7 +24726,7 @@
                             "lValueRequested": false,
                             "memberName": "deleteProjectByAddress",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4362,
+                            "referencedDeclaration": 4440,
                             "src": "4231:24:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$_t_bool_$",
@@ -24948,7 +24948,7 @@
                       "referencedDeclaration": 3033,
                       "src": "4486:11:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                        "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                         "typeString": "contract iAcademyStudents"
                       }
                     },
@@ -24980,10 +24980,10 @@
                         "name": "iAcademyStudents",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4326,
+                        "referencedDeclaration": 4404,
                         "src": "4500:16:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_iAcademyStudents_$4326_$",
+                          "typeIdentifier": "t_type$_t_contract$_iAcademyStudents_$4404_$",
                           "typeString": "type(contract iAcademyStudents)"
                         }
                       },
@@ -24998,13 +24998,13 @@
                       "src": "4500:36:7",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                        "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                         "typeString": "contract iAcademyStudents"
                       }
                     },
                     "src": "4486:50:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_iAcademyStudents_$4326",
+                      "typeIdentifier": "t_contract$_iAcademyStudents_$4404",
                       "typeString": "contract iAcademyStudents"
                     }
                   },
@@ -26296,8 +26296,9 @@
       "transactionHash": "0x34150e604d3af58adf109e66dcde0aff92b0c42f4dee0e9e55d16e834c43aae5"
     }
   },
-  "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-23T18:35:21.180Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-08T14:11:26.722Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {

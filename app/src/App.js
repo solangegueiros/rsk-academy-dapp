@@ -34,6 +34,7 @@ function App() {
 
   const [academyQuizByStudentList, setAcademyQuizByStudentList] = useState(null);
   const [academyStudentsList, setAcademyStudentsList] = useState(null);
+  const [academyStudentsCount, setAcademyStudentsCount] = useState(null);
 
   const [scStudentName, setScStudentName] = useState(null);
   const [studentName, setStudentName] = useState(null);
@@ -420,6 +421,11 @@ function App() {
         console.log ('scAcademyStudents listStudents: \n', list);
         setAcademyStudentsList(list);
       });
+    scAcademyStudents.methods.countStudents().call()
+    .then( function(result) {
+      console.log ('scAcademyStudents countStudents: \n', result);
+      setAcademyStudentsCount(result);
+    });   
   };
 
   const handleMasterNameListNames = e => {
@@ -441,12 +447,57 @@ function App() {
 
         <div>
           {account && <p>Your account: {account}</p>}
-          {scAcademyClassList && <p>AcademyClassList: scAcademyClassList.address</p>}
-          {scAcademyStudents && <p>AcademyStudents: scAcademyStudents._address</p>}
+          {scAcademyClassList && <p>AcademyClassList: scAcademyClassList._address - scAcademyClassList.address</p>}
+          {scAcademyStudents && <p>AcademyStudents: scAcademyStudents._address - scAcademyStudents.ddress</p>}
           {scAcademyClass && <p>AcademyClass: {scAcademyClass._address}</p>}
           {scStudentPortfolio && <p>StudentPortfolio: scStudentPortfolio._address</p>}
           {scMasterName && <p>MasterName: {scMasterName._address}</p>}
         </div>
+
+        <br/><br/>
+        <hr/>
+        <h1>Admin page</h1>
+        <br/>
+        <h2>Students</h2>
+        <div>
+          <br/> 
+          <Form onSubmit={handleAcademyStudentList}>
+              <Button type="submit">List Students</Button>
+          </Form>
+          <Row>
+            {academyStudentsList && 
+              <p>List: 
+                {academyStudentsList.map((item, i) => 
+                  <li key={i}>{item}</li>
+                  )}
+              </p>
+            }
+            <br/>
+            {academyStudentsCount && <p>
+              Count: {academyStudentsCount}
+            </p>
+            }
+          </Row>          
+        </div>        
+
+        <br/>
+        <h2>MasterName</h2>
+        <div>
+          <br/>
+          <Form onSubmit={handleMasterNameListNames}>
+              <Button type="submit">List Names</Button>
+          </Form>
+          <Row>
+            {masterListNames && 
+              <p>List: 
+                {masterListNames.map((item, i) => 
+                  <li key={i}>{item[0]} - {item[1]} - {item[2]}</li>
+                  )}
+              </p>
+            }
+          </Row>          
+        </div>
+        <br/><br/>
 
         <hr/>
         <h2>Student subscribe in class</h2>
@@ -598,45 +649,7 @@ function App() {
           </div>          
         </div>
 
-        <br/><br/>
-        <hr/>
-        <h1>Admin page</h1>
-        <br/>
-        <h2>Students</h2>
-        <div>
-          <br/> 
-          <Form onSubmit={handleAcademyStudentList}>
-              <Button type="submit">List Students</Button>
-          </Form>
-          <Row>
-            {academyStudentsList && 
-              <p>List: 
-                {academyStudentsList.map((item, i) => 
-                  <li key={i}>{item}</li>
-                  )}
-              </p>
-            }
-          </Row>          
-        </div>        
 
-        <br/>
-        <h2>MasterName</h2>
-        <div>
-          <br/>
-          <Form onSubmit={handleMasterNameListNames}>
-              <Button type="submit">List Names</Button>
-          </Form>
-          <Row>
-            {masterListNames && 
-              <p>List: 
-                {masterListNames.map((item, i) => 
-                  <li key={i}>{item[0]} - {item[1]} - {item[2]}</li>
-                  )}
-              </p>
-            }
-          </Row>          
-        </div>
-        <br/><br/>
         <br/><br/>
       </div>      
     </Container>
