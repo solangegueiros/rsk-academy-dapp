@@ -4752,7 +4752,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_StudentStruct_$4278_memory_ptr_to_t_struct$_StudentStruct_$4278_memory_ptr_fromStack",
+            "name": "abi_encode_t_struct$_StudentStruct_$4356_memory_ptr_to_t_struct$_StudentStruct_$4356_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6544,7 +6544,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_StudentStruct_$4278_memory_ptr_to_t_struct$_StudentStruct_$4278_memory_ptr_fromStack",
+                      "name": "abi_encode_t_struct$_StudentStruct_$4356_memory_ptr_to_t_struct$_StudentStruct_$4356_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "12340:105:26"
                     },
@@ -6561,7 +6561,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_struct$_StudentStruct_$4278_memory_ptr__to_t_struct$_StudentStruct_$4278_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_struct$_StudentStruct_$4356_memory_ptr__to_t_struct$_StudentStruct_$4356_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -8744,7 +8744,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_bytes32(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bytes32(value)\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_address_to_t_address(value0, pos) -> updatedPos {\n        abi_encode_t_address_to_t_address(value0, pos)\n        updatedPos := add(pos, 0x20)\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    // address[] -> address[]\n    function abi_encode_t_array$_t_address_$dyn_memory_ptr_to_t_array$_t_address_$dyn_memory_ptr(value, pos)  -> end  {\n        let length := array_length_t_array$_t_address_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_address_$dyn_memory_ptr(pos, length)\n        let baseRef := array_dataslot_t_array$_t_address_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_address_to_t_address(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_address_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    // address[] -> address[]\n    function abi_encode_t_array$_t_address_$dyn_memory_ptr_to_t_array$_t_address_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_address_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_address_$dyn_memory_ptr_fromStack(pos, length)\n        let baseRef := array_dataslot_t_array$_t_address_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_address_to_t_address(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_address_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_bytes32_to_t_bytes32_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bytes32(value))\n    }\n\n    function abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 34)\n        store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 27)\n        store_literal_in_memory_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 27)\n        store_literal_in_memory_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 48)\n        store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(pos)\n        end := add(pos, 64)\n    }\n\n    // struct StudentStruct -> struct StudentStruct\n    function abi_encode_t_struct$_StudentStruct_$4278_memory_ptr_to_t_struct$_StudentStruct_$4278_memory_ptr_fromStack(value, pos)  -> end  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // index\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // ownerAddress\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // portfolioAddress\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x40))\n        }\n\n        {\n            // activeClass\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x60))\n        }\n\n        {\n            // studentClasses\n\n            let memberValue0 := mload(add(value, 0x80))\n\n            mstore(add(pos, 0x80), sub(tail, pos))\n            tail := abi_encode_t_array$_t_address_$dyn_memory_ptr_to_t_array$_t_address_$dyn_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_address_t_address__to_t_address_t_address__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_address_to_t_address_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function abi_encode_tuple_t_array$_t_address_$dyn_memory_ptr__to_t_array$_t_address_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_address_$dyn_memory_ptr_to_t_array$_t_address_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_bytes32__to_t_bytes32__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bytes32_to_t_bytes32_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_struct$_StudentStruct_$4278_memory_ptr__to_t_struct$_StudentStruct_$4278_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_struct$_StudentStruct_$4278_memory_ptr_to_t_struct$_StudentStruct_$4278_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function array_dataslot_t_array$_t_address_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function array_length_t_array$_t_address_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_nextElement_t_array$_t_address_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_address_$dyn_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_address_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function checked_add_t_uint256(x, y) -> sum {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        // overflow, if x > (maxValue - y)\n        if gt(x, sub(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, y)) { panic_error_0x11() }\n\n        sum := add(x, y)\n    }\n\n    function checked_sub_t_uint256(x, y) -> diff {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        if lt(x, y) { panic_error_0x11() }\n\n        diff := sub(x, y)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function cleanup_t_bytes32(value) -> cleaned {\n        cleaned := value\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(memPtr) {\n\n        mstore(add(memPtr, 0), \"EnumerableSet: index out of boun\")\n\n        mstore(add(memPtr, 32), \"ds\")\n\n    }\n\n    function store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to grant\")\n\n    }\n\n    function store_literal_in_memory_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b(memPtr) {\n\n        mstore(add(memPtr, 0), \"AcademyStudents: not active\")\n\n    }\n\n    function store_literal_in_memory_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212(memPtr) {\n\n        mstore(add(memPtr, 0), \"AcademyStudents: only owner\")\n\n    }\n\n    function store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to revoke\")\n\n    }\n\n    function store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: can only renounce\")\n\n        mstore(add(memPtr, 32), \" roles for self\")\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bytes32(value) {\n        if iszero(eq(value, cleanup_t_bytes32(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
+      "contents": "{\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_bytes32(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bytes32(value)\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_bytes32t_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes32(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encodeUpdatedPos_t_address_to_t_address(value0, pos) -> updatedPos {\n        abi_encode_t_address_to_t_address(value0, pos)\n        updatedPos := add(pos, 0x20)\n    }\n\n    function abi_encode_t_address_to_t_address(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    // address[] -> address[]\n    function abi_encode_t_array$_t_address_$dyn_memory_ptr_to_t_array$_t_address_$dyn_memory_ptr(value, pos)  -> end  {\n        let length := array_length_t_array$_t_address_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_address_$dyn_memory_ptr(pos, length)\n        let baseRef := array_dataslot_t_array$_t_address_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_address_to_t_address(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_address_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    // address[] -> address[]\n    function abi_encode_t_array$_t_address_$dyn_memory_ptr_to_t_array$_t_address_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_address_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_address_$dyn_memory_ptr_fromStack(pos, length)\n        let baseRef := array_dataslot_t_array$_t_address_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            let elementValue0 := mload(srcPtr)\n            pos := abi_encodeUpdatedPos_t_address_to_t_address(elementValue0, pos)\n            srcPtr := array_nextElement_t_array$_t_address_$dyn_memory_ptr(srcPtr)\n        }\n        end := pos\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_t_bytes32_to_t_bytes32_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bytes32(value))\n    }\n\n    function abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 34)\n        store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 27)\n        store_literal_in_memory_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 27)\n        store_literal_in_memory_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 48)\n        store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(pos)\n        end := add(pos, 64)\n    }\n\n    // struct StudentStruct -> struct StudentStruct\n    function abi_encode_t_struct$_StudentStruct_$4356_memory_ptr_to_t_struct$_StudentStruct_$4356_memory_ptr_fromStack(value, pos)  -> end  {\n        let tail := add(pos, 0xa0)\n\n        {\n            // index\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // ownerAddress\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // portfolioAddress\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x40))\n        }\n\n        {\n            // activeClass\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_address_to_t_address(memberValue0, add(pos, 0x60))\n        }\n\n        {\n            // studentClasses\n\n            let memberValue0 := mload(add(value, 0x80))\n\n            mstore(add(pos, 0x80), sub(tail, pos))\n            tail := abi_encode_t_array$_t_address_$dyn_memory_ptr_to_t_array$_t_address_$dyn_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_address_t_address__to_t_address_t_address__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_address_to_t_address_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function abi_encode_tuple_t_array$_t_address_$dyn_memory_ptr__to_t_array$_t_address_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_address_$dyn_memory_ptr_to_t_array$_t_address_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_bytes32__to_t_bytes32__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bytes32_to_t_bytes32_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_struct$_StudentStruct_$4356_memory_ptr__to_t_struct$_StudentStruct_$4356_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_struct$_StudentStruct_$4356_memory_ptr_to_t_struct$_StudentStruct_$4356_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function array_dataslot_t_array$_t_address_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function array_length_t_array$_t_address_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_nextElement_t_array$_t_address_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_address_$dyn_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_address_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function checked_add_t_uint256(x, y) -> sum {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        // overflow, if x > (maxValue - y)\n        if gt(x, sub(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, y)) { panic_error_0x11() }\n\n        sum := add(x, y)\n    }\n\n    function checked_sub_t_uint256(x, y) -> diff {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        if lt(x, y) { panic_error_0x11() }\n\n        diff := sub(x, y)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function cleanup_t_bytes32(value) -> cleaned {\n        cleaned := value\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function store_literal_in_memory_045d6834e6193a687012a3ad777f612279e549b6945364d9d2324f48610d3cbb(memPtr) {\n\n        mstore(add(memPtr, 0), \"EnumerableSet: index out of boun\")\n\n        mstore(add(memPtr, 32), \"ds\")\n\n    }\n\n    function store_literal_in_memory_0ba7116025f1ef6b158a2bd2238e617f30e17c9e456917d901086ca4f8ad2811(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to grant\")\n\n    }\n\n    function store_literal_in_memory_13431bf957419f45ca200b7aa5a2cfe79ffb4ca700e17bba77a63f7f5c4f430b(memPtr) {\n\n        mstore(add(memPtr, 0), \"AcademyStudents: not active\")\n\n    }\n\n    function store_literal_in_memory_59bba219a0e0c258d8438b0abec09e8facb9714dc0b6de3eb48c655530489212(memPtr) {\n\n        mstore(add(memPtr, 0), \"AcademyStudents: only owner\")\n\n    }\n\n    function store_literal_in_memory_64344570eab7406ca49d34d38bf2b2496dfda914405390c5057c8b0aabf798a3(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: sender must be an\")\n\n        mstore(add(memPtr, 32), \" admin to revoke\")\n\n    }\n\n    function store_literal_in_memory_fb06fa8ff2141e8ed74502f6792273793f25f0e9d3cf15344f3f5a0d4948fd4b(memPtr) {\n\n        mstore(add(memPtr, 0), \"AccessControl: can only renounce\")\n\n        mstore(add(memPtr, 32), \" roles for self\")\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_bytes32(value) {\n        if iszero(eq(value, cleanup_t_bytes32(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
       "id": 26,
       "language": "Yul",
       "name": "#utility.yul"
@@ -8761,46 +8761,46 @@
         2251
       ],
       "AccessControl": [
-        4649
+        4727
       ],
       "Address": [
-        4945
+        5023
       ],
       "Context": [
-        4971
+        5049
       ],
       "EnumerableSet": [
-        6066
+        6144
       ],
       "PortfolioStruct": [
-        4346
+        4424
       ],
       "ProjectStruct": [
-        4196
+        4274
       ],
       "StudentInClass": [
-        4158
+        4236
       ],
       "StudentPortfolio": [
-        4144
+        4222
       ],
       "StudentStatus": [
-        4150
+        4228
       ],
       "StudentStruct": [
-        4278
+        4356
       ],
       "iAcademyClass": [
-        4173
+        4251
       ],
       "iAcademyProjectList": [
-        4226
+        4304
       ],
       "iAcademyStudents": [
-        4326
+        4404
       ],
       "iStudentPortfolio": [
-        4363
+        4441
       ]
     },
     "id": 2252,
@@ -8823,7 +8823,7 @@
         "id": 1749,
         "nodeType": "ImportDirective",
         "scope": 2252,
-        "sourceUnit": 4650,
+        "sourceUnit": 4728,
         "src": "236:49:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -8834,7 +8834,7 @@
         "id": 1750,
         "nodeType": "ImportDirective",
         "scope": 2252,
-        "sourceUnit": 4145,
+        "sourceUnit": 4223,
         "src": "289:32:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -8845,7 +8845,7 @@
         "id": 1751,
         "nodeType": "ImportDirective",
         "scope": 2252,
-        "sourceUnit": 4174,
+        "sourceUnit": 4252,
         "src": "323:29:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -8856,7 +8856,7 @@
         "id": 1752,
         "nodeType": "ImportDirective",
         "scope": 2252,
-        "sourceUnit": 4327,
+        "sourceUnit": 4405,
         "src": "354:32:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -8869,7 +8869,7 @@
               "id": 1753,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4649,
+              "referencedDeclaration": 4727,
               "src": "420:13:4"
             },
             "id": 1754,
@@ -8878,17 +8878,17 @@
           }
         ],
         "contractDependencies": [
-          4144,
-          4649,
-          4971
+          4222,
+          4727,
+          5049
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 2251,
         "linearizedBaseContracts": [
           2251,
-          4649,
-          4971
+          4727,
+          5049
         ],
         "name": "AcademyStudents",
         "nodeType": "ContractDefinition",
@@ -8959,7 +8959,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
               "typeString": "mapping(address => struct StudentStruct)"
             },
             "typeName": {
@@ -8977,7 +8977,7 @@
               "nodeType": "Mapping",
               "src": "510:33:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                 "typeString": "mapping(address => struct StudentStruct)"
               },
               "valueType": {
@@ -8987,13 +8987,13 @@
                   "id": 1760,
                   "name": "StudentStruct",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 4278,
+                  "referencedDeclaration": 4356,
                   "src": "529:13:4"
                 },
-                "referencedDeclaration": 4278,
+                "referencedDeclaration": 4356,
                 "src": "529:13:4",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                  "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                   "typeString": "struct StudentStruct"
                 }
               }
@@ -9114,7 +9114,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4392,
+                        "referencedDeclaration": 4470,
                         "src": "757:18:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -9163,7 +9163,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4575,
+                      "referencedDeclaration": 4653,
                       "src": "746:10:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -9573,7 +9573,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4392,
+                            "referencedDeclaration": 4470,
                             "src": "1237:18:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -9622,7 +9622,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4438,
+                          "referencedDeclaration": 4516,
                           "src": "1229:7:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -10039,7 +10039,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                        "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                         "typeString": "contract StudentPortfolio"
                       },
                       "typeName": {
@@ -10049,13 +10049,13 @@
                           "id": 1860,
                           "name": "StudentPortfolio",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4144,
+                          "referencedDeclaration": 4222,
                           "src": "1719:16:4"
                         },
-                        "referencedDeclaration": 4144,
+                        "referencedDeclaration": 4222,
                         "src": "1719:16:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                          "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                           "typeString": "contract StudentPortfolio"
                         }
                       },
@@ -10109,7 +10109,7 @@
                       "nodeType": "NewExpression",
                       "src": "1740:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_address_$returns$_t_contract$_StudentPortfolio_$4144_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_address_$returns$_t_contract$_StudentPortfolio_$4222_$",
                         "typeString": "function (address,address) returns (contract StudentPortfolio)"
                       },
                       "typeName": {
@@ -10119,13 +10119,13 @@
                           "id": 1863,
                           "name": "StudentPortfolio",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4144,
+                          "referencedDeclaration": 4222,
                           "src": "1744:16:4"
                         },
-                        "referencedDeclaration": 4144,
+                        "referencedDeclaration": 4222,
                         "src": "1744:16:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                          "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                           "typeString": "contract StudentPortfolio"
                         }
                       }
@@ -10141,7 +10141,7 @@
                     "src": "1740:50:4",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                      "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                       "typeString": "contract StudentPortfolio"
                     }
                   },
@@ -10165,7 +10165,7 @@
                           "referencedDeclaration": 1763,
                           "src": "1801:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -10189,7 +10189,7 @@
                         "nodeType": "IndexAccess",
                         "src": "1801:20:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -10200,7 +10200,7 @@
                       "lValueRequested": true,
                       "memberName": "portfolioAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4272,
+                      "referencedDeclaration": 4350,
                       "src": "1801:37:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -10219,7 +10219,7 @@
                           "referencedDeclaration": 1862,
                           "src": "1849:1:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                            "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                             "typeString": "contract StudentPortfolio"
                           }
                         }
@@ -10227,7 +10227,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                            "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                             "typeString": "contract StudentPortfolio"
                           }
                         ],
@@ -10498,7 +10498,7 @@
                           "referencedDeclaration": 1763,
                           "src": "2121:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -10522,7 +10522,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2121:20:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -10533,7 +10533,7 @@
                       "lValueRequested": true,
                       "memberName": "ownerAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4270,
+                      "referencedDeclaration": 4348,
                       "src": "2121:33:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -10744,7 +10744,7 @@
                           "referencedDeclaration": 1763,
                           "src": "2262:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -10768,7 +10768,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2262:20:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -10779,7 +10779,7 @@
                       "lValueRequested": true,
                       "memberName": "index",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4268,
+                      "referencedDeclaration": 4346,
                       "src": "2262:26:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -11289,7 +11289,7 @@
                         "referencedDeclaration": 1763,
                         "src": "2770:11:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                           "typeString": "mapping(address => struct StudentStruct storage ref)"
                         }
                       },
@@ -11313,7 +11313,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2770:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                         "typeString": "struct StudentStruct storage ref"
                       }
                     },
@@ -11324,7 +11324,7 @@
                     "lValueRequested": false,
                     "memberName": "index",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 4268,
+                    "referencedDeclaration": 4346,
                     "src": "2770:26:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -11541,7 +11541,7 @@
                           "referencedDeclaration": 1763,
                           "src": "2923:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -11565,7 +11565,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2923:22:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -11576,7 +11576,7 @@
                       "lValueRequested": true,
                       "memberName": "index",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4268,
+                      "referencedDeclaration": 4346,
                       "src": "2923:28:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -11627,7 +11627,7 @@
                         "referencedDeclaration": 1763,
                         "src": "2995:11:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                           "typeString": "mapping(address => struct StudentStruct storage ref)"
                         }
                       },
@@ -11651,7 +11651,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2995:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                         "typeString": "struct StudentStruct storage ref"
                       }
                     },
@@ -12084,7 +12084,7 @@
                                   "referencedDeclaration": 1763,
                                   "src": "3481:11:4",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                                     "typeString": "mapping(address => struct StudentStruct storage ref)"
                                   }
                                 },
@@ -12108,7 +12108,7 @@
                                 "nodeType": "IndexAccess",
                                 "src": "3481:20:4",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                                  "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                                   "typeString": "struct StudentStruct storage ref"
                                 }
                               },
@@ -12119,7 +12119,7 @@
                               "lValueRequested": false,
                               "memberName": "studentClasses",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4277,
+                              "referencedDeclaration": 4355,
                               "src": "3481:35:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_address_$dyn_storage",
@@ -12966,7 +12966,7 @@
                           "referencedDeclaration": 1763,
                           "src": "4226:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -12990,7 +12990,7 @@
                         "nodeType": "IndexAccess",
                         "src": "4226:20:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -13001,7 +13001,7 @@
                       "lValueRequested": true,
                       "memberName": "activeClass",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4274,
+                      "referencedDeclaration": 4352,
                       "src": "4226:32:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -13689,7 +13689,7 @@
                                 "referencedDeclaration": 1763,
                                 "src": "4827:11:4",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                                   "typeString": "mapping(address => struct StudentStruct storage ref)"
                                 }
                               },
@@ -13713,7 +13713,7 @@
                               "nodeType": "IndexAccess",
                               "src": "4827:20:4",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                                "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                                 "typeString": "struct StudentStruct storage ref"
                               }
                             },
@@ -13724,7 +13724,7 @@
                             "lValueRequested": false,
                             "memberName": "index",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4268,
+                            "referencedDeclaration": 4346,
                             "src": "4827:26:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -13943,7 +13943,7 @@
                         "referencedDeclaration": 1763,
                         "src": "5120:11:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                           "typeString": "mapping(address => struct StudentStruct storage ref)"
                         }
                       },
@@ -13967,7 +13967,7 @@
                       "nodeType": "IndexAccess",
                       "src": "5120:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                         "typeString": "struct StudentStruct storage ref"
                       }
                     },
@@ -14000,7 +14000,7 @@
                             "stateVariable": false,
                             "storageLocation": "memory",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                              "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                               "typeString": "struct StudentStruct"
                             },
                             "typeName": {
@@ -14010,13 +14010,13 @@
                                 "id": 2192,
                                 "name": "StudentStruct",
                                 "nodeType": "IdentifierPath",
-                                "referencedDeclaration": 4278,
+                                "referencedDeclaration": 4356,
                                 "src": "5027:13:4"
                               },
-                              "referencedDeclaration": 4278,
+                              "referencedDeclaration": 4356,
                               "src": "5027:13:4",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                                "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                                 "typeString": "struct StudentStruct"
                               }
                             },
@@ -14036,7 +14036,7 @@
                           "referencedDeclaration": 2194,
                           "src": "5071:1:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                            "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                             "typeString": "struct StudentStruct memory"
                           }
                         },
@@ -14106,7 +14106,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                    "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                     "typeString": "struct StudentStruct"
                   },
                   "typeName": {
@@ -14116,13 +14116,13 @@
                       "id": 2184,
                       "name": "StudentStruct",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4278,
+                      "referencedDeclaration": 4356,
                       "src": "4954:13:4"
                     },
-                    "referencedDeclaration": 4278,
+                    "referencedDeclaration": 4356,
                     "src": "4954:13:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                      "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                       "typeString": "struct StudentStruct"
                     }
                   },
@@ -14711,46 +14711,46 @@
         2251
       ],
       "AccessControl": [
-        4649
+        4727
       ],
       "Address": [
-        4945
+        5023
       ],
       "Context": [
-        4971
+        5049
       ],
       "EnumerableSet": [
-        6066
+        6144
       ],
       "PortfolioStruct": [
-        4346
+        4424
       ],
       "ProjectStruct": [
-        4196
+        4274
       ],
       "StudentInClass": [
-        4158
+        4236
       ],
       "StudentPortfolio": [
-        4144
+        4222
       ],
       "StudentStatus": [
-        4150
+        4228
       ],
       "StudentStruct": [
-        4278
+        4356
       ],
       "iAcademyClass": [
-        4173
+        4251
       ],
       "iAcademyProjectList": [
-        4226
+        4304
       ],
       "iAcademyStudents": [
-        4326
+        4404
       ],
       "iStudentPortfolio": [
-        4363
+        4441
       ]
     },
     "id": 2252,
@@ -14773,7 +14773,7 @@
         "id": 1749,
         "nodeType": "ImportDirective",
         "scope": 2252,
-        "sourceUnit": 4650,
+        "sourceUnit": 4728,
         "src": "236:49:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -14784,7 +14784,7 @@
         "id": 1750,
         "nodeType": "ImportDirective",
         "scope": 2252,
-        "sourceUnit": 4145,
+        "sourceUnit": 4223,
         "src": "289:32:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -14795,7 +14795,7 @@
         "id": 1751,
         "nodeType": "ImportDirective",
         "scope": 2252,
-        "sourceUnit": 4174,
+        "sourceUnit": 4252,
         "src": "323:29:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -14806,7 +14806,7 @@
         "id": 1752,
         "nodeType": "ImportDirective",
         "scope": 2252,
-        "sourceUnit": 4327,
+        "sourceUnit": 4405,
         "src": "354:32:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -14819,7 +14819,7 @@
               "id": 1753,
               "name": "AccessControl",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4649,
+              "referencedDeclaration": 4727,
               "src": "420:13:4"
             },
             "id": 1754,
@@ -14828,17 +14828,17 @@
           }
         ],
         "contractDependencies": [
-          4144,
-          4649,
-          4971
+          4222,
+          4727,
+          5049
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 2251,
         "linearizedBaseContracts": [
           2251,
-          4649,
-          4971
+          4727,
+          5049
         ],
         "name": "AcademyStudents",
         "nodeType": "ContractDefinition",
@@ -14909,7 +14909,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
               "typeString": "mapping(address => struct StudentStruct)"
             },
             "typeName": {
@@ -14927,7 +14927,7 @@
               "nodeType": "Mapping",
               "src": "510:33:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                 "typeString": "mapping(address => struct StudentStruct)"
               },
               "valueType": {
@@ -14937,13 +14937,13 @@
                   "id": 1760,
                   "name": "StudentStruct",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 4278,
+                  "referencedDeclaration": 4356,
                   "src": "529:13:4"
                 },
-                "referencedDeclaration": 4278,
+                "referencedDeclaration": 4356,
                 "src": "529:13:4",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                  "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                   "typeString": "struct StudentStruct"
                 }
               }
@@ -15064,7 +15064,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4392,
+                        "referencedDeclaration": 4470,
                         "src": "757:18:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -15113,7 +15113,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4575,
+                      "referencedDeclaration": 4653,
                       "src": "746:10:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -15523,7 +15523,7 @@
                             "name": "DEFAULT_ADMIN_ROLE",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4392,
+                            "referencedDeclaration": 4470,
                             "src": "1237:18:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes32",
@@ -15572,7 +15572,7 @@
                           "name": "hasRole",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4438,
+                          "referencedDeclaration": 4516,
                           "src": "1229:7:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -15989,7 +15989,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                        "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                         "typeString": "contract StudentPortfolio"
                       },
                       "typeName": {
@@ -15999,13 +15999,13 @@
                           "id": 1860,
                           "name": "StudentPortfolio",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4144,
+                          "referencedDeclaration": 4222,
                           "src": "1719:16:4"
                         },
-                        "referencedDeclaration": 4144,
+                        "referencedDeclaration": 4222,
                         "src": "1719:16:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                          "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                           "typeString": "contract StudentPortfolio"
                         }
                       },
@@ -16059,7 +16059,7 @@
                       "nodeType": "NewExpression",
                       "src": "1740:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_address_$returns$_t_contract$_StudentPortfolio_$4144_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_address_$returns$_t_contract$_StudentPortfolio_$4222_$",
                         "typeString": "function (address,address) returns (contract StudentPortfolio)"
                       },
                       "typeName": {
@@ -16069,13 +16069,13 @@
                           "id": 1863,
                           "name": "StudentPortfolio",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4144,
+                          "referencedDeclaration": 4222,
                           "src": "1744:16:4"
                         },
-                        "referencedDeclaration": 4144,
+                        "referencedDeclaration": 4222,
                         "src": "1744:16:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                          "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                           "typeString": "contract StudentPortfolio"
                         }
                       }
@@ -16091,7 +16091,7 @@
                     "src": "1740:50:4",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                      "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                       "typeString": "contract StudentPortfolio"
                     }
                   },
@@ -16115,7 +16115,7 @@
                           "referencedDeclaration": 1763,
                           "src": "1801:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -16139,7 +16139,7 @@
                         "nodeType": "IndexAccess",
                         "src": "1801:20:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -16150,7 +16150,7 @@
                       "lValueRequested": true,
                       "memberName": "portfolioAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4272,
+                      "referencedDeclaration": 4350,
                       "src": "1801:37:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -16169,7 +16169,7 @@
                           "referencedDeclaration": 1862,
                           "src": "1849:1:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                            "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                             "typeString": "contract StudentPortfolio"
                           }
                         }
@@ -16177,7 +16177,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_contract$_StudentPortfolio_$4144",
+                            "typeIdentifier": "t_contract$_StudentPortfolio_$4222",
                             "typeString": "contract StudentPortfolio"
                           }
                         ],
@@ -16448,7 +16448,7 @@
                           "referencedDeclaration": 1763,
                           "src": "2121:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -16472,7 +16472,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2121:20:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -16483,7 +16483,7 @@
                       "lValueRequested": true,
                       "memberName": "ownerAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4270,
+                      "referencedDeclaration": 4348,
                       "src": "2121:33:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -16694,7 +16694,7 @@
                           "referencedDeclaration": 1763,
                           "src": "2262:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -16718,7 +16718,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2262:20:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -16729,7 +16729,7 @@
                       "lValueRequested": true,
                       "memberName": "index",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4268,
+                      "referencedDeclaration": 4346,
                       "src": "2262:26:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -17239,7 +17239,7 @@
                         "referencedDeclaration": 1763,
                         "src": "2770:11:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                           "typeString": "mapping(address => struct StudentStruct storage ref)"
                         }
                       },
@@ -17263,7 +17263,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2770:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                         "typeString": "struct StudentStruct storage ref"
                       }
                     },
@@ -17274,7 +17274,7 @@
                     "lValueRequested": false,
                     "memberName": "index",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 4268,
+                    "referencedDeclaration": 4346,
                     "src": "2770:26:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -17491,7 +17491,7 @@
                           "referencedDeclaration": 1763,
                           "src": "2923:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -17515,7 +17515,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2923:22:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -17526,7 +17526,7 @@
                       "lValueRequested": true,
                       "memberName": "index",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4268,
+                      "referencedDeclaration": 4346,
                       "src": "2923:28:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -17577,7 +17577,7 @@
                         "referencedDeclaration": 1763,
                         "src": "2995:11:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                           "typeString": "mapping(address => struct StudentStruct storage ref)"
                         }
                       },
@@ -17601,7 +17601,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2995:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                         "typeString": "struct StudentStruct storage ref"
                       }
                     },
@@ -18034,7 +18034,7 @@
                                   "referencedDeclaration": 1763,
                                   "src": "3481:11:4",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                                     "typeString": "mapping(address => struct StudentStruct storage ref)"
                                   }
                                 },
@@ -18058,7 +18058,7 @@
                                 "nodeType": "IndexAccess",
                                 "src": "3481:20:4",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                                  "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                                   "typeString": "struct StudentStruct storage ref"
                                 }
                               },
@@ -18069,7 +18069,7 @@
                               "lValueRequested": false,
                               "memberName": "studentClasses",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4277,
+                              "referencedDeclaration": 4355,
                               "src": "3481:35:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_address_$dyn_storage",
@@ -18916,7 +18916,7 @@
                           "referencedDeclaration": 1763,
                           "src": "4226:11:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                             "typeString": "mapping(address => struct StudentStruct storage ref)"
                           }
                         },
@@ -18940,7 +18940,7 @@
                         "nodeType": "IndexAccess",
                         "src": "4226:20:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                          "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                           "typeString": "struct StudentStruct storage ref"
                         }
                       },
@@ -18951,7 +18951,7 @@
                       "lValueRequested": true,
                       "memberName": "activeClass",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4274,
+                      "referencedDeclaration": 4352,
                       "src": "4226:32:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -19639,7 +19639,7 @@
                                 "referencedDeclaration": 1763,
                                 "src": "4827:11:4",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                                   "typeString": "mapping(address => struct StudentStruct storage ref)"
                                 }
                               },
@@ -19663,7 +19663,7 @@
                               "nodeType": "IndexAccess",
                               "src": "4827:20:4",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                                "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                                 "typeString": "struct StudentStruct storage ref"
                               }
                             },
@@ -19674,7 +19674,7 @@
                             "lValueRequested": false,
                             "memberName": "index",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4268,
+                            "referencedDeclaration": 4346,
                             "src": "4827:26:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -19893,7 +19893,7 @@
                         "referencedDeclaration": 1763,
                         "src": "5120:11:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4278_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_StudentStruct_$4356_storage_$",
                           "typeString": "mapping(address => struct StudentStruct storage ref)"
                         }
                       },
@@ -19917,7 +19917,7 @@
                       "nodeType": "IndexAccess",
                       "src": "5120:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_StudentStruct_$4278_storage",
+                        "typeIdentifier": "t_struct$_StudentStruct_$4356_storage",
                         "typeString": "struct StudentStruct storage ref"
                       }
                     },
@@ -19950,7 +19950,7 @@
                             "stateVariable": false,
                             "storageLocation": "memory",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                              "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                               "typeString": "struct StudentStruct"
                             },
                             "typeName": {
@@ -19960,13 +19960,13 @@
                                 "id": 2192,
                                 "name": "StudentStruct",
                                 "nodeType": "IdentifierPath",
-                                "referencedDeclaration": 4278,
+                                "referencedDeclaration": 4356,
                                 "src": "5027:13:4"
                               },
-                              "referencedDeclaration": 4278,
+                              "referencedDeclaration": 4356,
                               "src": "5027:13:4",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                                "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                                 "typeString": "struct StudentStruct"
                               }
                             },
@@ -19986,7 +19986,7 @@
                           "referencedDeclaration": 2194,
                           "src": "5071:1:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                            "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                             "typeString": "struct StudentStruct memory"
                           }
                         },
@@ -20056,7 +20056,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_StudentStruct_$4278_memory_ptr",
+                    "typeIdentifier": "t_struct$_StudentStruct_$4356_memory_ptr",
                     "typeString": "struct StudentStruct"
                   },
                   "typeName": {
@@ -20066,13 +20066,13 @@
                       "id": 2184,
                       "name": "StudentStruct",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4278,
+                      "referencedDeclaration": 4356,
                       "src": "4954:13:4"
                     },
-                    "referencedDeclaration": 4278,
+                    "referencedDeclaration": 4356,
                     "src": "4954:13:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_StudentStruct_$4278_storage_ptr",
+                      "typeIdentifier": "t_struct$_StudentStruct_$4356_storage_ptr",
                       "typeString": "struct StudentStruct"
                     }
                   },
@@ -20948,12 +20948,12 @@
         }
       },
       "links": {},
-      "address": "0xa173600B31E31b3B6Ab636b24e7e136613B88E66",
-      "transactionHash": "0x98d9633200f9aaaa9ac2766ad16a8d83b32e398f4822434be3e38531e58c9237"
+      "address": "0x51f2be66926Bd62ac8905C25d79F6cD97a8586e6",
+      "transactionHash": "0xf167abfb30bae45b9e2d7072ade92ceed4bbe18f248049cd17aa8570ee4c917c"
     }
   },
-  "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-24T03:49:02.541Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-08T14:11:26.613Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

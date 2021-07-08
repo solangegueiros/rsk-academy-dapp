@@ -17,7 +17,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -30,7 +31,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"getName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/NameSol.sol\":\"NameSol\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/NameSol.sol\":{\"keccak256\":\"0x6edbf493c16f9ad6b29794b6aaf9963179d36f59028dd87bf862e1683bca9213\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://89e4f3b884855f075d6db7d0d8155f2f5b6e98ee24e0957cb858f5de5e6b3d20\",\"dweb:/ipfs/QmdFf4gzKCPV4u7T2Zd3V6RT1F5L6MCgXHM6UXbpV6pVK2\"]}},\"version\":1}",
@@ -2467,12 +2469,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xBbAf8BE2Ae2d5a3A582e4852DdBA0FE0B8b51D16",
-      "transactionHash": "0x3fa1dc51cd418cd416b56e57972357d51008fadfb43404ce01a7eee8986128ba"
+      "address": "0x22DFb69DdA11f3343E7b2c2a71bD926B41a13Be4",
+      "transactionHash": "0xeb33447401edd6e8b6bc66423fbc5ede72e159336e07c189beec224a6724b876"
     }
   },
-  "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-24T03:46:11.814Z",
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-08T14:11:26.705Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
