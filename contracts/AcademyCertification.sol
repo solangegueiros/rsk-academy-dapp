@@ -13,6 +13,7 @@ struct CertificateStruct {
     address studentAddress;
     string studentName;
     string courseName;
+    string storageHash;
 }
 
 // This certification is exclusive for course Devs 2021-01!
@@ -94,7 +95,7 @@ contract AcademyCertification is AccessControl {
     return pass;    
   }
 
-  function addCertificate (address studentAddress, string memory studentName, string memory course) private returns(uint256) {
+  function addCertificate (address studentAddress, string memory studentName, string memory course, string memory storageHash) private returns(uint256) {
     if (existCertificate(studentAddress, course))
       return certificateIndex[studentAddress][course];
 
@@ -102,6 +103,7 @@ contract AcademyCertification is AccessControl {
     c.studentAddress = studentAddress;
     c.studentName = studentName;
     c.courseName = course;
+    c.storageHash = storageHash;    
 
     certificateInfo.push(c);
     uint256 index = certificateInfo.length;
@@ -109,11 +111,11 @@ contract AcademyCertification is AccessControl {
     return index;
   }
   
-  function registerCertificate(address studentAddress, string memory studentName, string memory course) public returns (bool) {
+  function registerCertificate(address studentAddress, string memory studentName, string memory course, string memory storageHash) public returns (bool) {
     require (masterName.existsOwner(studentAddress), "student must have a name contract");
     require (validateStudent(studentAddress), "student not approved");
 
-    uint256 index = addCertificate(studentAddress, studentName, course);
+    uint256 index = addCertificate(studentAddress, studentName, course, storageHash);
     if (index > 0)
       return true;
     else
