@@ -54,43 +54,43 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.1;\r\n\r\n\r\nstruct PortfolioStruct {\r\n    address projectAddress; // Key\r\n    //iAcademyProjects.ProjectStruct name;\r\n    string name;    // Key for iAcademyProjects.ProjectStruct\r\n}\r\n\r\ninterface iStudentPortfolio {\r\n    function addProject (address projectAddress, string memory projectName) external returns (uint256);\r\n    function deleteProjectByAddress (address projectAddress) external returns (bool);\r\n}  \r\n\r\n",
-  "sourcePath": "C:/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iStudentPortfolio.sol",
+  "sourcePath": "C:\\ACADEMY\\GITHUB\\rsk-academy-dapp\\contracts\\iStudentPortfolio.sol",
   "ast": {
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iStudentPortfolio.sol",
     "exportedSymbols": {
       "PortfolioStruct": [
-        1031
+        1610
       ],
       "iStudentPortfolio": [
-        1048
+        1627
       ]
     },
-    "id": 1049,
+    "id": 1628,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1026,
+        "id": 1605,
         "literals": [
           "solidity",
           "0.8",
           ".1"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:7"
+        "src": "33:22:9"
       },
       {
         "canonicalName": "PortfolioStruct",
-        "id": 1031,
+        "id": 1610,
         "members": [
           {
             "constant": false,
-            "id": 1028,
+            "id": 1607,
             "mutability": "mutable",
             "name": "projectAddress",
             "nodeType": "VariableDeclaration",
-            "scope": 1031,
-            "src": "91:22:7",
+            "scope": 1610,
+            "src": "91:22:9",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -98,10 +98,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 1027,
+              "id": 1606,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "91:7:7",
+              "src": "91:7:9",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -112,12 +112,12 @@
           },
           {
             "constant": false,
-            "id": 1030,
+            "id": 1609,
             "mutability": "mutable",
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 1031,
-            "src": "171:11:7",
+            "scope": 1610,
+            "src": "171:11:9",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -125,10 +125,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 1029,
+              "id": 1608,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "171:6:7",
+              "src": "171:6:9",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -139,8 +139,8 @@
         ],
         "name": "PortfolioStruct",
         "nodeType": "StructDefinition",
-        "scope": 1049,
-        "src": "61:170:7",
+        "scope": 1628,
+        "src": "61:170:9",
         "visibility": "public"
       },
       {
@@ -149,33 +149,33 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 1048,
+        "id": 1627,
         "linearizedBaseContracts": [
-          1048
+          1627
         ],
         "name": "iStudentPortfolio",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "8a06d20b",
-            "id": 1040,
+            "id": 1619,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "addProject",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1036,
+              "id": 1615,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1033,
+                  "id": 1612,
                   "mutability": "mutable",
                   "name": "projectAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1040,
-                  "src": "291:22:7",
+                  "scope": 1619,
+                  "src": "291:22:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -183,10 +183,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1032,
+                    "id": 1611,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "291:7:7",
+                    "src": "291:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -197,12 +197,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 1035,
+                  "id": 1614,
                   "mutability": "mutable",
                   "name": "projectName",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1040,
-                  "src": "315:25:7",
+                  "scope": 1619,
+                  "src": "315:25:9",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -210,10 +210,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1034,
+                    "id": 1613,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "315:6:7",
+                    "src": "315:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -222,20 +222,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "290:51:7"
+              "src": "290:51:9"
             },
             "returnParameters": {
-              "id": 1039,
+              "id": 1618,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1038,
+                  "id": 1617,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1040,
-                  "src": "360:7:7",
+                  "scope": 1619,
+                  "src": "360:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -243,10 +243,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1037,
+                    "id": 1616,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "360:7:7",
+                    "src": "360:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -255,34 +255,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "359:9:7"
+              "src": "359:9:9"
             },
-            "scope": 1048,
-            "src": "270:99:7",
+            "scope": 1627,
+            "src": "270:99:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "f4a496b7",
-            "id": 1047,
+            "id": 1626,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "deleteProjectByAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1043,
+              "id": 1622,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1042,
+                  "id": 1621,
                   "mutability": "mutable",
                   "name": "projectAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1047,
-                  "src": "408:22:7",
+                  "scope": 1626,
+                  "src": "408:22:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -290,10 +290,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1041,
+                    "id": 1620,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "408:7:7",
+                    "src": "408:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -303,20 +303,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "407:24:7"
+              "src": "407:24:9"
             },
             "returnParameters": {
-              "id": 1046,
+              "id": 1625,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1045,
+                  "id": 1624,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1047,
-                  "src": "450:4:7",
+                  "scope": 1626,
+                  "src": "450:4:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -324,10 +324,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1044,
+                    "id": 1623,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "450:4:7",
+                    "src": "450:4:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -336,57 +336,57 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "449:6:7"
+              "src": "449:6:9"
             },
-            "scope": 1048,
-            "src": "375:81:7",
+            "scope": 1627,
+            "src": "375:81:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 1049,
-        "src": "235:224:7"
+        "scope": 1628,
+        "src": "235:224:9"
       }
     ],
-    "src": "33:432:7"
+    "src": "33:432:9"
   },
   "legacyAST": {
     "absolutePath": "/C/ACADEMY/GITHUB/rsk-academy-dapp/contracts/iStudentPortfolio.sol",
     "exportedSymbols": {
       "PortfolioStruct": [
-        1031
+        1610
       ],
       "iStudentPortfolio": [
-        1048
+        1627
       ]
     },
-    "id": 1049,
+    "id": 1628,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1026,
+        "id": 1605,
         "literals": [
           "solidity",
           "0.8",
           ".1"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:7"
+        "src": "33:22:9"
       },
       {
         "canonicalName": "PortfolioStruct",
-        "id": 1031,
+        "id": 1610,
         "members": [
           {
             "constant": false,
-            "id": 1028,
+            "id": 1607,
             "mutability": "mutable",
             "name": "projectAddress",
             "nodeType": "VariableDeclaration",
-            "scope": 1031,
-            "src": "91:22:7",
+            "scope": 1610,
+            "src": "91:22:9",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -394,10 +394,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 1027,
+              "id": 1606,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "91:7:7",
+              "src": "91:7:9",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -408,12 +408,12 @@
           },
           {
             "constant": false,
-            "id": 1030,
+            "id": 1609,
             "mutability": "mutable",
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 1031,
-            "src": "171:11:7",
+            "scope": 1610,
+            "src": "171:11:9",
             "stateVariable": false,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -421,10 +421,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 1029,
+              "id": 1608,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "171:6:7",
+              "src": "171:6:9",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -435,8 +435,8 @@
         ],
         "name": "PortfolioStruct",
         "nodeType": "StructDefinition",
-        "scope": 1049,
-        "src": "61:170:7",
+        "scope": 1628,
+        "src": "61:170:9",
         "visibility": "public"
       },
       {
@@ -445,33 +445,33 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 1048,
+        "id": 1627,
         "linearizedBaseContracts": [
-          1048
+          1627
         ],
         "name": "iStudentPortfolio",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "8a06d20b",
-            "id": 1040,
+            "id": 1619,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "addProject",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1036,
+              "id": 1615,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1033,
+                  "id": 1612,
                   "mutability": "mutable",
                   "name": "projectAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1040,
-                  "src": "291:22:7",
+                  "scope": 1619,
+                  "src": "291:22:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -479,10 +479,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1032,
+                    "id": 1611,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "291:7:7",
+                    "src": "291:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -493,12 +493,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 1035,
+                  "id": 1614,
                   "mutability": "mutable",
                   "name": "projectName",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1040,
-                  "src": "315:25:7",
+                  "scope": 1619,
+                  "src": "315:25:9",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -506,10 +506,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1034,
+                    "id": 1613,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "315:6:7",
+                    "src": "315:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -518,20 +518,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "290:51:7"
+              "src": "290:51:9"
             },
             "returnParameters": {
-              "id": 1039,
+              "id": 1618,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1038,
+                  "id": 1617,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1040,
-                  "src": "360:7:7",
+                  "scope": 1619,
+                  "src": "360:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -539,10 +539,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1037,
+                    "id": 1616,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "360:7:7",
+                    "src": "360:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -551,34 +551,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "359:9:7"
+              "src": "359:9:9"
             },
-            "scope": 1048,
-            "src": "270:99:7",
+            "scope": 1627,
+            "src": "270:99:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "f4a496b7",
-            "id": 1047,
+            "id": 1626,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "deleteProjectByAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1043,
+              "id": 1622,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1042,
+                  "id": 1621,
                   "mutability": "mutable",
                   "name": "projectAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1047,
-                  "src": "408:22:7",
+                  "scope": 1626,
+                  "src": "408:22:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -586,10 +586,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1041,
+                    "id": 1620,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "408:7:7",
+                    "src": "408:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -599,20 +599,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "407:24:7"
+              "src": "407:24:9"
             },
             "returnParameters": {
-              "id": 1046,
+              "id": 1625,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1045,
+                  "id": 1624,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1047,
-                  "src": "450:4:7",
+                  "scope": 1626,
+                  "src": "450:4:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -620,10 +620,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1044,
+                    "id": 1623,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "450:4:7",
+                    "src": "450:4:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -632,28 +632,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "449:6:7"
+              "src": "449:6:9"
             },
-            "scope": 1048,
-            "src": "375:81:7",
+            "scope": 1627,
+            "src": "375:81:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 1049,
-        "src": "235:224:7"
+        "scope": 1628,
+        "src": "235:224:9"
       }
     ],
-    "src": "33:432:7"
+    "src": "33:432:9"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.1+commit.df193b15.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.1",
-  "updatedAt": "2021-05-31T04:25:04.907Z",
+  "schemaVersion": "3.4.0",
+  "updatedAt": "2021-08-06T13:59:27.409Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
