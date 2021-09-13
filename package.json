@@ -28,5 +28,6 @@
   "homepage": "https://github.com/solangegueiros/rsk-academy-dapp#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.1"
-  }
+  },
+  "packageManager": "yarn@3.0.2"
 }
