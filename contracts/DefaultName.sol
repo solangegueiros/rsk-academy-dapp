@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.4;
 
-contract NameSol {
+contract DefaultName {
     string private name;
     address public owner;
 
     constructor() {
         owner = msg.sender;
-        name = "Solange Gueiros";
+        name = "Your name";
     }
 
     function getName() public view returns (string memory) {
