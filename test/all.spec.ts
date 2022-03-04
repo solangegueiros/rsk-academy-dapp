@@ -29,15 +29,15 @@ describe('All Contracts', async function () {
   let academyOwner: SignerWithAddress
   let studentSol: SignerWithAddress
 
-  let _Wallet: Wallet__factory
-  let _Course: Course__factory
-  let _Projects: Projects__factory
-  let _Students: Students__factory
-  let _Courses: Courses__factory
-  let _Quiz: Quiz__factory
-  let _MasterName: MasterName__factory
-  let _NameSol: NameSol__factory
-  let _Certificate: Certificate__factory
+  let WalletFactory: Wallet__factory
+  let CourseFactory: Course__factory
+  let ProjectsFactory: Projects__factory
+  let StudentsFactory: Students__factory
+  let CoursesFactory: Courses__factory
+  let QuizFactory: Quiz__factory
+  let MasterNameFactory: MasterName__factory
+  let NameSolFactory: NameSol__factory
+  let CertificateFactory: Certificate__factory
 
   let academyWallet: Wallet
   let projects: Projects
@@ -54,26 +54,26 @@ describe('All Contracts', async function () {
     ;[academyOwner, studentSol] = await ethers.getSigners()
 
     // Contract factories
-    _Wallet = await ethers.getContractFactory('Wallet')
-    _Course = await ethers.getContractFactory('Course')
-    _Projects = await ethers.getContractFactory('Projects')
-    _Students = await ethers.getContractFactory('Students')
-    _Courses = await ethers.getContractFactory('Courses')
-    _Quiz = await ethers.getContractFactory('Quiz')
-    _MasterName = await ethers.getContractFactory('MasterName')
-    _NameSol = await ethers.getContractFactory('NameSol', { signer: studentSol })
-    _Certificate = await ethers.getContractFactory('Certificate')
+    WalletFactory = await ethers.getContractFactory('Wallet')
+    CourseFactory = await ethers.getContractFactory('Course')
+    ProjectsFactory = await ethers.getContractFactory('Projects')
+    StudentsFactory = await ethers.getContractFactory('Students')
+    CoursesFactory = await ethers.getContractFactory('Courses')
+    QuizFactory = await ethers.getContractFactory('Quiz')
+    MasterNameFactory = await ethers.getContractFactory('MasterName')
+    NameSolFactory = await ethers.getContractFactory('NameSol', { signer: studentSol })
+    CertificateFactory = await ethers.getContractFactory('Certificate')
 
     // Deployed contracts
-    academyWallet = await _Wallet.deploy()
-    projects = await _Projects.deploy()
-    students = await _Students.deploy(projects.address)
-    courses = await _Courses.deploy()
-    quiz = await _Quiz.deploy()
-    masterName = await _MasterName.deploy(students.address)
-    nameSol = await _NameSol.deploy()
+    academyWallet = await WalletFactory.deploy()
+    projects = await ProjectsFactory.deploy()
+    students = await StudentsFactory.deploy(projects.address)
+    courses = await CoursesFactory.deploy()
+    quiz = await QuizFactory.deploy()
+    masterName = await MasterNameFactory.deploy(students.address)
+    nameSol = await NameSolFactory.deploy()
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    certificate = await _Certificate.deploy(quiz.address, masterName.address)
+    certificate = await CertificateFactory.deploy(quiz.address, masterName.address)
 
     await (await students.grantRole(DEFAULT_ADMIN_ROLE, courses.address)).wait()
     await (await quiz.grantRole(DEFAULT_ADMIN_ROLE, courses.address)).wait()
@@ -81,10 +81,10 @@ describe('All Contracts', async function () {
     const developersClassTransaction = await (
       await courses.createCourse(students.address, quiz.address, DEV_CLASS_NAME)
     ).wait()
-    developersClass = _Course.attach(developersClassTransaction.logs[3].address)
+    developersClass = CourseFactory.attach(developersClassTransaction.logs[3].address)
   })
 
-  // Wallet
+  // WALLET
   describe('WALLET', async function () {
     const VALUE = 5000
     it('Should transfer value to wallet', async function () {
@@ -102,7 +102,7 @@ describe('All Contracts', async function () {
     })
   })
 
-  // Quiz
+  // QUIZ
   describe('QUIZ', function () {
     describe('ROLE', function () {
       it('Should Courses admin be in Quiz', async function () {
@@ -114,6 +114,7 @@ describe('All Contracts', async function () {
         expect(hasRole).to.equal(true)
       })
     })
+
     describe('SUBMIT', function () {
       before(async function () {
         const submitQuizTx = await quiz.submitQuiz(studentSol.address, 'dev-01', 'x 1', 10, 6)
@@ -140,7 +141,7 @@ describe('All Contracts', async function () {
     })
   })
 
-  // Quiz
+  // NAME
   describe('NAME', async function () {
     it('Should get correct name', async function () {
       const name = await nameSol.getName()
@@ -148,7 +149,7 @@ describe('All Contracts', async function () {
     })
   })
 
-  // Quiz
+  // MASTER NAME
   describe('MASTER NAME', async function () {
     it('Should check contract name', async function () {
       const isNameCorrect = await masterName.checkName(nameSol.address, 'Solange Gueiros')
