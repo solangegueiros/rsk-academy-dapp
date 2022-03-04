@@ -1,60 +1,56 @@
 import { ethers } from 'hardhat'
 import fsExtra from 'fs-extra'
 
-import {
-  Certificate__factory,
-  Courses__factory,
-  Course__factory,
-  MasterName__factory,
-  NameSol__factory,
-  Projects__factory,
-  Quiz__factory,
-  Students__factory,
-  Wallet__factory,
-} from '../typechain'
-
 const consoleBreak = () => console.log(`\n${'/'.repeat(50)}\n`)
 
 async function main() {
-  const [academyOwner, studentSol] = await ethers.getSigners()
+  consoleBreak()
+
+  const [academyOwner, studentA, studentB] = await ethers.getSigners()
   const DEFAULT_ADMIN_ROLE = '0x0000000000000000000000000000000000000000000000000000000000000000'
-  const ENV_PATH = '.env.example'
+  const LOG_PATH = 'deploy.log'
   const DEV_CLASS_NAME = 'Devs 2021-01'
+  const BUSINESS_CLASS_NAME = 'Business 2021-02'
 
   console.log('Deploying contracts with the account:', academyOwner.address)
   console.log('Account balance:', (await academyOwner.getBalance()).toString())
-  console.log(`academyOwner`, academyOwner.address)
-  console.log(`studentSol`, studentSol.address)
+  console.log(`Academy Owner`, academyOwner.address)
+  console.log(`Student A`, studentA.address)
+  console.log(`Student B`, studentB.address)
 
   consoleBreak()
 
   // Contract factories
-  const _Wallet = <Wallet__factory>await ethers.getContractFactory('Wallet')
-  const _Projects = <Projects__factory>await ethers.getContractFactory('Projects')
-  const _Courses = <Courses__factory>await ethers.getContractFactory('Courses')
-  const _Students = <Students__factory>await ethers.getContractFactory('Students')
-  const _Quiz = <Quiz__factory>await ethers.getContractFactory('Quiz')
-  const _MasterName = (await ethers.getContractFactory('MasterName')) as MasterName__factory
-  const _NameSol = (await ethers.getContractFactory('NameSol', { signer: studentSol })) as NameSol__factory
-  const _Certificate = (await ethers.getContractFactory('Certificate')) as Certificate__factory
-  const _Course = (await ethers.getContractFactory('Course')) as Course__factory
+  const WalletFactory = await ethers.getContractFactory('Wallet')
+  const ProjectsFactory = await ethers.getContractFactory('Projects')
+  const CoursesFactory = await ethers.getContractFactory('Courses')
+  const StudentsFactory = await ethers.getContractFactory('Students')
+  const QuizFactory = await ethers.getContractFactory('Quiz')
+  const MasterNameFactory = await ethers.getContractFactory('MasterName')
+  const NameSolFactory = await ethers.getContractFactory('NameSol', { signer: studentA })
+  const CertificateFactory = await ethers.getContractFactory('Certificate')
+  const CourseFactory = await ethers.getContractFactory('Course')
 
   // Deploy contracts
-  const wallet = await _Wallet.deploy()
-  const projects = await _Projects.deploy()
-  const courses = await _Courses.deploy()
-  const students = await _Students.deploy(projects.address)
-  const quiz = await _Quiz.deploy()
-  const masterName = await _MasterName.deploy(students.address)
-  const nameSol = await _NameSol.deploy()
-  const certificate = await _Certificate.deploy(quiz.address, masterName.address)
+  const wallet = await WalletFactory.deploy()
+  const projects = await ProjectsFactory.deploy()
+  const courses = await CoursesFactory.deploy()
+  const students = await StudentsFactory.deploy(projects.address)
+  const quiz = await QuizFactory.deploy()
+  const masterName = await MasterNameFactory.deploy(students.address)
+  const nameSol = await NameSolFactory.deploy()
+  const certificate = await CertificateFactory.deploy(quiz.address, masterName.address)
 
   await students.grantRole(DEFAULT_ADMIN_ROLE, courses.address)
   await quiz.grantRole(DEFAULT_ADMIN_ROLE, courses.address)
 
   const developersCourseTransaction = await courses.createCourse(students.address, quiz.address, DEV_CLASS_NAME)
   const developersCourseTransactionReceipt = await developersCourseTransaction.wait()
-  const developersCourse = _Course.attach(developersCourseTransactionReceipt.logs[3].address)
+  const developersCourse = CourseFactory.attach(developersCourseTransactionReceipt.logs[0].address)
+
+  const businessCourseTransaction = await courses.createCourse(students.address, quiz.address, BUSINESS_CLASS_NAME)
+  const businessCourseTransactionReceipt = await businessCourseTransaction.wait()
+  const businessCourse = CourseFactory.attach(businessCourseTransactionReceipt.logs[0].address)
 
   // Log and save addresses
   const ADDRESSES = {
@@ -67,38 +63,37 @@ async function main() {
     NAME_SOL: nameSol.address,
     CERTIFICATE: certificate.address,
     DEVELOPER_COURSE: developersCourse.address,
+    BUSINESS_COURSE: businessCourse.address,
   }
 
-  if (fsExtra.existsSync(ENV_PATH)) fsExtra.removeSync(ENV_PATH)
+  if (fsExtra.existsSync(LOG_PATH)) fsExtra.removeSync(LOG_PATH)
 
   Object.entries(ADDRESSES).forEach(([key, address]) => {
     console.log(key, address)
-    fsExtra.appendFileSync(ENV_PATH, `${key}=${address}\n`)
+    fsExtra.appendFileSync(LOG_PATH, `${key}=${address}\n`)
   })
 
   consoleBreak()
 
   const hasQuizRoleInCourses = await quiz.hasRole(DEFAULT_ADMIN_ROLE, courses.address)
-  console.log(`has_quiz_role_in_courses`, hasQuizRoleInCourses)
-  const hasStudentsRoleInCourses = await students.hasRole(DEFAULT_ADMIN_ROLE, courses.address)
-  console.log(`has_students_role_in_courses`, hasStudentsRoleInCourses)
-  const hasStudentsRoleInDevelopers = await students.hasRole(DEFAULT_ADMIN_ROLE, developersCourse.address)
-  console.log(`has_students_role_in_developers`, hasStudentsRoleInDevelopers)
+  console.log(`"Quiz" contract has role in "Courses" contract`, hasQuizRoleInCourses)
+
   const hasQuizRoleInDevelopers = await students.hasRole(DEFAULT_ADMIN_ROLE, developersCourse.address)
-  console.log(`has_quiz_role_in_developers`, hasQuizRoleInDevelopers)
+  console.log(`"Quiz" contract has role in "Developers" contract`, hasQuizRoleInDevelopers)
 
-  console.log('SUBSCRIBE DEVELOPERS')
+  const hasQuizRoleInBusiness = await students.hasRole(DEFAULT_ADMIN_ROLE, businessCourse.address)
+  console.log(`"Quiz contract has role in "Business" contract`, hasQuizRoleInBusiness)
 
-  /**
-   * TODO: Error: Transaction reverted: function selector was not recognized and
-   * there's no fallback function at Courses.<unrecognized-selector> (contracts/Courses.sol:11)
-   *
-   * Does it try to call function from Courses.sol instead of Course.sol?
-   */
-  await developersCourse.connect(studentSol).subscribe()
+  const hasStudentsRoleInCourses = await students.hasRole(DEFAULT_ADMIN_ROLE, courses.address)
+  console.log(`"Students" contract has role in "Courses" contract`, hasStudentsRoleInCourses)
 
-  const studentInDevelopersClass = await developersCourse.getCourseStudent(studentSol.address)
-  console.log(`studentInDevelopersClass`, studentInDevelopersClass)
+  const hasStudentsRoleInDevelopers = await students.hasRole(DEFAULT_ADMIN_ROLE, developersCourse.address)
+  console.log(`"Students" contract has role in "Developers" contract`, hasStudentsRoleInDevelopers)
+
+  const hasStudentsRoleInBusiness = await students.hasRole(DEFAULT_ADMIN_ROLE, businessCourse.address)
+  console.log(`"Students contract has role in "Business" contract`, hasStudentsRoleInBusiness)
+
+  consoleBreak()
 }
 
 main()
